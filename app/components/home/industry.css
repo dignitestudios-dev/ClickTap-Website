@@ -1,0 +1,71 @@
+.industry-swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.industry-swiper .swiper-slide {
+  width: 300px;
+  height: 450px; /* Container tall enough for the expansion */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.industry-card {
+  width: 300px;
+  height: 280px; /* Default height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.9); /* Default scale down */
+}
+
+/* Center 3 Cards Highlight (Active, Next, Prev) */
+.industry-swiper .swiper-slide-active .industry-card,
+.industry-swiper .swiper-slide-next .industry-card,
+.industry-swiper .swiper-slide-prev .industry-card {
+  background: #FFFFFF;
+  opacity: 1;
+  transform: scale(0.95); /* Slightly larger than far-side cards */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Specific Active (Center) Card expansion */
+.industry-swiper .swiper-slide-active .industry-card {
+  height: 400px; /* Expanded height only for center */
+  transform: scale(1); /* Full scale only for center */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.industry-nav-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  color: #01C2FE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.industry-nav-btn:hover {
+  background: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.industry-nav-btn:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,97 @@
+.why-swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  perspective: 1200px; /* Enhanced 3D perspective for the whole container */
+}
+
+.why-swiper .swiper-slide {
+  width: 406px;
+  height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #DBF7FF;
+  border-radius: 16px;
+  padding: 30px;
+  border-right: 1px solid rgba(219, 247, 255, 0.5);
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Subtler shadows for side cards */
+.why-swiper .swiper-slide-shadow-left,
+.why-swiper .swiper-slide-shadow-right {
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.why-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px; /* gap-1 in tailwind is 4px */
+}
+
+.why-pagination .swiper-pagination-bullet {
+  width: 16px; /* h-4 w-4 is 16px */
+  height: 16px;
+  background: #FFFFFF !important;
+  opacity: 0.5; /* bg-white/50 */
+  margin: 0 !important;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.why-pagination .swiper-pagination-bullet-active {
+  width: 30px; /* w-[30px] */
+  height: 16px;
+  background: #FFFFFF !important;
+  opacity: 1; /* bg-white */
+  border-radius: 20px;
+}
+
+/* Custom Navigation positioning */
+.why-navigation-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1380px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.why-nav-btn {
+  pointer-events: auto;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #01C2FE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.why-nav-btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+.why-nav-btn:active {
+  transform: scale(0.95);
+}
+.swiper-wrapper{
+  gap:30px;
+}

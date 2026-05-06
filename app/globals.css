@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F1FCFF;
+  --foreground: #00161D;
+  --primary-accent: #A9C921;
+  --secondary-accent: #01C2FE;
+  --nav-bg: rgba(255, 255, 255, 0.8);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary-accent);
+  --color-secondary: var(--secondary-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Blur Effects */
+.blur-blob {
+  position: absolute;
+  width: 631px;
+  height: 253px;
+  background: var(--secondary-accent);
+  opacity: 0.5;
+  filter: blur(150px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Navigation Links Style */
+.nav-links-container {
+  background: #F1F1F1;
+  border-radius: 16px;
+  padding: 10px 30px;
+}
+
+/* Custom Scrollbar for the horizontal scrolling sections */
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(1, 194, 254, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(1, 194, 254, 0.4);
+}
+
+.line-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bg-image{
+  background-image: url("/images/why-choos-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.trust-bg{
+  background-image: url("/images/trust-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
