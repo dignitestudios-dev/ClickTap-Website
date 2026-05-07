@@ -68,7 +68,7 @@ export default function Services() {
                 </Link>
               </div>
               <div className="absolute left-[50%] -translate-x-1/2  bottom-0 w-[280px] h-[220px] pointer-events-none">
-                <Image src="/images/ios-dev.png" alt="iOS" fill className="object-contain" />
+                <Image src="/images/services-top.png" alt="iOS" fill className="object-contain" />
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Services() {
                 </Link>
               </div>
               <div className="absolute -bottom-10 left-0 w-[200px] h-[300px] pointer-events-none">
-                <Image src="/images/image.png" alt="Android" fill className="object-contain" />
+                <Image src="/images/services-left-img.png" alt="Android" fill className="object-contain" />
               </div>
               <div className="absolute top-0 right-0 w-[150px] h-full pointer-events-none">
                 <Image src="/images/andriod-app-border.png" alt="Android" fill className="" />
