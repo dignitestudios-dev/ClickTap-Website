@@ -1,7 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useRef } from "react";
 import { ArrowLeft, ArrowRight, Star } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
 type Testimonial = {
     id: number;
@@ -11,73 +17,13 @@ type Testimonial = {
     message: string;
     date: string;
     rating: number;
+    avatar?: string;
 };
 
-const testimonials: Testimonial[] = [
-    {
-        id: 1,
-        name: "James Tate",
-        role: "Founder, Bright-E Labs",
-        title: "Fast and reliable delivery",
-        message:
-            "Their developers turned our idea into a reliable app way faster than we expected. Communicating was always clear and easy with them.",
-        date: "2024",
-        rating: 5,
-    },
-    {
-        id: 2,
-        name: "Sarah David",
-        role: "Product Manager, MediC Health",
-        title: "Strong product understanding",
-        message:
-            "Definitely a great team to work with. They understood our vision quickly and delivered a product that our users have loved so far.",
-        date: "2024",
-        rating: 5,
-    },
-    {
-        id: 3,
-        name: "Daniel Carter",
-        role: "CTO, UrbanCart",
-        title: "Improved user engagement",
-        message:
-            "We saw improvements in engagement after launch. The app feels very clean and very thoughtfully built.",
-        date: "2024",
-        rating: 5,
-    },
-    {
-        id: 4,
-        name: "Emily Rachel",
-        role: "CEO, TravelMate",
-        title: "Simple and consistent process",
-        message:
-            "Their team made the entire process simple. Everything was handled with care and consistency with them.",
-        date: "2024",
-        rating: 5,
-    },
-    {
-        id: 5,
-        name: "Michael Smith",
-        role: "Operations Lead, CoreSync Labs",
-        title: "Strong business alignment",
-        message:
-            "The internal system finally works just the way we wanted. The team understood our business needs from day one.",
-        date: "2024",
-        rating: 5,
-    },
-    {
-        id: 6,
-        name: "Olivia Cooper",
-        role: "Co-Founder, Linkify",
-        title: "Professional and responsive",
-        message:
-            "They were highly professional and responsive. They delivered exactly what we needed and helped us scale without friction.",
-        date: "2024",
-        rating: 5,
-    },
-];
-
-const CARD_WIDTH = 592;
-const CARD_GAP = 40;
+type Props = {
+    heading: React.ReactNode;
+    testimonials: Testimonial[];
+}
 
 function RatingStars({ rating }: { rating: number }) {
     return (
@@ -101,11 +47,11 @@ function RatingStars({ rating }: { rating: number }) {
 
 function TestimonialCard({ item }: { item: Testimonial }) {
     return (
-        <article className="h-[370px] w-[592px] rounded-3xl bg-white p-10">
+        <article className="h-[370px] w-full max-w-[582px] rounded-3xl bg-white p-10 mx-auto">
             <div className="flex h-[64px] items-center justify-between">
                 <div className="flex items-center gap-6">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#E1E1E1] text-[24px] font-semibold text-[#00161D]">
-                        <img src="/images/person.png" alt="person.png" />
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#E1E1E1] text-[24px] font-semibold text-[#00161D] overflow-hidden">
+                        <img src={item.avatar || "/images/person.png"} alt={item.name} className="w-full h-full object-cover" />
                     </div>
                     <div className="flex flex-col gap-2">
                         <p
@@ -126,7 +72,7 @@ function TestimonialCard({ item }: { item: Testimonial }) {
 
             <div className="mt-6 border-t border-[#DCDCDC]" />
 
-            <div className="mt-6 flex flex-col gap-4">
+            <div className="mt-6 flex flex-col gap-4 text-left">
                 <h3
                     className="text-[18px] leading-[22px] font-bold text-[#00161D]"
                     style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
@@ -158,14 +104,11 @@ function TestimonialCard({ item }: { item: Testimonial }) {
     );
 }
 
-export default function TestimonialPage() {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const totalItems = testimonials.length;
-
-    const translateX = useMemo(() => activeIndex * (CARD_WIDTH + CARD_GAP), [activeIndex]);
+export default function TestimonialPage({ heading, testimonials }: Props) {
+    const swiperRef = useRef<any>(null);
 
     return (
-        <section className="relative flex min-h-screen w-full justify-center overflow-hidden bg-[#F1FCFF] px-20 ">
+        <section className="relative flex min-h-screen w-full justify-center overflow-hidden bg-[#F1FCFF] px-6 md:px-20 py-20">
             <div className="pointer-events-none absolute left-0 top-[68px] h-[242px] w-[413px]">
                 <div className="absolute left-[343px] top-0 h-[70px] w-[70px] bg-[#DBF7FF]" />
                 <div className="absolute left-[273px] top-0 h-[70px] w-[70px] bg-[#DBF7FF]" />
@@ -174,42 +117,67 @@ export default function TestimonialPage() {
                 <div className="absolute left-0 top-[172px] h-[70px] w-[70px] bg-[#DBF7FF]" />
             </div>
 
-            <div className="relative z-10 flex h-[784px] w-full max-w-[1440px] flex-col items-center justify-center gap-[30px]">
-                <div className="flex h-[498px] w-[1280px] flex-col items-start gap-[60px]">
-                    <div className="flex h-[65px] w-full items-center justify-center">
+            <div className="relative z-10 flex w-full max-w-[1440px] flex-col items-center justify-center gap-[60px]">
+                <div className="flex w-full flex-col items-center gap-[60px]">
+                    <div className="flex w-full items-center justify-center">
                         <h1
-                            className=" text-center text-[66px] leading-[65px] font-normal text-[#00161D]"
+                            className=" text-center text-[40px] md:text-[66px] leading-tight font-normal text-[#00161D]"
                             style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
                         >
-                            What Our Clients Have to <span className="font-bold">Say About Us</span>
+                            {heading}
                         </h1>
                     </div>
 
-                    <div className="h-[373px]  overflow-hidden">
-                        <div
-                            className="flex items-center gap-10 transition-transform duration-500 ease-out"
-                            style={{ transform: `translateX(-${translateX}px)` }}
+                    <div className="w-full overflow-visible">
+                        <Swiper
+                            modules={[Navigation, Autoplay]}
+                            spaceBetween={40}
+                            slidesPerView={1}
+                            centeredSlides={true}
+                            loop={true}
+                            speed={800}
+                            autoplay={{
+                                delay: 4000,
+                                disableOnInteraction: false,
+                            }}
+                            breakpoints={{
+                                768: {
+                                    slidesPerView: 1.5,
+                                },
+                                1200: {
+                                    slidesPerView: 2,
+                                },
+                                1400: {
+                                    slidesPerView: 2.2,
+                                }
+                            }}
+                            onSwiper={(swiper) => {
+                                swiperRef.current = swiper;
+                            }}
+                            className="testimonial-swiper w-full !overflow-visible"
                         >
                             {testimonials.map((item) => (
-                                <TestimonialCard key={item.id} item={item} />
+                                <SwiperSlide key={item.id} className="flex justify-center">
+                                    <TestimonialCard item={item} />
+                                </SwiperSlide>
                             ))}
-                        </div>
+                        </Swiper>
                     </div>
                 </div>
 
                 <div className="flex h-14 w-[109px] items-center gap-[3px] rounded-2xl bg-[#DBF7FF] p-[3px]">
                     <button
                         type="button"
-                        onClick={() => setActiveIndex((prev) => (prev - 1 + totalItems) % totalItems)}
-                        className="flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-2xl border border-white/50 bg-white/80 backdrop-blur-[10px]"
+                        onClick={() => swiperRef.current?.slidePrev()}
+                        className="flex h-[50px] w-[50px] rotate-180 items-center justify-center rounded-2xl border border-white/50 bg-white/80 backdrop-blur-[10px] transition-all hover:scale-105 active:scale-95"
                         aria-label="Previous testimonial"
                     >
                         <ArrowLeft className="h-5 w-5 rotate-180 text-[#01C2FE]" />
                     </button>
                     <button
                         type="button"
-                        onClick={() => setActiveIndex((prev) => (prev + 1) % totalItems)}
-                        className="flex h-[50px] w-[50px] items-center justify-center rounded-2xl border border-white/50 bg-white/80 backdrop-blur-[10px]"
+                        onClick={() => swiperRef.current?.slideNext()}
+                        className="flex h-[50px] w-[50px] items-center justify-center rounded-2xl border border-white/50 bg-white/80 backdrop-blur-[10px] transition-all hover:scale-105 active:scale-95"
                         aria-label="Next testimonial"
                     >
                         <ArrowRight className="h-5 w-5 text-[#01C2FE]" />
@@ -219,3 +187,4 @@ export default function TestimonialPage() {
         </section>
     );
 }
+

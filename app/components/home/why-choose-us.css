@@ -2,11 +2,14 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 80px;
-  perspective: 1200px; /* Enhanced 3D perspective for the whole container */
+  perspective: 1200px;
+  display: flex;
+  
+   /* Enhanced 3D perspective for the whole container */
 }
 
 .why-swiper .swiper-slide {
-  width: 406px;
+  width: 490px;
   height: 404px;
   display: flex;
   flex-direction: column;
@@ -92,6 +95,6 @@
 .why-nav-btn:active {
   transform: scale(0.95);
 }
-.swiper-wrapper{
+/* .swiper-wrapper{
   gap:30px;
-}
+} */

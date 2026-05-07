@@ -3,9 +3,11 @@ import { FaAngular, FaAppStoreIos, FaAws, FaJava, FaPhp, FaPython, FaReact, FaSw
 import { FaFlutter, FaGolang, FaNodeJs } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiAndroid, DiMongodb, DiRedis, DiRuby } from "react-icons/di";
-import { SiElasticsearch, SiKotlin, SiMysql } from "react-icons/si";
+import { SiElasticsearch, SiKotlin, SiMysql, SiRubyonrails } from "react-icons/si";
 import { useState } from "react";
+import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
+
 type TechItem = {
   title: string;
   icon: any;
@@ -18,14 +20,14 @@ const techData: Record<string, TechItem[]> = {
     { title: "Angular", icon: FaAngular },
     { title: "Flutter", icon: FaFlutter },
     { title: "React Native", icon: FaReact },
-    { title: "Next.js", icon: RiNextjsFill },
+    { title: "Next.js", icon: TbBrandNextjs },
   ],
   "Back end": [
     { title: "Node.js", icon: FaNodeJs },
     { title: "Python", icon: FaPython },
-    { title: "Go", icon: FaGolang },
+    { title: "Go Lang", icon: FaGolang },
     { title: "Java", icon: FaJava },
-    { title: "Ruby", icon: DiRuby },
+    { title: "Ruby", icon: SiRubyonrails },
     { title: "PHP", icon: FaPhp },
   ],
   "Mobile": [
@@ -83,7 +85,7 @@ export default function TechStack() {
           {techData[activeTab].map((tech) => (
             <div key={tech.title} className="bg-white p-10 rounded-2xl flex flex-col items-center justify-center gap-4 shadow-sm border border-[#DBF7FF] hover:border-secondary transition-colors group">
               <div className="w-20 h-20 bg-[#01C2FE] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-[0_8px_20px_rgba(1,194,254,0.35)]">
-                <tech.icon className="w-10 h-10 text-white" strokeWidth={2.2} />
+                <tech.icon className="w-10 h-10 text-white" strokeWidth={1} />
               </div>
               <span className="text-[16px] font-medium text-[#00161D] text-center">{tech.title}</span>
             </div>

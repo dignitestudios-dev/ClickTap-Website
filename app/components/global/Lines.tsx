@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 
 export default function Lines() {
-    const width = 500;
+    const width = 670;
     const height = 200;
     const count = 6;
 

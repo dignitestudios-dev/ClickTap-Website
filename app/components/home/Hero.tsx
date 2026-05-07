@@ -3,11 +3,19 @@
 import Image from "next/image";
 import Lines from "../global/Lines";
 
-export default function Hero() {
+type Props = {
+  tagline: string;
+  title: string | React.ReactNode;
+  description: string;
+  cta: string;
+  children?: React.ReactNode;
+}
+
+export default function Hero({ tagline, title, description, cta, children }: Props) {
   return (
-    <section className="relative w-full min-h-[1000px] flex flex-col items-center py-10 pb-20 overflow-hidden">
+    <section className="relative w-full flex flex-col items-center  overflow-hidden" style={{ background: `url(/images/hero-bg-1.png)`, backgroundSize: 'cover', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}>
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col items-center text-center gap-6">
+      <div className="relative z-10  mx-auto px-4 flex flex-col items-center text-center gap-6">
 
         {/* Trust Badges Container */}
         <div className="flex items-center gap-6 border bg-transparent border-[#F5F5F5] px-6 py-3 rounded-2xl  mb-4">
@@ -30,14 +38,14 @@ export default function Hero() {
 
         {/* Small Tagline */}
         <div className="bg-[#DBF7FF] px-10 py-3 rounded-full mb-2">
-          <span className="text-[20px] font-bold text-[#00161D]">  Ready to build your mobile app?</span>
+          <span className="text-[20px] font-bold text-[#00161D]">  {tagline}</span>
         </div>
 
         {/* Main Title */}
         <div className="max-w-[1200px] ">
           <h1 className="text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
 
-            You’ve found the right development team.
+            {title}
 
           </h1>
         </div>
@@ -45,25 +53,17 @@ export default function Hero() {
         {/* Mission Statement */}
         <div className="max-w-[850px] mb-8">
           <p className="text-[18px] text-[#00161D]  leading-relaxed font-medium">
-            We are the team that focuses on creating smooth mobile experiences that feel fast and reliable. Every swipe and interaction is built with purpose because a great mobile app feels effortless and offer experiences that users remember.
+            {description}
           </p>
         </div>
 
         {/* CTA Button */}
         <button className="group bg-secondary hover:bg-[#01ace0] text-white pl-5 pr-3 py-3 rounded-[8px] flex items-center gap-6 transition-all active:scale-95 shadow-lg">
-          <span className="font-semibold text-[15px]">Share Your Idea with us</span>
+          <span className="font-semibold text-[15px]">{cta}</span>
           <Image src="/images/cta-button.png" alt="Arrow Right" width={30} height={30} />
         </button>
 
-        {/* Tech Stack Icons - Bottom of Hero */}
-        <div className="flex items-center gap-14   mt-12  hover:grayscale-0 transition-all">
-          <Image src="/images/andriod-icon.png" alt="Android" width={45} height={45} />
-          <Image src="/images/mdi_react.png" alt="React" width={45} height={45} />
-          <Image src="/images/akar-icons_node-fill.png" alt="Node" width={45} height={45} />
-          <Image src="/images/fa6-brands_aws.png" alt="AWS" width={45} height={45} />
-          <Image src="/images/material-symbols_flutter.png" alt="Flutter" width={45} height={45} />
-          <Image src="/images/material-icon-theme_html.png" alt="HTML5" width={45} height={45} />
-        </div>
+        {children}
 
         {/* Line Animation Integration */}
         <div className="w-full max-w-[900px] -mt-5 pointer-events-none">

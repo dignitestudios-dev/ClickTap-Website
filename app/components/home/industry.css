@@ -1,71 +1,92 @@
 .industry-swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  overflow: visible;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.industry-swiper .swiper-wrapper {
+  align-items: center;
 }
 
 .industry-swiper .swiper-slide {
-  width: 300px;
-  height: 450px; /* Container tall enough for the expansion */
   display: flex;
-  align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
 }
 
 .industry-card {
-  width: 300px;
-  height: 280px; /* Default height */
+ 
+  height: 350px;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
-  border-radius: 16px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0.3;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(0.9); /* Default scale down */
+
+  border-radius: 28px;
+
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  opacity: 0.35;
+
+  transform: scale(0.88);
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    height 0.5s ease,
+    background 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
-/* Center 3 Cards Highlight (Active, Next, Prev) */
-.industry-swiper .swiper-slide-active .industry-card,
-.industry-swiper .swiper-slide-next .industry-card,
-.industry-swiper .swiper-slide-prev .industry-card {
-  background: #FFFFFF;
+/* Left + Right visible cards */
+.industry-swiper .swiper-slide-prev .industry-card,
+.industry-swiper .swiper-slide-next .industry-card {
   opacity: 1;
-  transform: scale(0.95); /* Slightly larger than far-side cards */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  transform: scale(0.93);
+  background: rgba(255, 255, 255, 0.8);
 }
 
-/* Specific Active (Center) Card expansion */
+/* Center active card */
 .industry-swiper .swiper-slide-active .industry-card {
-  height: 400px; /* Expanded height only for center */
-  transform: scale(1); /* Full scale only for center */
+  height: 420px;
+
+  opacity: 1;
+
+  transform: scale(1);
+
+  background: #ffffff;
+
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  z-index: 10;
+
+  z-index: 20;
 }
 
 .industry-nav-btn {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  color: #01C2FE;
-  cursor: pointer;
+
+  background: white;
+
+  color: #01c2fe;
+
   transition: all 0.3s ease;
+
+  cursor: pointer;
 }
 
 .industry-nav-btn:hover {
-  background: #FFFFFF;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .industry-nav-btn:active {
-  transform: scale(0.95);
+  transform: scale(0.94);
 }

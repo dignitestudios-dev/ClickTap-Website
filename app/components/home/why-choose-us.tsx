@@ -19,57 +19,25 @@ type MetricCard = {
     description: string;
     icon: string;
 };
+type Props = {
+    heading: React.ReactNode;
+    para: any;
+    items: MetricCard[];
+    description?: string;
+    ctaText?: any;
+}
 
-const cards: MetricCard[] = [
-    {
-        id: 1,
-        title: "Product Experience",
-        description: "The team has worked with growing businesses to design and build digital products across different industries. This experience helps us understand what works in real situations.",
-        icon: "/images/why-1.png",
-    },
-    {
-        id: 2,
-        title: "Clear Process",
-        description: "The team at ClickTap Solutions keeps the process straightforward so you always know what is happening and progress stays smooth.",
-        icon: "/images/why-2.png",
-    },
-    {
-        id: 3,
-        title: "Easy Communication",
-        description: "We stay close and easy to reach throughout the project with clear conversations that keep everyone aligned and moving in the same direction.",
-        icon: "/images/why-3.png",
-    },
-    {
-        id: 4,
-        title: "Built to Scale",
-        description: "We build products with growth in mind, so they do not just work for today but can handle more users and demand over time.",
-        icon: "/images/why-1.png",
-    },
-    {
-        id: 5,
-        title: "Ongoing Support",
-        description: "We do not just build and leave. You will find us still with you after launch to help with updates and keep your product running smoothly.",
-        icon: "/images/why-2.png",
-    },
-    {
-        id: 6,
-        title: "Skilled Team",
-        description: "Our team brings together designers and developers who care about building things properly, and every project gets focused attention.",
-        icon: "/images/why-3.png",
-    },
-];
-
-export default function WhyChooseUs() {
+export default function WhyChooseUs({ heading, para, items }: Props) {
     return (
-        <section className="relative isolate mx-auto h-auto min-h-[905px] w-full max-w-[1440px] overflow-hidden rounded-[24px] bg-[#F1FCFF] px-4 md:px-[40px] py-[100px]">
-            <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[1114px] w-full -translate-x-1/2 -translate-y-[calc(50%+19.5px)] rounded-[12px] border-4 border-white bg-image " />
+        <section className="relative isolate mx-auto h-auto min-h-[905px] w-full  overflow-hidden rounded-[24px]  py-[100px]">
+            <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[1114px] w-full -translate-x-1/2 -translate-y-[calc(50%+19.5px)] rounded-[12px]  bg-image " />
 
             <div className="relative z-[2] mx-auto flex w-full max-w-[950px] flex-col items-center justify-end gap-[10px]">
                 <h2 className="text-center text-[40px] md:text-[66px] font-normal leading-tight capitalize text-[#00161D]">
-                    How We Prove to be the Best <span className="font-bold">Development Partner</span>
+                    {heading}
                 </h2>
                 <p className="max-w-[700px] text-center text-[15px] md:text-[18px] font-normal leading-relaxed text-[#00161D] opacity-80">
-                    We are a hands on team that helps startups and businesses turn ideas into actual digital products, the way they envisioned. We keep things simple while working closely with you and focus on building solutions that feel natural.
+                    {para}
                 </p>
             </div>
 
@@ -82,6 +50,7 @@ export default function WhyChooseUs() {
                     initialSlide={1}
                     speed={800}
                     loop={true}
+                    spaceBetween={50}
                     coverflowEffect={{
                         rotate: 30,     /* Subtle tilt for side cards */
                         stretch: 0,
@@ -100,7 +69,7 @@ export default function WhyChooseUs() {
                     modules={[EffectCoverflow, Pagination, Navigation]}
                     className="why-swiper"
                 >
-                    {cards.map((card) => (
+                    {items.map((card) => (
                         <SwiperSlide key={card.id}>
                             <article className="flex flex-col justify-between h-full">
                                 <div className="flex h-[50px] w-[50px] items-center justify-center">

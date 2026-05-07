@@ -34,7 +34,7 @@ const ArrowIcon = () => (
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-[#F1FCFF] py-24 px-5 md:px-10 flex flex-col items-center">
+    <section id="services" className="w-full bg-[#F1FCFF] py-24  px-20 md:px-20 flex flex-col items-center">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[800px] mb-16 text-center">
         <h2 className="text-[#00161D] font-bold text-5xl md:text-[72px] leading-tight tracking-tight">
@@ -46,7 +46,7 @@ export default function Services() {
       </div>
 
       {/* Grid Container */}
-      <div className="w-full bg-white p-3 max-w-[1300px] grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="w-full bg-white p-3 rounded-[16px] grid grid-cols-1 md:grid-cols-3 gap-6">
 
         {/* Column 1 */}
         <div className="flex flex-col gap-6">
