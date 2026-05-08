@@ -37,7 +37,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
         </div> */}
 
         {/* Small Tagline */}
-        <div className="bg-[#DBF7FF] px-10 py-3 rounded-full mb-2">
+        <div className="bg-[#DBF7FF] px-10 py-3 mt-10 rounded-full mb-2">
           <span className="text-[20px] font-bold text-[#00161D]">  {tagline}</span>
         </div>
 

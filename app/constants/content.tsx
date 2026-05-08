@@ -73,7 +73,7 @@ export const HOME_CONTENT = {
             { value: 50, suffix: "+", label: "Developers" },
             { value: 95, suffix: "%", label: "Client Retention" },
         ],
-        logos: ["/images/marquee1.png", "/images/marquee2.png", "/images/marquee3.png", "/images/marquee4.png", "/images/marquee5.png"],
+        logos: ["/images/marquee1.png", "/images/marquee2.png", "/images/marquee3.png", "/images/marquee4.png", "/images/marquee5.png", "/images/marquee2.png", "/images/marquee3.png",],
     },
     portfolio: {
         heading: <> <span className="font-bold" > The Projects  </ span >We’ve Worked on </ >,
@@ -232,6 +232,24 @@ export const HOME_CONTENT = {
                 id: 6,
                 title: "Real Estate",
                 description: "Finding the right property can be complex most of the time. With this realization, we show that clarity actually matters. The team develops real estate platforms that make it easy for users.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 7,
+                title: "Healthcare",
+                description: "We have built products for healthcare businesses so we understand the need for reliable digital systems to improve how patients and providers connect. We develop products that simplify appointments and access to care.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 8,
+                title: "Social Media",
+                description: "Social platforms literally live based on engagement and smooth interaction. So, the team designs scalable social media apps that help people connect and share content in communities.",
+                icon: "/images/social.png",
+            },
+            {
+                id: 9,
+                title: "Dating and Matchmaking",
+                description: "For dating platforms, user trust is literally necessary. So, we build apps that make it easy for people to discover matches and interact through comfortable and well structured experiences.",
                 icon: "/images/healthcare.png",
             },
         ],
