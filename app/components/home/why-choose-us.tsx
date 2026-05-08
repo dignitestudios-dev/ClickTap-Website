@@ -77,7 +77,7 @@ export default function WhyChooseUs({ heading, para, items }: Props) {
                                 </div>
 
                                 <div className="flex w-full flex-col gap-[10px]">
-                                    <h3 className="text-[32px] md:text-[44px] font-normal leading-tight text-[#00161D]">
+                                    <h3 className="text-[32px] md:text-[35px] font-normal leading-tight text-[#00161D]">
                                         {card.title}
                                     </h3>
                                     <p className="text-[16px] font-normal leading-relaxed text-[#00161D] opacity-70">

@@ -51,7 +51,7 @@ const Step = ({ number, title, description, isGreen = false }: { number: string,
 
 export default function Process({ heading, description, steps }: Props) {
     return (
-        <section className="relative w-full bg-[#F1FCFF] py-20 md:py-28 px-20 overflow-hidden">
+        <section className="relative w-full bg-[#F1FCFF] py-10 md:py-10 px-10 overflow-hidden">
             {/* Grid background dots (decorative) */}
             <div className="absolute left-[5%] top-[10%] opacity-5 pointer-events-none">
                 <Image src="/images/line.png" alt="Grid" width={600} height={600} className="scale-150" />

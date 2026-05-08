@@ -22,6 +22,7 @@ type Testimonial = {
 
 type Props = {
     heading: React.ReactNode;
+    description?: string;
     testimonials: Testimonial[];
 }
 
@@ -93,18 +94,18 @@ function TestimonialCard({ item }: { item: Testimonial }) {
                 <div className="h-10 w-10">
                     <img src="/images/testimonial.png" alt="testimonial.png" className="w-full h-full object-contain" />
                 </div>
-                <p
+                {/* <p
                     className="text-[16px] leading-[19px] font-normal text-[#00161D]"
                     style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
                 >
                     {item.date}
-                </p>
+                </p> */}
             </div>
         </article>
     );
 }
 
-export default function TestimonialPage({ heading, testimonials }: Props) {
+export default function TestimonialPage({ heading, description, testimonials }: Props) {
     const swiperRef = useRef<any>(null);
 
     return (
@@ -118,14 +119,19 @@ export default function TestimonialPage({ heading, testimonials }: Props) {
             </div>
 
             <div className="relative z-10 flex w-full max-w-[1440px] flex-col items-center justify-center gap-[60px]">
-                <div className="flex w-full flex-col items-center gap-[60px]">
-                    <div className="flex w-full items-center justify-center">
+                <div className="flex w-full flex-col items-center gap-[40px]">
+                    <div className="flex w-full flex-col items-center justify-center gap-4">
                         <h1
                             className=" text-center text-[40px] md:text-[66px] leading-tight font-normal text-[#00161D]"
                             style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
                         >
                             {heading}
                         </h1>
+                        {description && (
+                            <p className="max-w-[900px] text-center text-[15px] md:text-[18px] font-normal leading-relaxed text-[#00161D] opacity-80">
+                                {description}
+                            </p>
+                        )}
                     </div>
 
                     <div className="w-full overflow-visible">

@@ -12,6 +12,12 @@ const navLinks: NavLink[] = [
     hasDropdown: true,
     subLinks: [
       { label: "Mobile App Development", href: "/mobile-app-development" },
+      { label: "iOS App Development", href: "/ios-app-development" },
+      { label: "Android App Development", href: "/andriod-app-development" },
+      { label: "PWA Development", href: "/progressive-web-app" },
+      { label: "Web App Development", href: "/web-app-development" },
+      { label: "AI App Development", href: "/ai-app-development" },
+      { label: "Custom Software Development", href: "/custom-software-development" },
     ],
   },
   { label: "Case Studies", href: "#" },
@@ -58,7 +64,7 @@ export default function Navbar() {
             </Link>
 
             {link.subLinks && (
-              <div className="absolute top-full left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 pt-2 z-50">
+              <div className="absolute w-[350px] top-full left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 pt-2 z-50">
                 <div className="bg-white shadow-[0_10px_30px_rgba(0,0,0,0.1)] rounded-xl min-w-[240px] py-3 border border-gray-100 overflow-hidden">
                   {link.subLinks.map((sub) => (
                     <Link

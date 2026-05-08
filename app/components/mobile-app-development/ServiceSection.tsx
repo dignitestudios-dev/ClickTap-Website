@@ -13,7 +13,7 @@ type Props = {
     heading: React.ReactNode;
     description: string;
     services: any[];
-    ctaText: string;
+    ctaText?: string;
 }
 
 const ServicesSection = ({ heading, description, services, ctaText }: Props) => {
@@ -40,7 +40,7 @@ const ServicesSection = ({ heading, description, services, ctaText }: Props) => 
                         return (
                             <div
                                 key={index}
-                                className="group relative overflow-hidden rounded-[28px] bg-[#DBF7FF] p-5 transition-all duration-300 hover:-translate-y-1"
+                                className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#DBF7FF] p-5 transition-all duration-300 hover:-translate-y-1"
                             >
 
                                 {/* BACKGROUND SHAPE */}
@@ -63,7 +63,7 @@ const ServicesSection = ({ heading, description, services, ctaText }: Props) => 
                                         {service.description}
                                     </p>
                                 </div>
-                                <div>
+                                <div className="mt-auto">
 
                                     {/* BUTTON */}
                                     <button className="group/btn cursor-pointer relative z-10 mt-12 flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white transition-all hover:bg-[#01C2FE]">
@@ -80,17 +80,19 @@ const ServicesSection = ({ heading, description, services, ctaText }: Props) => 
                 </div>
 
                 {/* CTA BUTTON */}
-                <div className="mt-16 flex justify-center">
-                    <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
-                        <span className="text-[16px] font-semibold text-[#00161D]">
-                            {ctaText}
-                        </span>
+                {ctaText && (
+                    <div className="mt-16 flex justify-center">
+                        <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
+                            <span className="text-[16px] font-semibold text-[#00161D]">
+                                {ctaText}
+                            </span>
 
-                        <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
-                            <ArrowUpRight size={18} />
-                        </div>
-                    </button>
-                </div>
+                            <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
+                                <ArrowUpRight size={18} />
+                            </div>
+                        </button>
+                    </div>
+                )}
 
             </div>
         </section>

@@ -1,5 +1,7 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 
 const ArrowIcon = () => (
     <div className="flex h-7 w-7 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/btn:-translate-y-1 group-hover/btn:translate-x-1">
@@ -18,6 +20,33 @@ const ArrowIcon = () => (
     </div>
 );
 
+const Counter = ({ value }: { value: string }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const count = useMotionValue(0);
+    const rounded = useTransform(count, (latest) => Math.round(latest));
+
+    useEffect(() => {
+        if (isInView) {
+            const numericValue = parseInt(value.replace(/[^0-9]/g, '')) || 0;
+            const controls = animate(count, numericValue, {
+                duration: 5,
+                ease: "easeOut"
+            });
+            return controls.stop;
+        }
+    }, [isInView, count, value]);
+
+    const suffix = value.replace(/[0-9]/g, '');
+
+    return (
+        <span ref={ref}>
+            <motion.span>{rounded}</motion.span>
+            {suffix}
+        </span>
+    );
+};
+
 type Stat = {
     value: string;
     label: string;
@@ -28,7 +57,7 @@ type Stat = {
 type Props = {
     tagline: string;
     heading: React.ReactNode;
-    paragraphs: string[];
+    paragraphs: React.ReactNode[];
     ctaText: string;
     stats: Stat[];
 }
@@ -49,7 +78,7 @@ const AboutSection: React.FC<Props> = ({ tagline, heading, paragraphs, ctaText, 
                     </h2>
 
                     {paragraphs.map((p, i) => (
-                        <p key={i} className="mt-8 first:mt-8 mt-2 max-w-[520px] text-[17px] leading-[1.9] text-[#00161D]/80">
+                        <p key={i} className="mt-8 text-[17px] leading-[1.9] text-[#00161D]/80">
                             {p}
                         </p>
                     ))}
@@ -70,14 +99,13 @@ const AboutSection: React.FC<Props> = ({ tagline, heading, paragraphs, ctaText, 
                         {stats.map((stat, index) => {
                             const isBlue = stat.color === 'blue';
                             const isLight = stat.color === 'light';
-                            const isWhite = stat.color === 'white';
 
                             return (
                                 <div key={index} className="flex flex-col gap-5">
                                     {/* STAT CARD */}
                                     <div className={`relative ${index === 1 ? 'flex-1 order-2' : 'h-[400px] order-1'} rounded-[30px] p-7 ${isBlue ? 'bg-[#01C2FE]' : isLight ? 'bg-[#DBF7FF]' : 'border border-[#00161D]/20 bg-white'}`}>
                                         <h3 className={`text-[68px] font-bold leading-none ${isBlue ? 'text-white' : 'text-[#00161D]'}`}>
-                                            {stat.value}
+                                            <Counter value={stat.value} />
                                         </h3>
                                         <p className={`absolute bottom-7 left-7 text-[20px] font-medium ${isBlue ? 'text-white' : 'text-[#00161D]'}`}>
                                             {stat.label}

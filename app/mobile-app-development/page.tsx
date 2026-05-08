@@ -16,7 +16,11 @@ import ServicesSection from "../components/mobile-app-development/ServiceSection
 import FeaturesSection from "../components/mobile-app-development/FeaturesSection";
 import QuoteSection from "../components/mobile-app-development/QuoteSection";
 import { MOBILE_APP_CONTENT } from "../constants/content";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: MOBILE_APP_CONTENT.meta.title,
+    description: MOBILE_APP_CONTENT.meta.description,
+};
 export default function MobileAppDevelopment() {
     return (
         <div className="flex flex-col min-h-screen  overflow-x-hidden">
@@ -54,10 +58,13 @@ export default function MobileAppDevelopment() {
                         services={MOBILE_APP_CONTENT.services.items}
                         ctaText={MOBILE_APP_CONTENT.services.cta}
                     />
-                  
+
                     {/* Tech Stack Section */}
-                    <TechStack />
-                  
+                    <TechStack
+                        heading={<> Our Core <span className="font-bold" >Technologies</span></>}
+                        description={"Having a professional team means using multiple modern technologies to build reliable products. Products that work amazingly across mobile and web development. The emphasis stays on selecting the right stack for each project and not on using tools based on trends"}
+                    />
+
                     {/* Industry */}
                     <Industry
                         heading={MOBILE_APP_CONTENT.industry.heading}

@@ -32,7 +32,7 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                     <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D] capitalize">
                         {heading}
                     </h2>
-                    <p className="max-w-[600px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
+                    <p className="max-w-[800px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
                         {description}
                     </p>
                 </div>
@@ -44,7 +44,7 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                         loop={true}
                         speed={800}
                         slidesPerView={4}
-                        spaceBetween={24}
+                        spaceBetween={80}
 
                         navigation={{
                             nextEl: ".industry-next",
@@ -53,15 +53,15 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
 
                         breakpoints={{
                             0: {
-                                slidesPerView: 2.2,
-                            },
-
-                            768: {
                                 slidesPerView: 2,
                             },
 
-                            1200: {
+                            768: {
                                 slidesPerView: 3,
+                            },
+
+                            1200: {
+                                slidesPerView: 4,
                             },
                         }}
 
@@ -69,7 +69,7 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                     >
                         {cards.map((card) => (
                             <SwiperSlide key={card.id}>
-                                <article className="industry-card" style={{ background: `url(/images/benefit-card-bg.png)`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                                <article className="industry-card w-[400px]!" style={{ background: `url(/images/benefit-card-bg.png)`, backgroundSize: "cover", backgroundPosition: "center" }}>
                                     <h3 className="text-[28px] font-bold leading-tight text-white">
                                         {card.title}
                                     </h3>
@@ -104,4 +104,4 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
             </div>
         </section>
     );
-}
+}

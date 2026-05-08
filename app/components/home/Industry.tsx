@@ -26,10 +26,10 @@ type Props = {
 
 export default function Industry({ heading, description, cards }: Props) {
     return (
-        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF]  py-20">
-            <div className="flex w-full  flex-col items-center gap-[60px]">
-                <div className="flex flex-col items-center gap-6 text-center">
-                    <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D] capitalize">
+        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF]  py-10">
+            <div className="flex w-full  flex-col items-center gap-[35px]">
+                <div className="flex flex-col items-center gap-4 text-center">
+                    <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D]">
                         {heading}
                     </h2>
                     <p className="max-w-[600px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
@@ -43,8 +43,8 @@ export default function Industry({ heading, description, cards }: Props) {
                         centeredSlides={true}
                         loop={true}
                         speed={800}
-                        slidesPerView={4}
-                        spaceBetween={24}
+                        slidesPerView={5}
+                        spaceBetween={20}
 
                         navigation={{
                             nextEl: ".industry-next",
@@ -53,15 +53,15 @@ export default function Industry({ heading, description, cards }: Props) {
 
                         breakpoints={{
                             0: {
-                                slidesPerView: 2.2,
-                            },
-
-                            768: {
                                 slidesPerView: 2,
                             },
 
-                            1200: {
+                            768: {
                                 slidesPerView: 3,
+                            },
+
+                            1200: {
+                                slidesPerView: 5,
                             },
                         }}
 
@@ -79,7 +79,7 @@ export default function Industry({ heading, description, cards }: Props) {
                                     </div>
 
                                     <div className="mt-8 flex flex-col gap-4">
-                                        <h3 className="text-[28px] font-bold leading-tight text-[#00161D]">
+                                        <h3 className="text-[20px] font-medium leading-tight text-[#00161D]">
                                             {card.title}
                                         </h3>
 
@@ -94,7 +94,7 @@ export default function Industry({ heading, description, cards }: Props) {
                 </div>
 
                 {/* Custom Navigation */}
-                <div className="flex items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
+                <div className="flex  items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
                     <button
                         className="industry-prev industry-nav-btn"
                         aria-label="Previous"

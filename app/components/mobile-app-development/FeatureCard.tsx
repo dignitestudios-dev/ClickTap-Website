@@ -7,7 +7,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title }) => {
   return (
-    <div className="flex flex-col items-center justify-between cursor-pointer p-10 bg-[#EBFBFF] rounded-[32px] hover:shadow-2xl hover:shadow-blue-100/50 hover:-translate-y-2 transition-all duration-500 group h-[240px] text-center border border-white/60">
+    <div className="flex flex-col items-center justify-between cursor-pointer p-10 bg-[#DBF7FF] rounded-[32px] hover:shadow-2xl hover:shadow-blue-100/50 hover:-translate-y-2 transition-all duration-500 group h-[240px] text-center border border-white/60">
       <div className="mb-8 text-[#00AEEF] transition-transform duration-500 group-hover:scale-110">
         <img src={icon} alt="" width={40} height={40} className="mx-auto" />
       </div>

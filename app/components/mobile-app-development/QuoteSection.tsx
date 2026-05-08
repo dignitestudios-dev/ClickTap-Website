@@ -20,7 +20,7 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                 <div className="absolute inset-0 z-0 w-full " style={{ background: `url("/images/bg-start.png") `, backgroundSize: "cover !important", backgroundRepeat: "no-repeat !important", }} />
 
                 {/* Background Shape - Ripple effect */}
-                <div className="absolute -right-5  w-[700px] top-16  z-10 opacity-60">
+                <div className="absolute -right-5  w-[750px] top-16  z-10 opacity-60">
                     <Image
                         src="/images/bg-shape.png"
                         alt="Background Shape"
@@ -71,7 +71,7 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                             src="/images/hand-image.png"
                             alt="Hand holding phone"
                             fill
-                            className="object-contain -ml-24 object-bottom"
+                            className="object-contain -ml-18 object-bottom"
                             priority
                         />
                     </motion.div>

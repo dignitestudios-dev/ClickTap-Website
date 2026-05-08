@@ -1,17 +1,22 @@
 "use client";
 import { FaAngular, FaAppStoreIos, FaAws, FaJava, FaPhp, FaPython, FaReact, FaSwift, FaVuejs, } from "react-icons/fa";
 import { FaFlutter, FaGolang, FaNodeJs } from "react-icons/fa6";
-import { RiNextjsFill } from "react-icons/ri";
-import { DiAndroid, DiMongodb, DiRedis, DiRuby } from "react-icons/di";
-import { SiElasticsearch, SiKotlin, SiMysql, SiRubyonrails } from "react-icons/si";
+import {  DiRedis } from "react-icons/di";
+import { SiElasticsearch, SiLaravel, SiMysql, SiRubyonrails } from "react-icons/si";
 import { useState } from "react";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
-
+import { BiLogoMongodb } from "react-icons/bi";
+import { BsAndroid2 } from "react-icons/bs";
 type TechItem = {
   title: string;
   icon: any;
 };
+
+type Props = {
+  heading?: React.ReactNode;
+  description?: string;
+}
 
 const techData: Record<string, TechItem[]> = {
   "Front end": [
@@ -27,20 +32,20 @@ const techData: Record<string, TechItem[]> = {
     { title: "Python", icon: FaPython },
     { title: "Go Lang", icon: FaGolang },
     { title: "Java", icon: FaJava },
-    { title: "Ruby", icon: SiRubyonrails },
+    { title: "Laravel", icon: SiLaravel },
     { title: "PHP", icon: FaPhp },
   ],
   "Mobile": [
     { title: "iOS", icon: FaAppStoreIos },
-    { title: "Android", icon: DiAndroid },
+    { title: "Android", icon: BsAndroid2 },
     { title: "React Native", icon: FaReact },
     { title: "Flutter", icon: FaFlutter },
     { title: "Swift", icon: FaSwift },
-    { title: "Kotlin", icon: SiKotlin },
+    { title: "Kotlin", icon: TbBrandKotlin },
   ],
   "Database": [
     { title: "AWS", icon: FaAws },
-    { title: "MongoDB", icon: DiMongodb },
+    { title: "MongoDB", icon: BiLogoMongodb },
     { title: "MySQL", icon: SiMysql },
     { title: "Redis", icon: DiRedis },
     { title: "Firebase", icon: IoLogoFirebase },
@@ -48,16 +53,18 @@ const techData: Record<string, TechItem[]> = {
   ]
 };
 
-export default function TechStack() {
+export default function TechStack({ heading, description }: Props) {
   const [activeTab, setActiveTab] = useState("Front end");
 
   return (
-    <section className="w-full bg-[#F1FCFF] py-32 px-10">
+    <section className="w-full bg-[#F1FCFF] py-10 px-10">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-16">
         <div className="text-center flex flex-col items-center gap-4">
-          <h2 className="text-[66px] font-normal text-[#00161D] leading-tight capitalize">The <span className="!font-bold"> Technologies </span> We Use</h2>
+          <h2 className="text-[66px] font-normal text-[#00161D] leading-tight">
+            {heading || <>The <span className="!font-bold"> Technologies </span> We Use</>}
+          </h2>
           <p className="max-w-[900px] text-[15px] text-[#00161D] opacity-70 leading-relaxed">
-            The team uses a carefully chosen mix of modern technologies to build reliable products across mobile and web development. The focus is on selecting the right stack for each project, not just following trends.
+            {description || "The team uses a carefully chosen mix of modern technologies to build reliable products across mobile and web development. The focus is on selecting the right stack for each project, not just following trends."}
           </p>
         </div>
 
@@ -85,7 +92,7 @@ export default function TechStack() {
           {techData[activeTab].map((tech) => (
             <div key={tech.title} className="bg-white p-10 rounded-2xl flex flex-col items-center justify-center gap-4 shadow-sm border border-[#DBF7FF] hover:border-secondary transition-colors group">
               <div className="w-20 h-20 bg-[#01C2FE] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-[0_8px_20px_rgba(1,194,254,0.35)]">
-                <tech.icon className="w-10 h-10 text-white" strokeWidth={1} />
+                <tech.icon className="w-10 h-10 text-white" strokeWidth={tech.title == "Next.js" || tech.title == "Kotlin" ? 1 : 0} />
               </div>
               <span className="text-[16px] font-medium text-[#00161D] text-center">{tech.title}</span>
             </div>

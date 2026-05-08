@@ -23,7 +23,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
 
         {/* Optional Title Section matching your previous design */}
         <div className="text-center flex flex-col items-center gap-4">
-          <h2 className="text-[#00161D] relative z-10 text-5xl md:text-[72px] leading-tight tracking-tight capitalize">
+          <h2 className="text-[#00161D] relative z-10 text-5xl md:text-[72px] leading-tight tracking-tight">
             {heading}
           </h2>
           <p className="text-[#00161D] text-[15px] md:text-[18px] leading-[28px] opacity-80 max-w-[850px] mt-4">
