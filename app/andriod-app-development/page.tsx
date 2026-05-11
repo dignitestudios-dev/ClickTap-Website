@@ -33,7 +33,7 @@ export default function AndriodAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-5 md:gap-16">
                     {/* Hero Section */}
                     <Hero
                         tagline={ANDROID_APP_CONTENT.hero.tagline}

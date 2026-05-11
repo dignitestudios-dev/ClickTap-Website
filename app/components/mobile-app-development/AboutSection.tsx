@@ -22,7 +22,7 @@ const ArrowIcon = () => (
 
 const Counter = ({ value }: { value: string }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
     const count = useMotionValue(0);
     const rounded = useTransform(count, (latest) => Math.round(latest));
 

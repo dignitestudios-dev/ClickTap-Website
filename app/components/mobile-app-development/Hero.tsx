@@ -17,7 +17,7 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
       {/* Background Grid Image */}
       <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
         <Image
-          src="/images/grid-frame.png"
+          src="/images/grid-frame.webp"
           alt="grid-frame"
           fill
           className="object-cover"

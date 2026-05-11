@@ -120,7 +120,7 @@ export default function TestimonialPage({ heading, description, testimonials }: 
     const swiperRef = useRef<any>(null);
 
     return (
-        <section className="relative flex min-h-[600px] md:min-h-screen w-full justify-center overflow-hidden bg-[#F1FCFF] px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20">
+        <section className="relative flex min-h-[600px] md:min-h-screen w-full justify-center overflow-hidden bg-[#F1FCFF] px-4 sm:px-8 md:px-16 lg:px-20 pb-0 py-12 sm:py-16 md:py-20">
             {/* ── Decorative squares (hidden on very small screens) ── */}
             <div className="pointer-events-none absolute left-0 top-[68px] h-[242px] w-[413px] hidden sm:block">
                 <div className="absolute left-[343px] top-0 h-[70px] w-[70px] bg-[#DBF7FF]" />

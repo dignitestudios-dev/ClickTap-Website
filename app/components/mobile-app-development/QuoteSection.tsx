@@ -20,7 +20,7 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                 <div className="absolute inset-0 bottom-0 z-0 w-full bg-cover! bg-no-repeat! " style={{ background: `url("/images/bg-start.png") ` }} />
 
                 {/* Background Shape - Ripple effect */}
-                <div className="absolute md:-right-20 md:-right-5 w-full md:w-[750px] -bottom-10 md:bottom-0  z-10 opacity-40 md:opacity-60">
+                <div className="absolute hidden md:flex md:-right-20 md:-right-5 w-full md:w-[750px] -bottom-10 md:bottom-0  z-10 opacity-40 md:opacity-60">
                     <Image
                         src="/images/bg-shape.png"
                         alt="Background Shape"
@@ -59,7 +59,7 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                 </div>
 
                 {/* Right Image */}
-                <div className="relative z-20 w-full  lg:w-[45%] h-full flex justify-center lg:justify-end items-end self-end">
+                <div className="relative z-20 w-full  lg:w-[45%] h-full hidden md:flex justify-center lg:justify-end items-end self-end">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}

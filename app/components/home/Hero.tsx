@@ -16,7 +16,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
     <section className="relative w-full flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg-1.png"
+          src="/images/hero-bg-1.webp"
           alt="Hero Background"
           fill
           className="object-cover object-top"

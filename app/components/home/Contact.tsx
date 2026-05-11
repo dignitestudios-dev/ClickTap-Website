@@ -29,7 +29,7 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
     };
 
     return (
-        <section id="contact" className="w-full bg-[#F1FCFF] pb-16 md:pb-0 -mb-3 relative overflow-hidden isolate">
+        <section id="contact" className="w-full bg-[#F1FCFF]  md:pb-0 mb-5 md:-mb-2 relative overflow-hidden isolate">
             <div className="mx-auto flex flex-col lg:flex-row gap-12 items-start relative z-10">
                 {/* Left content */}
                 <div className="flex  flex-col gap-10 w-full md:w-[579px] flex-shrink-0">
@@ -43,8 +43,8 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
                     </div>
 
                     {/* Phone mockup placeholder */}
-                    <div className="relative w-full h-[420px] hidden md:flex items-center justify-center">
-                        <Image src="/images/hand-contact.webp" alt="hand-contact" width={500} height={420} className="object-contain" />
+                    <div className="relative w-full h-[420px] left-0  hidden md:flex items-center justify-center">
+                        <Image src="/images/hand-contact.webp" alt="hand-contact" width={600} height={420} className="object-contain" />
                     </div>
                 </div>
 

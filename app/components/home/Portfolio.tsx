@@ -19,7 +19,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
   const [activeItem, setActiveItem] = useState(0); // Start with the first item active
 
   return (
-    <div className="flex h-full w-full items-center justify-center py-16 md:py-24 bg-[#F1FCFF]">
+    <div className="flex h-full w-full items-center justify-center py-5 md:py-24 bg-[#F1FCFF]">
       <div className="  w-full flex flex-col gap-12">
 
         {/* Optional Title Section matching your previous design */}
@@ -31,7 +31,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
             {description}
           </p>
         </div>
-        <div className="relative h-[200px] md:h-[300px] w-full">
+        <div className="absolute h-[200px] md:h-[300px] w-full">
           <Image src="/images/portfolio.png" alt="portfolio-bg-circle" width={300} height={300} className="absolute left-0 bottom-0 z-1 w-[200px] h-[200px] md:w-[300px] md:h-[300px]" />
         </div>
         {/* MOBILE + TABLET UI */}

@@ -83,7 +83,7 @@ export default function FAQs({ heading, description, faqs }: Props) {
   return (
     <section
       id="faqs"
-      className="relative isolate w-full bg-[#F1FCFF] pb-24 md:pb-48 pt-16 md:pt-20"
+      className="relative isolate w-full bg-[#F1FCFF] pb-24 md:pb-48 pt-0 md:pt-20"
     >
       {/* Decorative squares */}
       <div className="pointer-events-none relative h-20">

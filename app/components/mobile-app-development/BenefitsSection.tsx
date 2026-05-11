@@ -27,7 +27,7 @@ type Props = {
 
 export default function BenefitsSection({ heading, description, cards }: Props) {
     return (
-        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF]  py-20">
+        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF] py-0 md:py-20">
             <div className="flex w-full  flex-col items-center gap-[60px]">
                 <div className="flex flex-col items-center gap-6 text-center">
                     <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D] capitalize">
@@ -70,7 +70,7 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                     >
                         {cards.map((card) => (
                             <SwiperSlide key={card.id}>
-                                <article className="industry-card ml-8 md:ml-0 w-[400px]! relative overflow-hidden">
+                                <article className="industry-card ml-3 md:ml-0 w-[400px]! relative overflow-hidden">
                                     <Image
                                         src="/images/benefit-card-bg.png"
                                         alt="benefit-card-bg"
