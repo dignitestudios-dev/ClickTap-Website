@@ -1,16 +1,20 @@
+import dynamic from "next/dynamic";
 import Navbar from "./components/global/Navbar";
-import Services from "./components/home/Services";
-import Portfolio from "./components/home/Portfolio";
-import Process from "./components/home/Process";
-import TechStack from "./components/home/TechStack";
-import Footer from "./components/global/Footer";
-import WhyChooseUs from "./components/home/why-choose-us";
-import Contact from "./components/home/Contact";
-import FAQs from "./components/home/FAQs";
-import Industry from "./components/home/Industry";
-import TestimonialPage from "./components/home/Testimonials";
-import TrustPilot from "./components/home/TrustPilot";
 import Hero from "./components/home/Hero";
+
+
+// Dynamic imports for components below the fold
+const Services = dynamic(() => import("./components/home/Services"), { ssr: true });
+const Portfolio = dynamic(() => import("./components/home/Portfolio"), { ssr: true });
+const Process = dynamic(() => import("./components/home/Process"), { ssr: true });
+const TechStack = dynamic(() => import("./components/home/TechStack"), { ssr: true });
+const WhyChooseUs = dynamic(() => import("./components/home/why-choose-us"), { ssr: true });
+const Contact = dynamic(() => import("./components/home/Contact"), { ssr: true });
+const FAQs = dynamic(() => import("./components/home/FAQs"), { ssr: true });
+const Industry = dynamic(() => import("./components/home/Industry"), { ssr: true });
+const TestimonialPage = dynamic(() => import("./components/home/Testimonials"), { ssr: true });
+const TrustPilot = dynamic(() => import("./components/home/TrustPilot"), { ssr: true });
+const Footer = dynamic(() => import("./components/global/Footer"), { ssr: true });
 import { HOME_CONTENT } from "./constants/content";
 import Image from "next/image";
 
@@ -21,7 +25,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="flex-1 w-full">
+      <main className="flex-1 main-body-section w-full">
         <div className="flex flex-col gap-16">
           {/* Hero Section */}
           <Hero
@@ -31,13 +35,13 @@ export default function Home() {
             cta={HOME_CONTENT.hero.cta}
           >
             {/* Tech Stack Icons - Bottom of Hero */}
-            <div className="flex items-center gap-20   mt-12  hover:grayscale-0 transition-all">
-              <Image src="/images/andriod-icon.png" alt="Android" width={55} height={55} />
-              <Image src="/images/mdi_react.png" alt="React" width={55} height={55} />
-              <Image src="/images/akar-icons_node-fill.png" alt="Node" width={55} height={55} />
-              <Image src="/images/fa6-brands_aws.png" alt="AWS" width={55} height={55} />
-              <Image src="/images/material-symbols_flutter.png" alt="Flutter" width={55} height={55} />
-              <Image src="/images/material-icon-theme_html.png" alt="HTML5" width={55} height={55} />
+            <div className="flex flex-wrap   items-center gap-8 -ml-8 md:ml-0  sm:gap-10 md:gap-15 lg:gap-20 mt-5 lg:mt-12 hover:grayscale-0 transition-all">
+              <Image src="/images/andriod-icon.png" alt="Android" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
+              <Image src="/images/mdi_react.png" alt="React" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
+              <Image src="/images/akar-icons_node-fill.png" alt="Node" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
+              <Image src="/images/fa6-brands_aws.png" alt="AWS" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
+              <Image src="/images/material-symbols_flutter.png" alt="Flutter" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
+              <Image src="/images/material-icon-theme_html.png" alt="HTML5" width={45} height={45} className="w-6 h-6 md:w-5 md:h-5 lg:w-14 lg:h-14" />
             </div>
           </Hero>
 

@@ -1349,6 +1349,7 @@ export const CUSTOM_SOFTWARE_CONTENT = {
         description: "Everyone needs strong features for success. Our custom software development ensures your software performs well and meets the user's expectations.",
         items: [
             "Secure Login",
+            "Push Notifications ",
             "Offline Access",
             "AI Support",
             "Analytics",
@@ -1725,6 +1726,8 @@ export const AI_APP_CONTENT = {
             "User Personalization",
             "Multi Platform Guidance",
             "Integration Planning",
+            "Work Flow Automation ",
+            "AI Powered Chatbot Integration "
         ],
         cta: "Get Feature Recommendations",
     },

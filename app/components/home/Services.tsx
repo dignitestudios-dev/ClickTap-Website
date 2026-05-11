@@ -34,13 +34,13 @@ const ArrowIcon = () => (
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-[#F1FCFF] py-24  px-20 md:px-20 flex flex-col items-center">
+    <section id="services" className="w-full bg-[#F1FCFF] py-16 md:py-24 px-6 sm:px-10 md:px-20 flex flex-col items-center">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[800px] mb-16 text-center">
-        <h2 className="text-[#00161D] font-bold text-5xl md:text-[72px] leading-tight tracking-tight">
+        <h2 className="text-[#00161D] font-bold text-4xl sm:text-5xl md:text-[72px] leading-tight tracking-tight">
           Services <span className="font-normal text-[#00161D]">We Offer</span>
         </h2>
-        <p className="text-[#00161D] text-[18px] md:text-[20px] leading-[28px] opacity-80 max-w-[750px]">
+        <p className="text-[#00161D] text-[16px] md:text-[20px] leading-[28px] opacity-80 max-w-[750px]">
           An idea is the beginning of every project and in order to make that project successful, the execution needs to be perfect. So, here are the services we offer to turn your idea into a scalable product.
         </p>
       </div>
@@ -52,16 +52,16 @@ export default function Services() {
         <div className="flex flex-col gap-6">
           {/* iOS Card */}
           <div className="bg-white p-2.5 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
-            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[420px] p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
+            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <Image src="/images/line.png" alt="iOS" fill className="object-contain mt-3 h-full" />
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
-                <h3 className="text-[#00161D] font-bold text-[24px] mb-1">iOS App Development</h3>
+                <h3 className="text-[#00161D] font-bold text-[16px] md:text-[24px] mb-1">iOS App Development</h3>
                 <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
-                <h3 className="text-white font-bold text-[24px] mb-3">iOS App Development</h3>
+                <h3 className="text-white font-bold text-[20px] md:text-[24px] mb-3">iOS App Development</h3>
                 <p className="text-white/90 text-[15px] leading-[24px]">{serviceDescriptions["iOS App Development"]}</p>
                 <Link href="#" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
@@ -75,9 +75,9 @@ export default function Services() {
 
           {/* Android Card */}
           <div className="bg-white p-2.5 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
-            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[420px] p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
+            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
-                <h3 className="text-[#00161D] font-bold text-[24px] mb-1">Android App Development</h3>
+                <h3 className="text-[#00161D] font-bold text-[20px] md:text-[24px] mb-1">Android App Development</h3>
                 <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
@@ -138,12 +138,12 @@ export default function Services() {
           {/* Consulting Card */}
           <div className="bg-white p-2.5 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex-1">
             <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[264px]  flex flex-col justify-end group hover:bg-[#e2f3fa] transition-colors">
-              <div className="flex items-center justify-between">
-                <Image src="/images/left-service.png" alt="Consulting" width={100} height={100} className="object-contain" />
-                <div className="bg-[#01C2FE] rounded-[16px] p-3 pr-5 flex items-center gap-3 shadow-[0_10px_30px_rgba(1,194,254,0.4)] z-10 mx-[-10px]">
+              <div className="flex items-center p-5 xl:p-0 justify-between">
+                <Image src="/images/left-service.png" alt="Consulting" width={100} height={100} className="object-contain hidden xl:block  " />
+                <div className="bg-[#01C2FE]  w-full  rounded-[16px] p-3 pr-5 flex items-center gap-3 shadow-[0_10px_30px_rgba(1,194,254,0.4)] z-10 ">
                   <div className="bg-white w-[46px] h-[46px] rounded-full flex items-center justify-center relative shrink-0">
                     {/* Logo SVG */}
-                    <img src="/images/card-logo.png" alt="card-logo.png" />
+                    <Image src="/images/card-logo.png" alt="card-logo" width={24} height={24} className="object-contain" />
                     {/* Green Dot */}
                     <span className="absolute top-0 right-0 w-3 h-3 bg-[#A9C921] rounded-full border-2 border-white translate-x-[10%] -translate-y-[10%]"></span>
                   </div>
@@ -152,7 +152,7 @@ export default function Services() {
                     <span className="text-white text-[13px] leading-[1.2] max-w-[130px] opacity-90">Hey there how can we help you today?</span>
                   </div>
                 </div>
-                <Image src="/images/right-service.png" alt="Consulting" width={100} height={100} className="object-contain" />
+                <Image src="/images/right-service.png" alt="Consulting" width={100} height={100} className="object-contain hidden xl:block" />
               </div>
               <div className="p-8 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[22px] relative z-10 leading-tight">Mobile App Consulting<br />Services</h3>
@@ -172,7 +172,7 @@ export default function Services() {
         <div className="flex flex-col gap-6">
           {/* AI Card */}
           <div className="bg-white p-2.5 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
-            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[420px] p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
+            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-20 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[24px] mb-1">AI App Development</h3>
                 <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
@@ -199,7 +199,7 @@ export default function Services() {
 
           {/* Mobile App Card */}
           <div className="bg-white p-2.5 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
-            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[420px] p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
+            <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[24px] mb-1">Mobile App Development</h3>
                 <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">

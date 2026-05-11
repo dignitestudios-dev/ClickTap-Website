@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import Navbar from "../components/global/Navbar";
-import Hero from "../components/progressive-web-app/Hero";
-import { PWA_CONTENT } from "../constants/content";
+import Hero from "../components/UIUX/Hero";
+import { MVP_CONTENT } from "../constants/content";
 
 // Dynamic imports
 const Footer = dynamic(() => import("../components/global/Footer"), { ssr: true });
@@ -21,13 +21,13 @@ const QuoteSection = dynamic(() => import("../components/mobile-app-development/
 const ServicesSection = dynamic(() => import("../components/mobile-app-development/ServiceSection"), { ssr: true });
 
 export const metadata: Metadata = {
-    title: PWA_CONTENT.meta.title,
-    description: PWA_CONTENT.meta.description,
+    title: MVP_CONTENT.meta.title,
+    description: MVP_CONTENT.meta.description,
 };
 
-export default function ProgressiveWebAppDevelopment() {
+export default function UIUXDevelopment() {
     return (
-        <div className="flex flex-col  min-h-screen  overflow-x-hidden">
+        <div className="flex flex-col min-h-screen  overflow-x-hidden">
             {/* Navigation */}
             <Navbar />
 
@@ -36,21 +36,21 @@ export default function ProgressiveWebAppDevelopment() {
                 <div className="flex flex-col gap-16">
                     {/* Hero Section */}
                     <Hero
-                        tagline={PWA_CONTENT.hero.tagline}
-                        title={PWA_CONTENT.hero.title}
-                        cta={PWA_CONTENT.hero.cta}
-                        description={PWA_CONTENT.hero.description}
+                        tagline={MVP_CONTENT.hero.tagline}
+                        title={MVP_CONTENT.hero.title}
+                        cta={MVP_CONTENT.hero.cta}
+                        description={MVP_CONTENT.hero.description}
                     />
 
                     {/* About Section */}
                     <AboutSection
-                        tagline="About clicktap solution"
-                        heading={PWA_CONTENT.about.heading}
+                        tagline=""
+                        heading={MVP_CONTENT.about.heading}
                         paragraphs={[
-                            PWA_CONTENT.about.description,
-                            PWA_CONTENT.about.content
+                            MVP_CONTENT.about.description,
+                            MVP_CONTENT.about.content
                         ]}
-                        ctaText={PWA_CONTENT.about.cta}
+                        ctaText={MVP_CONTENT.about.cta}
                         stats={[
                             { value: "300+", label: "Projects Delivered", color: 'blue', image: "/images/about-2.png" },
                             { value: "10+", label: "Years Experience", color: 'light', image: "/images/about-3.png" },
@@ -60,44 +60,44 @@ export default function ProgressiveWebAppDevelopment() {
 
                     {/* Services Section */}
                     <ServicesSection
-                        heading={PWA_CONTENT.services.heading}
-                        description={PWA_CONTENT.services.description}
-                        services={PWA_CONTENT.services.items}
-                        ctaText={PWA_CONTENT.services.cta}
+                        heading={MVP_CONTENT.services.heading}
+                        description={MVP_CONTENT.services.description}
+                        services={MVP_CONTENT.services.items}
+                        ctaText={MVP_CONTENT.services.cta}
                     />
 
                     {/* Why Choose Us Section */}
                     <WhyChooseUs
-                        heading={PWA_CONTENT.whyChooseUs.heading}
-                        para={PWA_CONTENT.whyChooseUs.description}
-                        items={PWA_CONTENT.whyChooseUs.items}
+                        heading={MVP_CONTENT.whyChooseUs.heading}
+                        para={MVP_CONTENT.whyChooseUs.description}
+                        items={MVP_CONTENT.whyChooseUs.items}
                     />
 
                     {/* Tech Stack Section */}
                     <TechStack
-                        heading={PWA_CONTENT.techStack.heading}
-                        description={PWA_CONTENT.techStack.description}
+                        heading={MVP_CONTENT.techStack.heading}
+                        description={MVP_CONTENT.techStack.description}
                     />
 
                     {/* Industry */}
                     <Industry
-                        heading={PWA_CONTENT.industry.heading}
-                        description={PWA_CONTENT.industry.description}
-                        cards={PWA_CONTENT.industry.items}
+                        heading={MVP_CONTENT.industry.heading}
+                        description={MVP_CONTENT.industry.description}
+                        cards={MVP_CONTENT.industry.items}
                     />
 
                     {/* Process Section */}
                     <Process
-                        heading={PWA_CONTENT.process.heading}
-                        description={PWA_CONTENT.process.description}
-                        steps={PWA_CONTENT.process.items}
+                        heading={MVP_CONTENT.process.heading}
+                        description={MVP_CONTENT.process.description}
+                        steps={MVP_CONTENT.process.items}
                     />
 
                     {/* Benefits Section */}
                     <BenefitsSection
-                        heading={PWA_CONTENT.advantages.heading}
-                        description={PWA_CONTENT.advantages.description}
-                        cards={PWA_CONTENT.advantages.items.map((item, idx) => ({
+                        heading={MVP_CONTENT.advantages.heading}
+                        description={MVP_CONTENT.advantages.description}
+                        cards={MVP_CONTENT.advantages.items.map((item, idx) => ({
                             id: idx + 1,
                             title: item.title,
                             description: item.description,
@@ -107,8 +107,9 @@ export default function ProgressiveWebAppDevelopment() {
 
                     {/* Features Section */}
                     <FeaturesSection
-                        heading={PWA_CONTENT.features.heading}
-                        features={PWA_CONTENT.features.items.map((title, idx) => ({
+                        heading={MVP_CONTENT.features.heading}
+                        description={MVP_CONTENT.features.description}
+                        features={MVP_CONTENT.features.items.map((title, idx) => ({
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`
                         }))}
@@ -116,23 +117,23 @@ export default function ProgressiveWebAppDevelopment() {
 
                     {/* Portfolio Section */}
                     <Portfolio
-                        heading={PWA_CONTENT.portfolio.heading}
-                        description={PWA_CONTENT.portfolio.description}
-                        projects={PWA_CONTENT.portfolio.items}
+                        heading={MVP_CONTENT.portfolio.heading}
+                        description={MVP_CONTENT.portfolio.description}
+                        projects={MVP_CONTENT.portfolio.items}
                     />
 
                     {/* Quote Section */}
                     <QuoteSection
-                        heading={PWA_CONTENT.portfolio.ctaTitle}
-                        description={PWA_CONTENT.portfolio.ctaDescription}
-                        ctaText={PWA_CONTENT.portfolio.ctaButton}
+                        heading={MVP_CONTENT.portfolio.ctaTitle}
+                        description={MVP_CONTENT.portfolio.ctaDescription}
+                        ctaText={MVP_CONTENT.portfolio.ctaButton}
                     />
 
                     {/* Testimonials */}
                     <TestimonialPage
-                        heading={PWA_CONTENT.testimonials.heading}
-                        description={PWA_CONTENT.testimonials.description}
-                        testimonials={PWA_CONTENT.testimonials.items.map((item, idx) => ({
+                        heading={MVP_CONTENT.testimonials.heading}
+                        description={MVP_CONTENT.testimonials.description}
+                        testimonials={MVP_CONTENT.testimonials.items.map((item, idx) => ({
                             id: idx + 1,
                             name: item.author,
                             role: item.role,
@@ -146,16 +147,16 @@ export default function ProgressiveWebAppDevelopment() {
 
                     {/* FAQs */}
                     <FAQs
-                        heading={PWA_CONTENT.faqs.heading}
-                        description="Here are some answers to common questions to help you get started."
-                        faqs={PWA_CONTENT.faqs.items}
+                        heading={MVP_CONTENT.faqs.heading}
+                        description=""
+                        faqs={MVP_CONTENT.faqs.items}
                     />
 
                     {/* Contact Section */}
                     <Contact
-                        heading={PWA_CONTENT.contact.heading}
-                        description={PWA_CONTENT.contact.description}
-                        ctaText={PWA_CONTENT.contact.cta}
+                        heading={MVP_CONTENT.contact.heading}
+                        description={MVP_CONTENT.contact.description}
+                        ctaText={MVP_CONTENT.contact.cta}
                         fieldLabel="App Idea"
                     />
                 </div>

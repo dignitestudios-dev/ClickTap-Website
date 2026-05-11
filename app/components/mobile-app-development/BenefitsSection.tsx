@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -53,11 +54,11 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
 
                         breakpoints={{
                             0: {
-                                slidesPerView: 2,
+                                slidesPerView: 1,
                             },
 
                             768: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                             },
 
                             1200: {
@@ -69,11 +70,17 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                     >
                         {cards.map((card) => (
                             <SwiperSlide key={card.id}>
-                                <article className="industry-card w-[400px]!" style={{ background: `url(/images/benefit-card-bg.png)`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                                    <h3 className="text-[28px] font-bold leading-tight text-white">
+                                <article className="industry-card ml-8 md:ml-0 w-[400px]! relative overflow-hidden">
+                                    <Image
+                                        src="/images/benefit-card-bg.png"
+                                        alt="benefit-card-bg"
+                                        fill
+                                        className="object-cover -z-10"
+                                    />
+                                    <h3 className="text-[28px] font-bold leading-tight text-white relative z-10">
                                         {card.title}
                                     </h3>
-                                    <div className="mt-8 flex flex-col gap-4">
+                                    <div className="mt-8 flex flex-col gap-4 relative z-10">
 
 
                                         <p className="text-[14px] leading-relaxed text-white opacity-70">

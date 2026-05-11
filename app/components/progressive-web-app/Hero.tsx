@@ -15,11 +15,13 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
     <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0">
-        <img
+      <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
+        <Image
           src="/images/grid-frame.png"
           alt="grid-frame"
-          className="h-[650px] w-full"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
       {/* Hero Content */}
@@ -27,7 +29,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
 
         {/* Main Title */}
         <div className="max-w-[1200px] ">
-          <h1 className="text-3xl md:text-5xl lg:text-[80px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#00161D] leading-[1.1] md:leading-[0.95] tracking-tight px-4">
 
             {title}
 
@@ -36,7 +38,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
 
         {/* Mission Statement */}
         <div className="max-w-[850px] mb-3">
-          <p className="text-[18px] text-[#00161D]  leading-relaxed font-medium">
+          <p className="text-[16px] md:text-[18px] text-[#00161D] leading-relaxed font-medium px-6">
             {description}
           </p>
         </div>
@@ -56,7 +58,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
             alt="web-app-dev.png"
             width={1100}
             height={800}
-            className="relative z-[1] mx-auto"
+            className="relative z-[1] mx-auto w-full max-w-[500px] sm:max-w-[700px] md:max-w-[1100px] px-4"
           />
         </div>
       </div>

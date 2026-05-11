@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import Counter from "../global/Counter";
 
@@ -51,17 +52,17 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
         <main className="trust-bg  py-12 text-white ">
             <section className="mx-auto flex w-full  flex-col items-center gap-[60px] overflow-hidden rounded-2xl bg-transparent py-[60px]  md:pb-[100px]">
                 <div className="text-center max-w-[900px]">
-                    <h2 className="text-[40px] md:text-[56px] font-bold leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-[56px] font-bold leading-tight px-6 md:px-0">
                         Verified and Trusted by Different Platforms
                     </h2>
-                    <p className="mt-4 text-[16px] leading-[28px] text-white/85">
+                    <p className="mt-4 text-[15px] md:text-[16px] leading-[28px] text-white/85 px-6 md:px-0">
                         Clicktap Solutions is trusted by startups and businesses across industries, with positive feedback on platforms like Clutch and Trustpilot. Our work is built on consistent delivery and transparency through every stage.
                     </p>
                 </div>
 
 
-                <div className="w-full px-20 py-12" >
-                    <div className="px-20 grid w-full grid-cols-1 overflow-hidden rounded-2xl border border-[#dbf7ff1a] bg-[#ffffff05] backdrop-blur-[10px] sm:grid-cols-2 lg:grid-cols-4">
+                <div className="w-full px-6 sm:px-10 md:px-20 py-8 md:py-12" >
+                    <div className="grid w-full grid-cols-2 lg:grid-cols-4 overflow-hidden rounded-2xl border border-[#dbf7ff1a] bg-[#ffffff05] backdrop-blur-[10px]">
                         {stats.map((item, index) => (
                             <div
                                 key={item.label}
@@ -71,9 +72,7 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
                                         index < stats.length - 1 ? "1px solid rgba(219, 247, 255, 0.10)" : "none",
                                 }}
                             >
-                                <p
-                                    className="text-[46px] font-black leading-[56px] tracking-tight"
-                                >
+                                <p className="text-[32px] md:text-[46px] font-black leading-tight tracking-tight">
                                     <Counter to={item.value} suffix={item.suffix} />
                                 </p>
                                 <p
@@ -84,16 +83,16 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
                             </div>
                         ))}
                     </div>
-                    <div className=" text-center py-16">
-                        <h3 className="text-[30px] md:text-[40px] font-bold leading-tight">Our Proven Track Record</h3>
-                        <p className="mt-3 text-[16px] leading-[26px] text-white/85">
+                    <div className="text-center py-10 md:py-16">
+                        <h3 className="text-2xl md:text-[40px] font-bold leading-tight">Our Proven Track Record</h3>
+                        <p className="mt-3 text-[15px] md:text-[16px] leading-[26px] text-white/85">
                             Trusted results delivered through years of experience, a skilled team, strong client retention, and successful app launches across startups and growing businesses.
                         </p>
                     </div>
-                    <div className="relative flex w-full items-center justify-center gap-8 overflow-hidden rounded-2xl border-r border-[#dbf7ff1a] bg-[#00161D] px-5 py-[30px] md:h-[312px] md:gap-[70px] md:px-8">
+                    <div className="relative flex w-full items-center justify-center gap-6 md:gap-[70px] overflow-hidden rounded-2xl border-r border-[#dbf7ff1a] bg-[#00161D] px-6 py-8 md:h-[312px] md:px-8 flex-wrap md:flex-nowrap">
                         {reviewBadges.map((badge) => (
                             <div key={badge} className="z-10 flex items-center gap-3 text-white/95">
-                                <img src={badge} alt={badge} className="rounded-lg w-38 h-auto " />
+                                <Image src={badge} alt="Review Badge" width={152} height={40} className="rounded-lg w-24 sm:w-32 md:w-38 h-auto " />
                             </div>
                         ))}
                         <DecorativeBlocks />
@@ -110,9 +109,11 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
                                 key={index}
                                 className="flex flex-shrink-0 items-center justify-center px-8"
                             >
-                                <img
+                                <Image
                                     src={logo}
-                                    alt={logo}
+                                    alt="Client Logo"
+                                    width={152}
+                                    height={40}
                                     className="h-auto w-38 rounded-lg"
                                 />
                             </div>

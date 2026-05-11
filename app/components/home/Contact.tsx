@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 type Props = {
     heading: React.ReactNode;
@@ -28,12 +29,12 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
     };
 
     return (
-        <section id="contact" className="w-full bg-[#F1FCFF]   -mb-3 relative overflow-hidden isolate">
-            <div className=" mx-auto flex flex-col md:flex-row gap-12 items-start relative z-10">
+        <section id="contact" className="w-full bg-[#F1FCFF] pb-16 md:pb-0 -mb-3 relative overflow-hidden isolate">
+            <div className="mx-auto flex flex-col lg:flex-row gap-12 items-start relative z-10">
                 {/* Left content */}
                 <div className="flex  flex-col gap-10 w-full md:w-[579px] flex-shrink-0">
                     <div className="flex px-5 md:px-20 flex-col gap-6">
-                        <h2 className="text-[#00161D]  text-[38px] md:text-[55px] leading-tight">
+                        <h2 className="text-[#00161D] text-3xl sm:text-4xl md:text-[55px] font-bold leading-tight">
                             {heading}
                         </h2>
                         <p className="text-[#00161D] text-[18px] leading-[28px] max-w-[500px] opacity-80">
@@ -43,13 +44,13 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
 
                     {/* Phone mockup placeholder */}
                     <div className="relative w-full h-[420px] hidden md:flex items-center justify-center">
-                        <img src="/images/hand-contact.png" alt="hand-contact.png" />
+                        <Image src="/images/hand-contact.png" alt="hand-contact" width={500} height={420} className="object-contain" />
                     </div>
                 </div>
 
                 {/* Right form */}
-                <div className="px-5 md:px-20 w-full">
-                    <div className="flex-1  bg-white rounded-3xl p-5">
+                <div className="px-6 md:px-12 lg:px-20 w-full lg:w-auto flex-1">
+                    <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl shadow-[#00161D]/5">
                         <div className="flex flex-col gap-6">
                             <h3 className="text-[#00161D] font-medium text-[22px]">
                                 Send Us a Message
@@ -97,7 +98,7 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
                                     <label className="text-[#00161D]/60 text-[16px]">Number</label>
                                     <div className="flex items-center gap-2 bg-[#F1F1F1] border border-[#F5F5F5] rounded-2xl px-4 py-4">
                                         <div className="flex items-center gap-2 border-r border-[#E3E3E3] pr-2">
-                                            <img src="/images/flag.png" alt="flag.png" width={40} height={40} />
+                                            <Image src="/images/flag.png" alt="flag" width={24} height={16} className="w-6 h-4 object-contain" />
                                         </div>
                                         <input
                                             name="phone"

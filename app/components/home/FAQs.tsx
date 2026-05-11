@@ -1,18 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { FAQItem } from "@/types";
 
 type FAQ = {
-    question: string;
-    answer: string;
-    number?: string;
+  question: string;
+  answer: string;
+  number?: string;
 };
 
 type Props = {
-    heading: React.ReactNode;
-    description: string;
-    faqs: FAQ[];
+  heading: React.ReactNode;
+  description: string;
+  faqs: FAQ[];
 }
 
 type FAQItemProps = {
@@ -82,29 +83,31 @@ export default function FAQs({ heading, description, faqs }: Props) {
   return (
     <section
       id="faqs"
-      className="relative isolate w-full bg-[#F1FCFF] pb-48 pt-20"
+      className="relative isolate w-full bg-[#F1FCFF] pb-24 md:pb-48 pt-16 md:pt-20"
     >
       {/* Decorative squares */}
-      <div className="pointer-events-none relative">
-        <img
+      <div className="pointer-events-none relative h-20">
+        <Image
           src="/images/faq-sqaure.png"
           alt="faq-sqaure"
+          width={450}
+          height={450}
           className="absolute -top-22 left-0 w-[450px]"
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-20 px-20">
+      <div className="grid grid-cols-1 relative z-10 lg:grid-cols-2 gap-12 lg:gap-20 px-6 sm:px-10 md:px-20">
         {/* Left heading */}
-        <div className="relative z-10 mt-20 flex w-full flex-col gap-2">
+        <div className=" mt-20 flex w-full flex-col gap-2">
           <p className="text-[16px] font-semibold uppercase tracking-wider text-[#00161D]">
             Common Questions
           </p>
 
-          <h2 className="text-[50px] leading-tight text-[#00161D] md:text-[66px]">
+          <h2 className="text-4xl sm:text-5xl md:text-[66px] leading-tight text-[#00161D]">
             {heading}
           </h2>
 
-          <p className="mt-4 text-[18px] leading-[28px] text-[#00161D] opacity-70">
+          <p className="mt-4 text-[16px] md:text-[18px] leading-[28px] text-[#00161D] opacity-70">
             {description}
           </p>
         </div>

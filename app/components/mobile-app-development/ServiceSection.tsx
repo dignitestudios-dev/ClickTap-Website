@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
     ArrowUpRight,
 } from "lucide-react";
@@ -18,17 +19,17 @@ type Props = {
 
 const ServicesSection = ({ heading, description, services, ctaText }: Props) => {
     return (
-        <section className="overflow-hidden bg-[#F3FBFD] px-5 py-16 md:px-10 lg:px-20 lg:py-24">
+        <section className="overflow-hidden bg-[#F3FBFD] px-6 py-16 md:px-10 lg:px-20 lg:py-24">
 
             <div className="mx-auto max-w-[1280px]">
 
                 {/* HEADING */}
                 <div className="mx-auto max-w-[980px] text-center">
-                    <h2 className="text-[42px] leading-[1.05] text-[#00161D] md:text-[72px]">
+                    <h2 className="text-3xl sm:text-4xl md:text-[72px] leading-[1.05] text-[#00161D]">
                         {heading}
                     </h2>
 
-                    <p className="mx-auto mt-6 max-w-[1050px] text-[18px] leading-[1.7] text-[#00161D]/70">
+                    <p className="mx-auto mt-6 max-w-[1050px] text-[16px] md:text-[18px] leading-[1.7] text-[#00161D]/70">
                         {description}
                     </p>
                 </div>
@@ -45,12 +46,12 @@ const ServicesSection = ({ heading, description, services, ctaText }: Props) => 
 
                                 {/* BACKGROUND SHAPE */}
                                 <div className="absolute -bottom-3 -right-20 h-[220px] w-[220px] " >
-                                    <img src="/images/service-star.png" className="absolute right-20 z-10 top-0" alt="icon" />
+                                    <Image src="/images/service-star.png" width={220} height={220} className="absolute right-20 z-10 top-0" alt="icon" />
                                 </div>
 
                                 {/* ICON */}
                                 <div className="relative z-10 flex h-[50px] w-[50px] items-center justify-center rounded-full border border-[#00161D]/20 bg-white">
-                                    <img src={service.icon} alt="icon" width={24} height={24} />
+                                    <Image src={service.icon} alt="icon" width={24} height={24} />
                                 </div>
 
                                 {/* CONTENT */}

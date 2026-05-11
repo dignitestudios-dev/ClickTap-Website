@@ -1,20 +1,23 @@
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
-import Footer from "../components/global/Footer";
 import Navbar from "../components/global/Navbar";
-import Contact from "../components/home/Contact";
-import FAQs from "../components/home/FAQs";
-import Industry from "../components/home/Industry";
-import Portfolio from "../components/home/Portfolio";
-import Process from "../components/home/Process";
-import TechStack from "../components/home/TechStack";
-import TestimonialPage from "../components/home/Testimonials";
 import Hero from "../components/ios-app-development/Hero";
-import AboutSection from "../components/mobile-app-development/AboutSection";
-import BenefitsSection from "../components/mobile-app-development/BenefitsSection";
-import FeaturesSection from "../components/mobile-app-development/FeaturesSection";
-import QuoteSection from "../components/mobile-app-development/QuoteSection";
-import ServicesSection from "../components/mobile-app-development/ServiceSection";
 import { IOS_APP_Development } from "../constants/content";
+
+// Dynamic imports
+const Footer = dynamic(() => import("../components/global/Footer"), { ssr: true });
+const Contact = dynamic(() => import("../components/home/Contact"), { ssr: true });
+const FAQs = dynamic(() => import("../components/home/FAQs"), { ssr: true });
+const Industry = dynamic(() => import("../components/home/Industry"), { ssr: true });
+const Portfolio = dynamic(() => import("../components/home/Portfolio"), { ssr: true });
+const Process = dynamic(() => import("../components/home/Process"), { ssr: true });
+const TechStack = dynamic(() => import("../components/home/TechStack"), { ssr: true });
+const TestimonialPage = dynamic(() => import("../components/home/Testimonials"), { ssr: true });
+const AboutSection = dynamic(() => import("../components/mobile-app-development/AboutSection"), { ssr: true });
+const BenefitsSection = dynamic(() => import("../components/mobile-app-development/BenefitsSection"), { ssr: true });
+const FeaturesSection = dynamic(() => import("../components/mobile-app-development/FeaturesSection"), { ssr: true });
+const QuoteSection = dynamic(() => import("../components/mobile-app-development/QuoteSection"), { ssr: true });
+const ServicesSection = dynamic(() => import("../components/mobile-app-development/ServiceSection"), { ssr: true });
 export const metadata: Metadata = {
     title: IOS_APP_Development.meta.title,
     description: IOS_APP_Development.meta.description,
@@ -27,7 +30,7 @@ export default function IOSAppDevelopment() {
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1 w-full">
+            <main className="flex-1 main-body-section w-full">
                 <div className="flex flex-col gap-16">
                     {/* Hero Section */}
                     <Hero

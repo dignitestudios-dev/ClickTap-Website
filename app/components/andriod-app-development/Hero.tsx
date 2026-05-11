@@ -15,11 +15,13 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
     <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0">
-        <img
+      <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
+        <Image
           src="/images/grid-frame.png"
           alt="grid-frame"
-          className="h-[650px] w-full"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
       {/* Hero Content */}
@@ -46,7 +48,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
 
         {/* Main Title */}
         <div className="max-w-[1200px] mt-10 ">
-          <h1 className="text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[1.1] md:leading-[0.95] tracking-tight px-4">
 
             {title}
 
@@ -55,7 +57,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
 
         {/* Mission Statement */}
         <div className="max-w-[850px] mb-3">
-          <p className="text-[18px] text-[#00161D]  leading-relaxed font-medium">
+          <p className="text-[16px] md:text-[18px] text-[#00161D] leading-relaxed font-medium px-6">
             {description}
           </p>
         </div>
@@ -66,20 +68,19 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           <Image src="/images/cta-button.png" alt="Arrow Right" width={30} height={30} />
         </button>
 
-        <div >
-          <Image src="/images/lead-mob-hero-overlay.png" alt="lead-mob-hero-overlay.png" width={1300} height={1300} className="w-[1300px] absolute  bottom-24 left-1/2 -translate-x-1/2" />
+        <div className="relative mt-6 md:mt-0 px-4">
+          <Image src="/images/lead-mob-hero-overlay.png" alt="lead-mob-hero-overlay.png" width={1300} height={1300} className="w-full h-auto absolute bottom-0 left-1/2 -translate-x-1/2 opacity-50 md:opacity-100" />
           <Image
             src="/images/lead-mob-bg.png"
             alt="leading-mobile-app.png"
             width={550}
             height={701}
-            className="relative z-[1] bottom-10 mx-auto"
+            className="relative z-[1] mx-auto w-full max-w-[280px] sm:max-w-[400px] md:max-w-[550px]"
           />
-
         </div>
       </div>
       {/* Bottom Blend Effect */}
-      <div className="absolute bottom-0  left-0 w-full h-[170px] z-20 pointer-events-none">
+      <div className="absolute bottom-0  left-0 w-full h-[30px] md:h-[170px] z-20 pointer-events-none">
 
         {/* Blur Layer */}
         <div className="absolute inset-0 mix-blend-darken " />

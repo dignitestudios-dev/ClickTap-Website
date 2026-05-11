@@ -29,11 +29,11 @@ type Props = {
 
 export default function WhyChooseUs({ heading, para, items }: Props) {
     return (
-        <section className="relative isolate mx-auto h-auto min-h-[905px] w-full  overflow-hidden rounded-[24px]  py-[100px]">
+        <section className="relative isolate mx-auto h-auto min-h-[700px] md:min-h-[905px] w-full overflow-hidden rounded-[24px] py-16 md:py-[100px] px-6 md:px-0">
             <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[1114px] w-full -translate-x-1/2 -translate-y-[calc(50%+19.5px)] rounded-[12px]  bg-image " />
 
             <div className="relative z-[2] mx-auto flex w-full max-w-[950px] flex-col items-center justify-end gap-[10px]">
-                <h2 className="text-center text-[40px] md:text-[66px] font-normal leading-tight capitalize text-[#00161D]">
+                <h2 className="text-center text-4xl md:text-[66px] font-normal leading-tight capitalize text-[#00161D]">
                     {heading}
                 </h2>
                 <p className="max-w-[700px] text-center text-[15px] md:text-[18px] font-normal leading-relaxed text-[#00161D] opacity-80">
@@ -50,7 +50,21 @@ export default function WhyChooseUs({ heading, para, items }: Props) {
                     initialSlide={1}
                     speed={800}
                     loop={true}
-                    spaceBetween={50}
+                    spaceBetween={20}
+                    breakpoints={{
+                        0: {
+                            spaceBetween: 20,
+                            slidesPerView: 1.1,
+                        },
+                        768: {
+                            spaceBetween: 30,
+                            slidesPerView: 'auto',
+                        },
+                        1024: {
+                            spaceBetween: 50,
+                            slidesPerView: 'auto',
+                        }
+                    }}
                     coverflowEffect={{
                         rotate: 30,     /* Subtle tilt for side cards */
                         stretch: 0,
@@ -77,7 +91,7 @@ export default function WhyChooseUs({ heading, para, items }: Props) {
                                 </div>
 
                                 <div className="flex w-full flex-col gap-[10px]">
-                                    <h3 className="text-[32px] md:text-[35px] font-normal leading-tight text-[#00161D]">
+                                    <h3 className="text-[28px] md:text-[35px] font-normal leading-tight text-[#00161D]">
                                         {card.title}
                                     </h3>
                                     <p className="text-[16px] font-normal leading-relaxed text-[#00161D] opacity-70">

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from "next/image";
 import FeatureCard from './FeatureCard';
 import { motion } from 'framer-motion';
 
@@ -18,9 +19,9 @@ type Props = {
 
 const FeaturesSection = ({ heading, description, features, ctaText }: Props) => {
     return (
-        <section className="relative py-10 px-20  overflow-hidden">
-            <div>
-                <img src="/images/feature-bg.png" className='absolute left-0 top-4 h-[900px]' alt="feature-bg.png" />
+        <section className="relative py-16 md:py-20 px-6 sm:px-10 md:px-20 overflow-hidden">
+            <div className='absolute left-0 top-4 h-[500px] md:h-[900px] w-full'>
+                <Image src="/images/feature-bg.png" fill className='object-contain opacity-30 md:opacity-100' alt="feature-bg" />
             </div>
             <div className="mx-auto relative z-10">
                 <motion.div
@@ -30,7 +31,7 @@ const FeaturesSection = ({ heading, description, features, ctaText }: Props) => 
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20 flex flex-col items-center justify-center gap-4"
                 >
-                    <h2 className="text-[42px] md:text-[64px] font-normal leading-tight text-[#00161D]">
+                    <h2 className="text-3xl sm:text-4xl md:text-[64px] font-normal leading-tight text-[#00161D]">
                         {heading}
                     </h2>
                     {description && (

@@ -12,14 +12,16 @@ type Props = {
 
 export default function Hero({ tagline, title, description, cta, children }: Props) {
   return (
-    <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
+    <section className="relative bg-[#F1FCFF] w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0">
-        <img
+      <div className="w-full absolute top-10 z-0 h-[650px]">
+        <Image
           src="/images/grid-frame.png"
           alt="grid-frame"
-          className="h-[650px] w-full"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
       {/* Hero Content */}
@@ -47,18 +49,18 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           <Image src="/images/cta-button.png" alt="Arrow Right" width={30} height={30} />
         </button>
 
-          {/* Blue Glow Effect */}
-        {/* <div className="relative">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-40 blur-[100px] z-0 pointer-events-none" />
+        {/* Blue Glow Effect */}
+        <div className="relative">
+          {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-40 blur-[100px] z-0 pointer-events-none" /> */}
 
           <Image
-            src="/images/progresive-web-app.png"
+            src="/images/mvp-hero.png"
             alt="web-app-dev.png"
-            width={1100}
+            width={700}
             height={800}
             className="relative z-[1] mx-auto"
           />
-        </div> */}
+        </div>
       </div>
       {/* Bottom Blend Effect */}
       <div className="absolute -bottom-5  left-0 w-full h-[50px] z-20 pointer-events-none">

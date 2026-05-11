@@ -14,31 +14,31 @@ type Props = {
 const QuoteSection = ({ heading, description, ctaText }: Props) => {
     return (
         <section className="px-6 md:px-20 py-10">
-            <div className="relative w-full max-w-[1440px] mx-auto h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#01C2FE80] min-h-[400px] flex flex-col md:flex-row items-center">
+            <div className="relative w-full max-w-[1440px] mx-auto h-auto min-h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#01C2FE80] flex flex-col lg:flex-row items-center">
 
                 {/* Gradient Overlay for the blue effect */}
-                <div className="absolute inset-0 z-0 w-full " style={{ background: `url("/images/bg-start.png") `, backgroundSize: "cover !important", backgroundRepeat: "no-repeat !important", }} />
+                <div className="absolute inset-0 bottom-0 z-0 w-full bg-cover! bg-no-repeat! " style={{ background: `url("/images/bg-start.png") ` }} />
 
                 {/* Background Shape - Ripple effect */}
-                <div className="absolute -right-5  w-[750px] top-16  z-10 opacity-60">
+                <div className="absolute md:-right-20 md:-right-5 w-full md:w-[750px] -bottom-10 md:bottom-0  z-10 opacity-40 md:opacity-60">
                     <Image
                         src="/images/bg-shape.png"
                         alt="Background Shape"
                         width={700}
                         height={300}
-                        className="h-[350px] w-[800px] "
+                        className="w-full h-[250px] md:h-[350px]  w-full object-contain"
                     />
                 </div>
 
                 {/* Left Content */}
-                <div className="relative z-20 w-full md:w-[55%] p-10 md:p-20 flex flex-col gap-6">
+                <div className="relative z-20 w-full lg:w-[55%] p-8 sm:p-12 md:p-20 flex flex-col gap-6">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-white text-[36px] md:text-[36px] leading-[1.1] mb-4">
+                        <h2 className="text-white text-3xl sm:text-[36px] font-bold leading-tight mb-4">
                             {heading}
                         </h2>
                         <p className="text-white/90 text-[15px] md:text-[15px] max-w-[550px] leading-relaxed mb-8">
@@ -59,19 +59,19 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                 </div>
 
                 {/* Right Image */}
-                <div className="relative z-20 w-full md:w-[45%] h-full flex justify-center md:justify-end items-end self-end">
+                <div className="relative z-20 w-full  lg:w-[45%] h-full flex justify-center lg:justify-end items-end self-end">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative w-[320px] md:w-[500px] h-[350px] md:h-[550px] -mb-1"
+                        className="relative w-[280px] sm:w-[320px] md:w-[500px] h-[300px] md:h-[550px] -mb-1"
                     >
                         <Image
                             src="/images/hand-image.png"
                             alt="Hand holding phone"
                             fill
-                            className="object-contain -ml-18 object-bottom"
+                            className="object-contain md:-ml-18 object-bottom"
                             priority
                         />
                     </motion.div>

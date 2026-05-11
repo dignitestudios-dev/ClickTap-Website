@@ -12,7 +12,7 @@ type Props = {
 
 export default function Hero({ tagline, title, description, cta, children }: Props) {
   return (
-    <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
+    <section className="relative bg-[#F1FCFF] w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
       <div className="w-full absolute top-10 z-0 h-[650px]">
@@ -49,16 +49,16 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           <Image src="/images/cta-button.png" alt="Arrow Right" width={30} height={30} />
         </button>
 
+        {/* Blue Glow Effect */}
         <div className="relative">
-          {/* Blue Glow Effect */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-30 blur-[100px] z-0 pointer-events-none" />
+          {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-40 blur-[100px] z-0 pointer-events-none" /> */}
 
           <Image
-            src="/images/custom-software-devlopment.png"
+            src="/images/consultant-hero.png"
             alt="web-app-dev.png"
-            width={900}
+            width={861}
             height={800}
-            className="relative z-[1] mx-auto"
+            className="relative mt-14 z-[1] mx-auto"
           />
         </div>
       </div>

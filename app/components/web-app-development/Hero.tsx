@@ -15,11 +15,13 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
     <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0">
-        <img
+      <div className="w-full absolute top-10 z-0 h-[650px]">
+        <Image
           src="/images/grid-frame.png"
           alt="grid-frame"
-          className="h-[650px] w-full"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
       {/* Hero Content */}

@@ -13,12 +13,21 @@ type Props = {
 
 export default function Hero({ tagline, title, description, cta, children }: Props) {
   return (
-    <section className="relative w-full flex flex-col items-center  overflow-hidden" style={{ background: `url(/images/hero-bg-1.png)`, backgroundSize: 'cover', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}>
+    <section className="relative w-full flex flex-col items-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-bg-1.png"
+          alt="Hero Background"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+      </div>
       {/* Hero Content */}
-      <div className="relative z-10  mx-auto px-4 flex flex-col items-center text-center gap-6">
+      <div className="relative z-10 mt-10  mx-auto px-4 flex flex-col items-center text-center gap-4">
 
         {/* Trust Badges Container */}
-        {/* <div className="flex items-center gap-6 border bg-transparent border-[#F5F5F5] px-6 py-3 rounded-2xl  mb-4">
+        {/* <div className="flex items-center gap-2 border bg-transparent border-[#F5F5F5] px-6 py-3 rounded-2xl  mb-4">
           <div className="flex items-center gap-2">
             <Image src="/images/trust-pilot.png" alt="trust-pilot.png" width={22} height={22} />
             <Image src="/images/clutch logo.png" alt="Clutch" width={18} height={18} />
@@ -37,13 +46,13 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
         </div> */}
 
         {/* Small Tagline */}
-        <div className="bg-[#DBF7FF] px-10 py-3 mt-10 rounded-full mb-2">
-          <span className="text-[20px] font-bold text-[#00161D]">  {tagline}</span>
+        <div className="bg-[#DBF7FF] px-6 md:px-10 py-2 md:py-3 mt-6 md:mt-10 rounded-full ">
+          <span className="text-[16px] md:text-[20px] font-bold text-[#00161D]">  {tagline}</span>
         </div>
 
         {/* Main Title */}
         <div className="max-w-[1200px] ">
-          <h1 className="text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[1.1] md:leading-[0.95] tracking-tight">
 
             {title}
 
@@ -52,7 +61,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
 
         {/* Mission Statement */}
         <div className="max-w-[850px] mb-8">
-          <p className="text-[18px] text-[#00161D]  leading-relaxed font-medium">
+          <p className="text-[16px] md:text-[18px] text-[#00161D] leading-relaxed font-medium">
             {description}
           </p>
         </div>
@@ -66,7 +75,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
         {children}
 
         {/* Line Animation Integration */}
-        <div className="w-full max-w-[900px] -mt-5 pointer-events-none">
+        <div className="w-[330px] -mt-10 md:mt-0 md:w-full max-w-[400px] md:max-w-[500px] lg:max-w-[900px]  pointer-events-none">
           <Lines />
         </div>
 

@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -26,10 +27,10 @@ type Props = {
 
 export default function Industry({ heading, description, cards }: Props) {
     return (
-        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF]  py-10">
+        <section className="flex min-h-[600px] md:min-h-screen w-full items-center justify-center bg-[#F1FCFF] py-16 md:py-20 px-6 md:px-0">
             <div className="flex w-full  flex-col items-center gap-[35px]">
                 <div className="flex flex-col items-center gap-4 text-center">
-                    <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D]">
+                    <h2 className="text-4xl md:text-[66px] leading-tight text-[#00161D]">
                         {heading}
                     </h2>
                     <p className="max-w-[600px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
@@ -53,7 +54,12 @@ export default function Industry({ heading, description, cards }: Props) {
 
                         breakpoints={{
                             0: {
-                                slidesPerView: 2,
+                                slidesPerView: 1.2,
+                                spaceBetween: 10,
+                            },
+                            480: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 15,
                             },
 
                             768: {
@@ -71,9 +77,11 @@ export default function Industry({ heading, description, cards }: Props) {
                             <SwiperSlide key={card.id}>
                                 <article className="industry-card">
                                     <div className="flex h-20 w-20 items-center justify-center">
-                                        <img
+                                        <Image
                                             src={card.icon}
                                             alt={card.title}
+                                            width={64}
+                                            height={64}
                                             className="h-16 w-16 object-contain"
                                         />
                                     </div>

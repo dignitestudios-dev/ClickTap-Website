@@ -12,14 +12,16 @@ type Props = {
 
 export default function Hero({ tagline, title, description, ctaText }: Props) {
   return (
-    <section className="relative w-full min-h-[1000px] bg-white overflow-hidden  flex flex-col items-center">
+    <section className="relative w-full min-h-[600px] md:min-h-[1000px] bg-white overflow-hidden flex flex-col items-center">
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0">
-        <img
+      <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
+        <Image
           src="/images/grid-frame.png"
           alt="grid-frame"
-          className="h-[650px] w-full"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
@@ -51,14 +53,14 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
 
         {/* Main Title */}
         <div className="max-w-[1200px]">
-          <h1 className="text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[100px] font-bold text-[#00161D] leading-[1.1] md:leading-[0.95] tracking-tight">
             {title}
           </h1>
         </div>
 
         {/* Description */}
         <div className="max-w-[850px] mb-8">
-          <p className="text-[18px] text-[#00161D] leading-relaxed font-medium">
+          <p className="text-[16px] md:text-[18px] text-[#00161D] leading-relaxed font-medium">
             {description}
           </p>
         </div>
@@ -76,12 +78,13 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
         </button>
 
         {/* Hero Image */}
-        <div className="relative z-10">
+        <div className="relative z-10 w-full max-w-[300px] sm:max-w-[500px] md:max-w-[932px] px-4">
           <Image
             src="/images/mobile-app-dev-hero.png"
             alt="mobile-app-dev-hero.png"
             width={932}
             height={774}
+            className="w-full h-auto"
           />
         </div>
       </div>

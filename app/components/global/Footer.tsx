@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const exploreLinks = [
   "What We Offer", "Case Studies", "Blog & Insights", "Resources", "FAQs",
 ];
@@ -20,7 +22,7 @@ export default function Footer() {
 
       <div className="relative z-10 mx-auto ">
         {/* Main content row */}
-        <div className="flex flex-col rounded-b-[60px]  bg-[#00161D] h-[200px] w-full md:flex-row gap-16 justify-between p-5 px-20">
+        <div className="flex flex-col rounded-b-[40px] md:rounded-b-[60px] bg-[#00161D] h-auto md:h-[200px] w-full md:flex-row gap-10 md:gap-16 justify-between p-8 md:p-5 md:px-20">
           {/* Left: logo + social + newsletter */}
           <div className="flex flex-col justify-end  gap-10 w-full md:w-[369px]">
             {/* Social icons */}
@@ -30,7 +32,7 @@ export default function Footer() {
                   key={social.name}
                   aria-label={social.name}
                 >
-                  <img src={social.icon} width={100} height={100} className="w-10 h-10 object-contain" />
+                  <Image src={social.icon} alt={social.name} width={40} height={40} className="w-8 h-8 md:w-10 md:h-10 object-contain" />
                 </button>
               ))}
             </div>
@@ -45,7 +47,7 @@ export default function Footer() {
           </div>
 
           {/* Right: links columns */}
-          <div className="flex gap-16 md:gap-[120px] flex-wrap">
+          <div className="flex gap-10 md:gap-16 lg:gap-[120px] flex-wrap md:flex-nowrap">
             {/* Explore */}
             <div className="flex flex-col gap-4 mt-10 w-[107px]">
               <span className="text-white font-medium text-[16px]">Explore</span>
@@ -86,9 +88,9 @@ export default function Footer() {
 
 
         {/* Bottom bar */}
-        <div className="relative rounded-t-[60px] bg-[#00161D] h-[200px] gap-4 px-20">
+        <div className="relative rounded-t-[40px] md:rounded-t-[60px] bg-[#00161D] h-auto md:h-[200px] gap-8 px-6 sm:px-10 md:px-20 py-12 md:py-0 flex flex-col md:block">
 
-          <div className="flex items-center w-[370px] justify-between bg-white/10 rounded-full px-4 py-1.5">
+          <div className="flex items-center w-full md:w-[370px] justify-between bg-white/10 rounded-full px-4 py-1.5 md:mb-0">
             <span className="text-white/80 text-[16px]">Email Address</span>
             <button className="bg-white text-black font-medium text-[16px] rounded-full px-5 py-2">
               Show Now!
@@ -97,17 +99,17 @@ export default function Footer() {
           <div className="relative flex items-center">
             <div className="flex-grow absolute w-full top-10 border-t border-gray-400"></div>
           </div>
-          <div className=" flex justify-between items-center h-full py-5" >
+          <div className="flex flex-col lg:flex-row justify-between items-center h-full py-10 md:py-5 gap-8 lg:gap-0" >
 
             <div className="flex items-center">
-              <img src="/images/logo.png" width={100} height={100} className="w-30 h-30 object-contain" alt="" />
+              <Image src="/images/logo.png" width={120} height={40} className="w-30 h-30 object-contain" alt="Logo" />
             </div>
 
             <span className="text-white/80 text-[16px] text-center">
               Copyright © 2026 Clicktap. All Rights Reserved.
             </span>
 
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
               <a href="#" className="text-white/80 text-[16px] hover:text-white transition-colors">
                 Terms & Conditions
               </a>
