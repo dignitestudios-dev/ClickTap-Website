@@ -35,7 +35,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
           <Image src="/images/portfolio.png" alt="portfolio-bg-circle" width={300} height={300} className="absolute left-0 bottom-0 z-1 w-[200px] h-[200px] md:w-[300px] md:h-[300px]" />
         </div>
         {/* MOBILE + TABLET UI */}
-        <div className="block md:hidden w-full">
+        <div className=" block md:hidden w-full">
           <ul className="flex flex-col w-full gap-4 px-6">
 
             {/* Active Large Image */}
@@ -93,7 +93,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
         </div>
 
         {/* DESKTOP UI */}
-        <div className="hidden md:block">
+        <div className="hidden relative z-1 md:block">
           <ul className="flex px-6 md:px-12 lg:px-20 flex-row w-full gap-4 md:h-[500px] lg:h-[640px]">
             {projects.map((project, index) => {
               const isActive = activeItem === index;
