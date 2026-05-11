@@ -19,7 +19,7 @@ const navLinks: NavLink[] = [
       { label: "Web App Development", href: "/web-app-development" },
       { label: "AI App Development", href: "/ai-app-development" },
       { label: "Custom Software Development", href: "/custom-software-development" },
-      { label: "MVP", href: "/mvp-development-services" },
+      { label: "MVP Development Services", href: "/mvp-development-services" },
     ],
   },
   { label: "Case Studies", href: "#" },
