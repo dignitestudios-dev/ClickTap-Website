@@ -54,8 +54,8 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-40 blur-[100px] z-0 pointer-events-none" /> */}
 
           <Image
-            src="/images/consultant-hero.png"
-            alt="web-app-dev.png"
+            src="/images/consultant-hero.webp"
+            alt="web-app-dev.webp"
             width={861}
             height={800}
             className="relative mt-14 z-[1] mx-auto"

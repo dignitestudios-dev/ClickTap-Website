@@ -27,12 +27,12 @@ export const metadata: Metadata = {
 
 export default function UIUXDevelopment() {
     return (
-        <div className="flex flex-col min-h-screen  overflow-x-hidden">
+        <div className="flex flex-col min-h-screen main-body-section  overflow-x-hidden">
             {/* Navigation */}
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1 main-body-section w-full">
+            <main className="flex-1  w-full">
                 <div className="flex flex-col gap-16">
                     {/* Hero Section */}
                     <Hero

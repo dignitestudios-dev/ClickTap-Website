@@ -54,7 +54,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#01C2FE] opacity-40 blur-[100px] z-0 pointer-events-none" /> */}
 
           <Image
-            src="/images/mvp-hero.png"
+            src="/images/mvp-hero.webp"
             alt="web-app-dev.png"
             width={700}
             height={800}

@@ -80,7 +80,7 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
         {/* Hero Image */}
         <div className="relative z-10 w-full max-w-[300px] sm:max-w-[500px] md:max-w-[932px] px-4">
           <Image
-            src="/images/mobile-app-dev-hero.png"
+            src="/images/mobile-app-dev-hero.webp"
             alt="mobile-app-dev-hero.png"
             width={932}
             height={774}

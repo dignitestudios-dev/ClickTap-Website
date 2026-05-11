@@ -72,7 +72,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
         <div className="relative mt-10 md:mt-0 px-4">
           <Image src="/images/lead-mob-hero-overlay.png" alt="lead-mob-hero-overlay.png" width={1300} height={1300} className="w-full h-auto absolute bottom-0 left-1/2 -translate-x-1/2 opacity-50 md:opacity-100" />
           <Image
-            src="/images/hero-lead-mob.png"
+            src="/images/hero-lead-mob.webp"
             alt="leading-mobile-app.png"
             width={952}
             height={800}

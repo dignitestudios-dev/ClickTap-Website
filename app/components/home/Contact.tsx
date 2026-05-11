@@ -44,7 +44,7 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
 
                     {/* Phone mockup placeholder */}
                     <div className="relative w-full h-[420px] hidden md:flex items-center justify-center">
-                        <Image src="/images/hand-contact.png" alt="hand-contact" width={500} height={420} className="object-contain" />
+                        <Image src="/images/hand-contact.webp" alt="hand-contact" width={500} height={420} className="object-contain" />
                     </div>
                 </div>
 
