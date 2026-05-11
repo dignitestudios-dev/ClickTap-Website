@@ -586,7 +586,7 @@ export const MOBILE_APP_CONTENT = {
         cta: "Get Your Mobile App",
     },
     features: {
-        heading: "Essential Features Every Mobile App Needs Today",
+        heading: <>Essential Features Every <br /> <span className="font-bold" >Mobile App Needs Today</span></>,
         description: "A successful mobile app is built on features that make it simple and enjoyable to use because developing a mobile application is more than just creating interesting designs. The success of your mobile app depends on the core features it has. And every feature in your mobile application is supposed to enhance the user experience.",
         items: [
             "Secure Payments",

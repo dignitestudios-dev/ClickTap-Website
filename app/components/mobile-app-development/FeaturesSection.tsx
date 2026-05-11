@@ -20,9 +20,9 @@ type Props = {
 const FeaturesSection = ({ heading, description, features, ctaText }: Props) => {
     return (
         <section className="relative py-16 md:py-20 px-6 sm:px-10 md:px-20 overflow-hidden">
-            <div className='absolute left-0 top-4 h-[500px] md:h-[900px] w-full'>
+            {/* <div className='absolute  left-0 top-4 h-[500px] md:h-[400px] '>
                 <Image src="/images/feature-bg.png" fill className='object-contain opacity-30 md:opacity-100' alt="feature-bg" />
-            </div>
+            </div> */}
             <div className="mx-auto relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
