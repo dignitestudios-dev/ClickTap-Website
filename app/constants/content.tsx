@@ -1489,7 +1489,7 @@ export const AI_APP_CONTENT = {
     },
     about: {
         heading: <>Strategic AI <br /> <span className="font-bold">Development Services</span></>,
-        description: "With 10+ years of experience, ClickTab Solution has delivered over 300+ successful projects. We offer expert AI development services across the industries. Our group prioritizes solid execution, smart planning and trustworthy assistance. We help businesses improve user experiences, automated procedures and make the decision wiser. We take a straightforward, goal oriented approach. We guide you at every step with clear communication and practical solutions which deliver real value.",
+        description: "With 10+ years of experience, ClickTap Solution has delivered over 300+ successful projects. We offer expert AI development services across the industries. Our group prioritizes solid execution, smart planning and trustworthy assistance. We help businesses improve user experiences, automated procedures and make the decision wiser. We take a straightforward, goal oriented approach. We guide you at every step with clear communication and practical solutions which deliver real value.",
         content: "We deliver advanced AI focused solutions designed to help businesses automate processes, improve decision making and scale faster. Our team builds intelligent systems that are reliable, secure and tailored to the real business needs with the long term performance in mind.",
         cta: "Book a Free Call",
     },
@@ -2931,6 +2931,403 @@ export const WEB_APP_CONTENT = {
         heading: <>Get Your Project Started <br /> <span className="font-bold">With Us Today!</span></>,
         description: "It’s time you turn your vision into a fully functional web application! Share your requirements with our team and get a solution that fits your business goals.",
         cta: "Get an Expert team Today!",
+    },
+};
+
+export const UIUX_CONTENT = {
+    meta: {
+        title: "UI/UX Design Services for Modern Businesses",
+        description: "ClickTap Solution provides modern UI/UX design services that improve usability, user experience and engagement through clean digital interfaces daily.",
+    },
+    hero: {
+        tagline: "",
+        title: <>Creative UI/UX Services for Businesses</>,
+        description: "We create simple and modern UI/UX designs which improve user experience and help businesses build the stronger digital products with better engagement",
+        cta: "Get Free Consultation",
+    },
+    about: {
+        heading: <>Professional UI/UX Design <br /> <span className="font-bold">Services for Brands</span></>,
+        description: "ClickTap Solution has over 10 years of experience in creating modern UI/UX designs for businesses across different industries. We have completed more than 300 successful projects with a strong focus on the usability and the user experience.",
+        content: "Our team designs clean interfaces which are simple, easy to use and visually attractive. We understand how users interact with the digital products and create designs that improve engagement and satisfaction. From wireframes to complete interface systems we keep the process smooth and transparent. Our goal is to create UI/UX designs which help businesses build trust, improve experience and achieve long term growth.",
+        cta: "Book a Free Call",
+    },
+    services: {
+        heading: <>Custom Mobile App Development <span className="font-bold">Services</span></>,
+        description: "We provide complete UI/UX design services for businesses which want simple, clean and user friendly digital experiences. Better usability, smooth navigation and modern interface design which enable straightforward user interaction are our constant priorities. Every design choice is made with the goal of increasing the user happiness and clarity across all the digital platforms.",
+        items: [
+            {
+                title: "User Research & Analysis",
+                description: "Before beginning the design process, we research user behaviour and understand actual demands. This also allows us to create UI/UX design which increase the user experience and meet the user expectations.",
+                icon: "/images/service-1.png",
+            },
+            {
+                title: "Wireframing & Prototyping",
+                description: "We create simple Wireframes and interactive prototypes which show how the product will look and function before final design development designs.",
+                icon: "/images/service-2.png",
+            },
+            {
+                title: "UI Design & Visual Identity",
+                description: "We design modern and clean the user interfaces through the strong visual identity. Our main focus is on the colors, typography and layout to balance the user experience.",
+                icon: "/images/service-3.png",
+            },
+            {
+                title: "Responsive Web & Mobile Design",
+                description: "We build the design which works quite smoothly on all of the screen sizes. Additionally, this guarantees that customers have a consistent experience across desktop, tablet and mobile platforms.",
+                icon: "/images/service-4.png",
+            },
+            {
+                title: "Testing & Improving Usability",
+                description: "We test designs with the real user behavior to find issues. We modify layouts and interactions for better usability and simpler navigation.",
+                icon: "/images/service-1.png",
+            },          
+            {
+                title: "UI Kits & Design Systems",
+                description: "We create reusable design systems and UI kits which keep the product consistent and make future updates faster and easier.",
+                icon: "/images/service-4.png",
+            },
+        ],
+        cta: "Let’s Get Started",
+    },
+    whyChooseUs: {
+        heading: <>Why Choose ClickTap <br /> <span className="font-bold">Design Team</span></>,
+        description: "We design simple and effective UI/UX solutions that improve user experience, increase engagement and help businesses build clear and easy to use digital products with strong visual consistency and practical design thinking.",
+        items: [
+            {
+                id: 1,
+                title: "Deep Design Experience",
+                description: "Our team brings strong experience in creating UI UX designs for different industries. We understand user behavior well and turn complex ideas into simple, clear and effective interfaces.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 2,
+                title: "Structured Design Process",
+                description: "We follow a clear step by step design process that keeps work quite organized. It also helps businesses stay informed and ensure smooth delivery without confusion or delays.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 3,
+                title: "Clear Communication Flow",
+                description: "We keep communication clear and easy to understand during every stage Clients always Know project updates clearly which helps build trust and avoids misunderstandings in design decisions.",
+                icon: "/images/why-3.png",
+            },
+            {
+                id: 4,
+                title: "Scalable Design Systems",
+                description: "We build flexible UI systems that grow with your product. This helps businesses maintain consistency while easily adding new features or screens in future updates.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 5,
+                title: "Reliable Ongoing Support",
+                description: "We support businesses even after project completion. Our team helps improve designs, fix usability issues and make continuous updates for better user experience over time.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 6,
+                title: "Skilled Creative Talent",
+                description: "Our designers combine creativity with practical thinking. We focus on clean layouts, strong usability and user friendly interfaces that help businesses achieve better digital results.",
+                icon: "/images/why-3.png",
+            },
+        ],
+        cta: "Get Free Consultation",
+    },
+    techStack: {
+        heading: <>Technologies We Use for <br /> <span className="font-bold">UI/UX Design:</span></>,
+        description: "We use modern design tools and technologies to create clean scalable and responsive UI/UX experiences. Our workflow helps improve collaboration faster revisions and better design consistency for businesses across different industries and digital platforms.",
+        tabs: {
+            "Frontend": [
+                { title: "Figma", icon: "SiFigma" },
+                { title: "Adobe xD", icon: "SiAdobexd" },
+                { title: "Sketch", icon: "SiSketch" },
+            ],
+            "Backend": [
+                { title: "Zeplin", icon: "SiZeplin" },
+                { title: "Avocode", icon: "SiAvocode" },
+            ],
+            "Mobile": [
+                { title: "Flutter", icon: "FaFlutter" },
+                { title: "React Native", icon: "FaReact" },
+            ],
+            "Database": [
+                { title: "Notion", icon: "SiNotion" },
+                { title: "Airtable", icon: "SiAirtable" },
+            ],
+        }
+    },
+    industry: {
+        heading: <>UI/UX Design for <br /> <span className="font-bold">Different Industries</span></>,
+        description: "We create UI/UX designs for businesses from different industries with a strong focus on the usability, simple navigation and better customer experience.",
+        items: [
+            {
+                id: 1,
+                title: "Healthcare",
+                description: "Simple healthcare interfaces that improve patient experience, appointment management and overall accessibility for users.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 2,
+                title: "Social Media",
+                description: "Interactive social media designs that improve engagement content browsing and user communication experiences.",
+                icon: "/images/social.png",
+            },
+            {
+                id: 3,
+                title: "Dating & Matchmaking",
+                description: "Easy to use matchmaking interfaces with clear navigation and better user interaction experiences.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 4,
+                title: "Travel & Hospitality",
+                description: "Modern travel booking designs that simplify reservations browning and customer interaction across platforms.",
+                icon: "/images/travel.png",
+            },
+            {
+                id: 5,
+                title: "Ecommerce",
+                description: "User friendly shopping experiences with clean product browsing and simple checkout process designs.",
+                icon: "/images/health.png",
+            },
+            {
+                id: 6,
+                title: "Real Estate",
+                description: "Property browning interfaces with the modern layouts, smart filtering and easy navigation for users.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 7,
+                title: "Healthcare",
+                description: "Simple healthcare interfaces that improve patient experience, appointment management and overall accessibility for users.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 8,
+                title: "Social Media",
+                description: "Interactive social media designs that improve engagement content browsing and user communication experiences.",
+                icon: "/images/social.png",
+            },
+            {
+                id: 9,
+                title: "Dating & Matchmaking",
+                description: "Easy to use matchmaking interfaces with clear navigation and better user interaction experiences.",
+                icon: "/images/healthcare.png",
+            },
+        ],
+        cta: "Discuss Your Idea",
+    },
+    process: {
+        heading: <>Our Clear UI/UX <br /> <span className="font-bold">Workflow Process</span></>,
+        description: "We follow a simple and transparent UI/UX design workflow that keeps every step clear for clients. Our process ensures smooth planning, better collaboration and structured delivery from start to final design with full clarity and no confusion.",
+        items: [
+            {
+                number: "01",
+                title: "Discovery Plan",
+                description: "We understand your business goals, user needs and project expectations. This helps us create a strong foundation for the UI/UX design process with a clear direction and better planning outcomes.",
+            },
+            {
+                number: "02",
+                title: "UI UX Design",
+                description: "We create wireframes, user flows and visual concepts. This stage focuses on building simple, clean and user friendly interface design which improve user experience.",
+            },
+            {
+                number: "03",
+                title: "System Build",
+                description: "We convert approved designs into structured systems. This ensures the consistency in layout, design elements and interaction patterns for smooth and scalable user experience across platforms.",
+            },
+            {
+                number: "04",
+                title: "Quality Testing",
+                description: "We test usability, design flow and user interactions. This also helps identify issues early and improve the overall experience to ensure smooth navigation and better user satisfaction.",
+            },
+            {
+                number: "05",
+                title: "Sprint Review",
+                description: "We present design progress in stages to the clients. This allows feedback at every step and ensures the final UI UX design matches expectation and business goals clearly.",
+            },
+            {
+                number: "06",
+                title: "Final Launch",
+                description: "We prepare final design files and deliver the complete UI UX assets. This also ensures smooth handover and easy implementation without any confusion or the missing design elements.",
+            },
+            {
+                number: "07",
+                title: "Growth Support",
+                description: "We continue supporting design improvements after delivery. Our team helps optimize usability, refine interfaces and enhance the user experience based on real user feedback and behavior.",
+            },
+        ],
+    },
+    advantages: {
+        heading: <>Benefits of Professional <br /> <span className="font-bold">UI UX Design</span></>,
+        description: "Digital products with good UI/UX design are simple to use and perceive. It increases the user experience when engaging with a system or website. Simple layout, clear navigation and better structure help users complete tasks without confusion and build trust with your business over time.",
+        items: [
+            {
+                title: "Better Usability",
+                description: "Simple layouts and clear structure help users understand everything quickly. This also reduces confusion and makes digital products easier to use without any of the effort.",
+            },
+            {
+                title: "Higher Engagement",
+                description: "Good UI UX keeps users interested by making interactions smooth and enjoyable. This increases time spent and overall user activity.",
+            },
+            {
+                title: "Strong Trust",
+                description: "Clean and professional design builds trust in your brand. Users feel more confident when the interface looks organized and reliable.",
+            },
+            {
+                title: "Easy Navigation",
+                description: "Clear navigation helps users find what they need without the frustration. This improves overall experiences and reduces the drop off rates.",
+            },
+            {
+                title: "Faster Actions",
+                description: "Well structured design helps users complete tasks quickly. Simple floes reduce efforts and improves overall speed of interaction.",
+            },
+            {
+                title: "Better Growth",
+                description: "Good UI UX design supports business growth by improving satisfaction and encouraging users to return and interact more often.",
+            },
+            {
+                title: "Better Usability",
+                description: "Simple layouts and clear structure help users understand everything quickly. This also reduces confusion and makes digital products easier to use without any of the effort.",
+            },
+            {
+                title: "Higher Engagement",
+                description: "Good UI UX keeps users interested by making interactions smooth and enjoyable. This increases time spent and overall user activity.",
+            },
+            {
+                title: "Strong Trust",
+                description: "Clean and professional design builds trust in your brand. Users feel more confident when the interface looks organized and reliable.",
+            },
+        ],
+        cta: "Improve Your UI UX Design",
+    },
+    features: {
+        heading: <>Must Have Features in <br /> <span className="font-bold">UI/UX Design</span></>,
+        description: "Good UI/UX design should include important features that improve usability accessibility and overall customer interaction across digital platforms and interfaces.",
+        items: [
+            "Simple User Navigation",
+            "Responsive Layout Navigation",
+            "Interactive Prototypes",
+            "User Friendly Dashboard",
+            "Clean Visual Hierarchy",
+            "Fast Loading Interface",
+            "Consistent Design System",
+            "Smooth User Flow",
+        ],
+        cta: "Get Feature Recommendations",
+    },
+    portfolio: {
+        heading: <>UI/UX Design Case <br /> <span className="font-bold">Studies</span></>,
+        description: "Our UI/UX design projects helped businesses improve user experience, simplify navigation and increase customer engagement through modern interfaces and practical design strategies made for different industries and business requirements.",
+        items: [
+            {
+                img: "/images/slider-card-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-4.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-5.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-6.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+        ],
+        ctaTitle: <>Ready to improve <br /> <span className="font-bold">User Experience?</span></>,
+        ctaDescription: "Let our UI/UX design experts create clean and user friendly interfaces that help your businesses deliver a better digital experiences and stronger customer engagement.",
+        ctaButton: "Request UI/UX Quote",
+    },
+    testimonials: {
+        heading: <>What Clients Say About <br /> <span className="font-bold">ClickTap Solution</span></>,
+        description: "Our clients consistently trust us for delivering high quality UI/UX designs with reliable performance and smooth user experience.",
+        items: [
+            {
+                quote: "ClickTap Solution created a clean and modern interface for our platform. The design became much easier for users to understand and navigate.",
+                author: "Michael Carter",
+                role: "Product Manager, Nexa Digital",
+            },
+            {
+                quote: "Their UI UX team listened carefully to our ideas and delivered exactly what we wanted. The whole process stayed simple and organized.",
+                author: "Sarah William",
+                role: "Founder, Bright Edge",
+            },
+            {
+                quote: "We noticed better customer engagement after the redesign. Users were spending more time on our platform because everything felt easier to use.",
+                author: "Daniel Roberts",
+                role: "Marketing Lead, Urban Shift",
+            },
+            {
+                quote: "The team maintained clear communication during every stage of the project. They delivered high quality designs without making the process complicated for us.",
+                author: "Emma Johnson",
+                role: "Operations Head, Pixel Craft",
+            },
+            {
+                quote: "Our old interface looked outdated and confusing. ClickTap Solution redesigned everything into a much cleaner and more professional experience for our users.",
+                author: "James Walker",
+                role: "CEO, NovaSphere",
+            },
+            {
+                quote: "We really liked how simple and user friendly the final design looked. Their designers understood both usability and modern design perfectly.",
+                author: "Olivia Turner",
+                role: "Creative Director, Elevate Media",
+            },
+            {
+                quote: "ClickTap Solution improved our platform usability through practical design changes. Our customers immediately noticed the smooth navigation and better layout structure.",
+                author: "Ryan Mitchell",
+                role: "Co Founder, Core Vision",
+            },
+        ],
+        cta: "Work With Our Expert Team",
+    },
+    faqs: {
+        heading: <>Frequently Asked <br /> <span className="font-bold">Questions</span></>,
+        items: [
+            {
+                question: "Do you offer full service UI/UX design?",
+                answer: "Yes. We provide complete UI/ux design services including user research wireframes prototypes interface design usability testing and design improvements. In order to increase customer satisfaction and navigation engagement across a range of digital platforms and business domains, our company focuses on developing straightforward, user-friendly experiences.",
+            },
+            {
+                question: "What is the duration of a UI/UX design project?",
+                answer: "The project’s size, design complexity and overall business requirements all affect the timeline. Most UI/UX design projects take several weeks to complete, including research wireframes, graphic design adjustments and final delivery. With the careful preparation and communication the process is kept timely, effective and well organised.",
+            },
+            {
+                question: "Do you redesign existing interfaces?",
+                answer: "Yes. We redesign the old or confusing interfaces to improve the usability navigation and the overall visual appearance. Our team studies the current design problems and creates the modern user friendly layouts which help businesses deliver smooth experiences, improve engagement and make the digital platforms easier for users to understand.",
+            },
+            {
+                question: "Do you create responsive UI/UX designs?",
+                answer: "Yes. We create responsive UI/UX designs which work smoothly across desktop tables and mobile devices. Our goal is to maintain consistent user experience and usability on every screen size while ensuring layouts remain quite clear, fast user friendly and visually balanced for all the users.",
+            },
+            {
+                question: "Can you help improve user experience?",
+                answer: "Yes. Our team also studies the user behavior usability issues and improves interface structure to create smoother digital experiences. We focus on simple navigation, clear layouts and better interaction flow which helps users complete tasks easily while improving overall satisfaction engagement levels significantly.",
+            },
+            {
+                question: "What industries do you work with?",
+                answer: "We work with businesses from healthcare ecommerce, real estate, social media, education and many other industries. Our UI/UX design solutions are created according to the different business goals users expectations and the customer behavior to ensure the better usability engagement and overall digital experience quality.",
+            },
+        ],
+    },
+    contact: {
+        heading: <>Discuss Your UI/UX  <span className="font-bold">Design Project</span></>,
+        description: "Share your project idea with our UI/UX design team. We create simple modern and user friendly interfaces which improve usability customer engagement and overall digital experience for businesses.",
+        cta: "Request UI/UX Consulting Quote",
     },
 };
 
