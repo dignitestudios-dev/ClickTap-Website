@@ -9,38 +9,22 @@ const interTight = Inter_Tight({
     display: "swap",
 });
 
-export const metadata: Metadata = {
-    title: "CTS Timeline Demo | Frame the World",
-    description: "Demo layout — CTS timeline section (Figma)",
+type WorkFlowProps = {
+    title: React.ReactNode;
+    description?: string;
+    items: {
+        title: string;
+        description: string;
+    }[];
 };
 
-const STEPS = [
-    {
-        title: "Discovery",
-        body: "We align on goals, constraints, and success metrics so the build matches your product vision from day one.",
-        lineClass: "min-h-[280px] md:min-h-[337px]",
-    },
-    {
-        title: "Design",
-        body: "Wireframes and UI systems are iterated quickly with your feedback until the experience feels production-ready.",
-        lineClass: "min-h-[120px] md:min-h-[150px]",
-    },
-    {
-        title: "Build",
-        body: "Engineering ships in tight loops with reviews, automated checks, and transparent progress you can follow.",
-        lineClass: "min-h-[220px] md:min-h-[280px]",
-    },
-    {
-        title: "Launch",
-        body: "Hardening, analytics, and rollout plans go live with monitoring so users get a stable first impression.",
-        lineClass: "min-h-[160px] md:min-h-[200px]",
-    },
-    {
-        title: "Scale",
-        body: "Performance, accessibility, and iteration cycles keep the product fast and dependable as usage grows.",
-        lineClass: "min-h-[260px] md:min-h-[320px]",
-    },
-] as const;
+const LINE_CLASSES = [
+    "min-h-[280px] md:min-h-[337px]",
+    "min-h-[120px] md:min-h-[150px]",
+    "min-h-[220px] md:min-h-[280px]",
+    "min-h-[160px] md:min-h-[200px]",
+    "min-h-[260px] md:min-h-[320px]",
+];
 
 /** ~1280px row: 4px bars + 3px gap → 182 segments */
 const DOT_COUNT = 182;
@@ -56,21 +40,11 @@ function StepIcon() {
     );
 }
 
-export default function WorkFlow() {
+export default function WorkFlow({ title, description, items }: WorkFlowProps) {
     return (
         <main
             className={`${interTight.className} relative isolate min-h-screen w-full overflow-hidden bg-white text-[#00161D]`}
         >
-            {/* ANIMATIONS */}
-            {/* @keyframes lineFill {
-                0% {
-                    background-position: 0% 0%;
-                }
-                100% {
-                    background-position: 0% 200%;
-                }
-            } */}
-            {/* ANIMATIONS */}
             <style jsx>{`
     @keyframes pulseFill {
         0% {
@@ -110,16 +84,6 @@ export default function WorkFlow() {
         animation: verticalMove 2.5s linear infinite;
     }
 
-    // @keyframes verticalMove {
-    //     0% {
-    //         transform: translateY(-100%);
-    //     }
-
-    //     100% {
-    //         transform: translateY(100%);
-    //     }
-    // }
-
     /* bottom bars sequential animation */
     .flow-bar {
         background: #5e2f08;
@@ -129,13 +93,20 @@ export default function WorkFlow() {
 `}</style>
 
             <section className="mx-auto flex max-w-[1440px] flex-col items-center gap-16 px-6 py-12 md:gap-[100px] md:px-20 md:py-[50px]">
-                <h1 className="max-w-[800px] text-center text-[clamp(2rem,6vw,4.125rem)] font-bold capitalize leading-[0.98] tracking-tight text-[#00161D]">
-                    Workflow
-                </h1>
+                <div className="flex flex-col items-center gap-4">
+                    <h1 className="max-w-[800px] text-center text-[clamp(2rem,6vw,4.125rem)] font-bold capitalize leading-[0.98] tracking-tight text-[#00161D]">
+                        {title}
+                    </h1>
+                    {description && (
+                        <p className="text-[#00161D] text-[15px] max-w-4xl text-center font-normal leading-relaxed">
+                            {description}
+                        </p>
+                    )}
+                </div>
 
                 <div className="relative flex w-full max-w-[1280px] flex-col">
                     <div className="flex flex-1 flex-col gap-12 md:min-h-[547px] md:flex-row md:items-end md:justify-center md:gap-0">
-                        {STEPS.map((step, index) => (
+                        {items.map((step, index) => (
                             <div
                                 key={step.title}
                                 className="flex flex-1 flex-col items-center gap-5 md:max-w-[256px] md:min-w-0"
@@ -146,13 +117,13 @@ export default function WorkFlow() {
                                     </h2>
 
                                     <p className="text-sm font-normal leading-[22px] text-[#00161D]">
-                                        {step.body}
+                                        {step.description}
                                     </p>
                                 </div>
 
                                 {/* Animated Vertical Line */}
                                 <div
-                                    className={`animated-line w-1 shrink-0 rounded ${step.lineClass}`}
+                                    className={`animated-line w-1 shrink-0 rounded ${LINE_CLASSES[index % LINE_CLASSES.length]}`}
                                     aria-hidden
                                 />
 
@@ -169,7 +140,6 @@ export default function WorkFlow() {
                         ))}
                     </div>
 
-                    {/* Animated Bottom Progress Bar */}
                     {/* Animated Bottom Progress Bar */}
                     <div className="relative -mt-14 w-full overflow-hidden pb-2 md:pt-6">
                         <div className="flex w-full flex-wrap justify-center gap-[3px]">

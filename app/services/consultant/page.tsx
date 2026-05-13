@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import Navbar from "../../components/global/Navbar";
 import Hero from "../../components/services-components/Consultant/Hero";
-import { MVP_CONTENT } from "../../constants/content";
+import { MOBILE_APP_CONSULTING_CONTENT } from "../../constants/content";
 
 // Dynamic imports
 const Footer = dynamic(() => import("../../components/global/Footer"), { ssr: true });
@@ -21,36 +21,36 @@ const QuoteSection = dynamic(() => import("../../components/services-components/
 const ServicesSection = dynamic(() => import("../../components/services-components/mobile-app-development/ServiceSection"), { ssr: true });
 
 export const metadata: Metadata = {
-    title: MVP_CONTENT.meta.title,
-    description: MVP_CONTENT.meta.description,
+    title: MOBILE_APP_CONSULTING_CONTENT.meta.title,
+    description: MOBILE_APP_CONSULTING_CONTENT.meta.description,
 };
 
 export default function ConsultantPage() {
     return (
-        <div className="flex flex-col min-h-screen  overflow-x-hidden">
+        <div className="flex flex-col min-h-screen main-body-section overflow-x-hidden">
             {/* Navigation */}
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1 main-body-section w-full">
+            <main className="flex-1  w-full">
                 <div className="flex flex-col gap-16">
                     {/* Hero Section */}
                     <Hero
-                        tagline={MVP_CONTENT.hero.tagline}
-                        title={MVP_CONTENT.hero.title}
-                        cta={MVP_CONTENT.hero.cta}
-                        description={MVP_CONTENT.hero.description}
+                        tagline={MOBILE_APP_CONSULTING_CONTENT.hero.tagline}
+                        title={MOBILE_APP_CONSULTING_CONTENT.hero.title}
+                        cta={MOBILE_APP_CONSULTING_CONTENT.hero.cta}
+                        description={MOBILE_APP_CONSULTING_CONTENT.hero.description}
                     />
 
                     {/* About Section */}
                     <AboutSection
                         tagline=""
-                        heading={MVP_CONTENT.about.heading}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.about.heading}
                         paragraphs={[
-                            MVP_CONTENT.about.description,
-                            MVP_CONTENT.about.content
+                            MOBILE_APP_CONSULTING_CONTENT.about.description,
+                            MOBILE_APP_CONSULTING_CONTENT.about.content
                         ]}
-                        ctaText={MVP_CONTENT.about.cta}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.about.cta}
                         stats={[
                             { value: "300+", label: "Projects Delivered", color: 'blue', image: "/images/about-2.png" },
                             { value: "10+", label: "Years Experience", color: 'light', image: "/images/about-3.png" },
@@ -60,44 +60,44 @@ export default function ConsultantPage() {
 
                     {/* Services Section */}
                     <ServicesSection
-                        heading={MVP_CONTENT.services.heading}
-                        description={MVP_CONTENT.services.description}
-                        services={MVP_CONTENT.services.items}
-                        ctaText={MVP_CONTENT.services.cta}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.services.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.services.description}
+                        services={MOBILE_APP_CONSULTING_CONTENT.services.items}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.services.cta}
                     />
 
                     {/* Why Choose Us Section */}
                     <WhyChooseUs
-                        heading={MVP_CONTENT.whyChooseUs.heading}
-                        para={MVP_CONTENT.whyChooseUs.description}
-                        items={MVP_CONTENT.whyChooseUs.items}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.heading}
+                        para={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.description}
+                        items={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.items}
                     />
 
                     {/* Tech Stack Section */}
                     <TechStack
-                        heading={MVP_CONTENT.techStack.heading}
-                        description={MVP_CONTENT.techStack.description}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.techStack.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.techStack.description}
                     />
 
                     {/* Industry */}
                     <Industry
-                        heading={MVP_CONTENT.industry.heading}
-                        description={MVP_CONTENT.industry.description}
-                        cards={MVP_CONTENT.industry.items}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.industry.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.industry.description}
+                        cards={MOBILE_APP_CONSULTING_CONTENT.industry.items}
                     />
 
                     {/* Process Section */}
                     <Process
-                        heading={MVP_CONTENT.process.heading}
-                        description={MVP_CONTENT.process.description}
-                        steps={MVP_CONTENT.process.items}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.process.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.process.description}
+                        steps={MOBILE_APP_CONSULTING_CONTENT.process.items}
                     />
 
                     {/* Benefits Section */}
                     <BenefitsSection
-                        heading={MVP_CONTENT.advantages.heading}
-                        description={MVP_CONTENT.advantages.description}
-                        cards={MVP_CONTENT.advantages.items.map((item, idx) => ({
+                        heading={MOBILE_APP_CONSULTING_CONTENT.advantages.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.advantages.description}
+                        cards={MOBILE_APP_CONSULTING_CONTENT.advantages.items.map((item, idx) => ({
                             id: idx + 1,
                             title: item.title,
                             description: item.description,
@@ -107,9 +107,9 @@ export default function ConsultantPage() {
 
                     {/* Features Section */}
                     <FeaturesSection
-                        heading={MVP_CONTENT.features.heading}
-                        description={MVP_CONTENT.features.description}
-                        features={MVP_CONTENT.features.items.map((title, idx) => ({
+                        heading={MOBILE_APP_CONSULTING_CONTENT.features.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.features.description}
+                        features={MOBILE_APP_CONSULTING_CONTENT.features.items.map((title, idx) => ({
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`
                         }))}
@@ -117,23 +117,23 @@ export default function ConsultantPage() {
 
                     {/* Portfolio Section */}
                     <Portfolio
-                        heading={MVP_CONTENT.portfolio.heading}
-                        description={MVP_CONTENT.portfolio.description}
-                        projects={MVP_CONTENT.portfolio.items}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.portfolio.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.portfolio.description}
+                        projects={MOBILE_APP_CONSULTING_CONTENT.portfolio.items}
                     />
 
                     {/* Quote Section */}
                     <QuoteSection
-                        heading={MVP_CONTENT.portfolio.ctaTitle}
-                        description={MVP_CONTENT.portfolio.ctaDescription}
-                        ctaText={MVP_CONTENT.portfolio.ctaButton}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.portfolio.ctaTitle}
+                        description={MOBILE_APP_CONSULTING_CONTENT.portfolio.ctaDescription}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.portfolio.ctaButton}
                     />
 
                     {/* Testimonials */}
                     <TestimonialPage
-                        heading={MVP_CONTENT.testimonials.heading}
-                        description={MVP_CONTENT.testimonials.description}
-                        testimonials={MVP_CONTENT.testimonials.items.map((item, idx) => ({
+                        heading={MOBILE_APP_CONSULTING_CONTENT.testimonials.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.testimonials.description}
+                        testimonials={MOBILE_APP_CONSULTING_CONTENT.testimonials.items.map((item, idx) => ({
                             id: idx + 1,
                             name: item.author,
                             role: item.role,
@@ -147,16 +147,16 @@ export default function ConsultantPage() {
 
                     {/* FAQs */}
                     <FAQs
-                        heading={MVP_CONTENT.faqs.heading}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.faqs.heading}
                         description=""
-                        faqs={MVP_CONTENT.faqs.items}
+                        faqs={MOBILE_APP_CONSULTING_CONTENT.faqs.items}
                     />
 
                     {/* Contact Section */}
                     <Contact
-                        heading={MVP_CONTENT.contact.heading}
-                        description={MVP_CONTENT.contact.description}
-                        ctaText={MVP_CONTENT.contact.cta}
+                        heading={MOBILE_APP_CONSULTING_CONTENT.contact.heading}
+                        description={MOBILE_APP_CONSULTING_CONTENT.contact.description}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.contact.cta}
                         fieldLabel="App Idea"
                     />
                 </div>

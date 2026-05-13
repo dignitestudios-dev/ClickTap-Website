@@ -2,11 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const solutions = [
+type SolutionsSectionProps = {
+    title: React.ReactNode;
+    items: {
+        title: string;
+        description: string;
+    }[];
+};
+
+const styles = [
     {
-        title: "Social-First Experience",
-        description:
-            "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
         activeBg: "bg-[#5E2F08]",
         inactiveBg: "bg-[#2a1100]",
         titleColor: "text-white",
@@ -14,9 +19,6 @@ const solutions = [
         borderColor: "border-[#6b3310]",
     },
     {
-        title: "Social-First Experience",
-        description:
-            "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
         activeBg: "bg-[#714927]",
         inactiveBg: "bg-[#3d2008]",
         titleColor: "text-white",
@@ -24,9 +26,6 @@ const solutions = [
         borderColor: "border-[#8b4f20]",
     },
     {
-        title: "AR-Based Pet Filters",
-        description:
-            "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
         activeBg: "bg-[#7D5B3F]",
         inactiveBg: "bg-[#4d2d0f]",
         titleColor: "text-white",
@@ -34,9 +33,6 @@ const solutions = [
         borderColor: "border-[#a06530]",
     },
     {
-        title: "Gamification Via Admin Controls",
-        description:
-            "We implemented a reward-based system through daily and weekly challenges managed via the admin panel to drive user engagement and retention.",
         activeBg: "bg-[#D5B482]",
         inactiveBg: "bg-[#7a6038]",
         titleColor: "text-[#714927]",
@@ -45,7 +41,7 @@ const solutions = [
     },
 ];
 
-export default function SolutionsSection() {
+export default function SolutionsSection({ title, items }: SolutionsSectionProps) {
     const [activeIndex, setActiveIndex] = useState<number>(-1);
     const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -77,16 +73,17 @@ export default function SolutionsSection() {
     }, []);
 
     return (
-        <section className="min-h-screen bg-white flex flex-col items-center justify-center py-20 px-20">
+        <section className="min-h-screen bg-white flex flex-col items-center justify-center py-20 px-4 md:px-20">
             {/* Heading */}
-            <h2 className="text-[66px] md:text-5xl font-light text-[#1a1a1a] mb-12 text-center tracking-tight">
-                The <span className="font-bold">Solutions</span> We Offered
+            <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-light text-[#1a1a1a] mb-12 text-center tracking-tight">
+                {title}
             </h2>
 
             {/* Cards Container */}
             <div className="w-full rounded-[16px] overflow-hidden border border-[#6b3310]/20 shadow-xl">
-                {solutions.map((solution, index) => {
+                {items.map((solution, index) => {
                     const isActive = index <= activeIndex;
+                    const style = styles[index % styles.length];
 
                     return (
                         <div
@@ -96,11 +93,11 @@ export default function SolutionsSection() {
                             }}
                             className={[
                                 "relative flex flex-col h-auto md:h-[160px]  md:flex-row items-start md:items-start ",
-                                "px-4 md:px-8 py-5 ",
+                                "px-4 md:px-8 py-5 gap-8 ",
                                 "transition-all duration-700 ease-in-out",
-                                isActive ? solution.activeBg : solution.inactiveBg,
-                                index < solutions.length - 1
-                                    ? `border-b ${solution.borderColor}`
+                                isActive ? style.activeBg : style.inactiveBg,
+                                index < items.length - 1
+                                    ? `border-b ${style.borderColor}`
                                     : "",
                             ].join(" ")}
                             style={{
@@ -121,7 +118,7 @@ export default function SolutionsSection() {
                                 className={[
                                     "w-full md:w-[38%] shrink-0 text-xl md:text-[36px] font-bold leading-snug",
                                     "transition-all duration-700",
-                                    solution.titleColor,
+                                    style.titleColor,
                                     isActive
                                         ? "opacity-100 translate-x-0"
                                         : "opacity-40 -translate-x-3",
@@ -136,7 +133,7 @@ export default function SolutionsSection() {
                                 className={[
                                     "text-sm md:text-[14px]  md:w-[368px] leading-relaxed",
                                     "transition-all duration-700",
-                                    solution.descColor,
+                                    style.descColor,
                                     isActive
                                         ? "opacity-100 translate-x-0"
                                         : "opacity-30 translate-x-3",

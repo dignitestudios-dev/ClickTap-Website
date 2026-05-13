@@ -2979,7 +2979,7 @@ export const UIUX_CONTENT = {
                 title: "Testing & Improving Usability",
                 description: "We test designs with the real user behavior to find issues. We modify layouts and interactions for better usability and simpler navigation.",
                 icon: "/images/service-1.png",
-            },          
+            },
             {
                 title: "UI Kits & Design Systems",
                 description: "We create reusable design systems and UI kits which keep the product consistent and make future updates faster and easier.",
@@ -3705,6 +3705,505 @@ export const MVP_CONTENT = {
     contact: {
         heading: <>Start your MVP journey <br /> <span className="font-bold">with ClickTap Solutions.</span></>,
         description: "Start your MVP journey with ClickTap Solutions. Share your idea and get expert guidance to turn it into a real product with a clear roadmap and structured through the development process.",
+        cta: "Request Mobile App Consulting Quote",
+    },
+};
+
+export const CHUBBS_ARMY_CONTENT = {
+    meta: {
+        title: "Chubbs Army - Pet Social App by Clicktap Solutions",
+        description: "Clicktap Solutions built Chubbs Army, a pet social platform to bring community engagement, services, events together through a unified digital ecosystem.",
+    },
+    hero: {
+        tagline: "Chubbs Army Case Study",
+        title: "Chubbs Army Case Study",
+        description: "Chubbs Army is a mobile first social platform that’s specifically built for pet lovers. Our team thoughtfully designed this platform to bring pet owners, service providers and event organizers together in one connected digital platform. It is more than just a traditional social media platform. It’s the type of platform that actually makes it possible for users to share moments and enjoy gamified interactions that keep the community active. The vision was to create a space that feels both structured and lively. A place where community connection and genuine pet services exist side by side in a natural way. At Clicktap Solutions, we were proud to take ownership of the full journey. We delivered it successfully over six months.",
+        cta: "Request Mobile App Consulting Quote",
+        details: [
+            { label: "Timeline", value: "6–8 months of execution" },
+            { label: "Sector", value: "Pet Social Media Platform" },
+            { label: "Scope", value: "UI and UX Design, App Development, Branding, Admin Panel Development" },
+        ]
+    },
+    vision: {
+        title: <>The <span className="font-bold">Core Vision</span></>,
+        description: "The idea behind Chubbs Army was to design a dedicated social platform for pet lovers where community connection and actual value could coexist in the same space. At its core, the product was created to help pet owners connect and share experiences with a community. Also while opening clear monetization pathways for businesses and event organizers operating within the ecosystem. The challenge was to bring multiple layers together: social interaction, service discovery, event participation, e-commerce capabilities, gamification. All without compromising simplicity. The positioning focused on creating a platform that feels familiar like a social network but purposeful enough to support structured engagement.",
+    },
+    research: {
+        title: <>Research and <span className="font-bold">Insights</span></>,
+        description: "This phase focuses on understanding the actual needs behind the product before any design or development begins. It combined market analysis with user behavior insights to identify gaps in existing social platforms and evaluate opportunities within the pet community space.",
+        marketResearch: [
+            "Analyzed pet content trends across major social platforms",
+            "Identified strong engagement but weak monetization structures",
+            "Studied gaps in niche community based digital platforms"
+        ],
+        userResearch: [
+            "Observed pet owners’ content sharing and engagement behavior",
+            "Evaluated expectations of service providers and event organizers",
+            "Identified need for structured discovery and interaction flows",
+            "Studied friction points in existing social media experiences"
+        ],
+        keyInsight: "While pet content grows on mainstream platforms, there is no unified platform that combines community interaction and monetization in a structured way."
+    },
+    challenges: {
+        title: <>The <span className="font-bold">Core Challenges</span></>,
+        items: [
+            {
+                title: "Multi-User Platform Complexity",
+                description: "The platform needed to support three distinct user types: pet owners, service providers, event organizers. Each has different permissions and expectations. The core structural challenge was to design interactions across these roles without creating confusion.",
+            },
+            {
+                title: "Feature-Rich Yet Lightweight Experience",
+                description: "The critical part was balancing advanced features like social feeds, events, subscriptions and monetization layers. All while maintaining smooth performance. Also avoiding feature overload with a rich experience was a major challenge.",
+            },
+            {
+                title: "User Engagement",
+                description: "The essential part was to retain user attention and bring consistent interaction as a new social platform. The key focus was on building mechanisms that naturally encouraged repeat usage throughout the product design process.",
+            },
+            {
+                title: "Scalability for Future Growth",
+                description: "The system needed to be built with long term scalability in mind. It was supposed to support increasing users, content volume and transactions. To avoid limitations during future expansion, designing a flexible backend and modular architecture was essential.",
+            },
+        ]
+    },
+    solutions: {
+        title: <>The <span className="font-bold">Solutions We Offered</span></>,
+        items: [
+            {
+                title: "Role Based User Architecture",
+                description: "ClickTap Solutions designed separate yet connected journeys for pet owners, service providers and event organizers to address multi user complexity. Each role had custom options while ensuring clarity and maintaining a unified platform experience.",
+            },
+            {
+                title: "Balanced Feature Integration",
+                description: "The team of developers carefully structured social feeds, events, subscriptions, monetization. All into a clean modular system. This offers better and smoother performance while keeping the experience rich and intuitive.",
+            },
+            {
+                title: "Engagement Driven Experience Design",
+                description: "Our team introduced natural interaction loops through content engagement and platform wide participation triggers. These systems encouraged users to return regularly without feeling forced or overwhelmed.",
+            },
+            {
+                title: "Scalable System Architecture",
+                description: "The team built a modular backend structureTo support future growth. To ensure the platform could handle increasing users, content volume and transactions without performance issues.",
+            },
+        ]
+    },
+    workflow: {
+        title: <>The <span className="font-bold">Development Flow</span></>,
+        description: "The Workflow section outlines the step by step process followed to create Chubbs Army from scratch. It highlights how each phase was structured to ensure alignment across design and product goals.",
+        items: [
+            {
+                title: "1. Discovery and Definition",
+                description: "We started by understanding the overall business goals. This phase focused on creating a long term product vision.",
+            },
+            {
+                title: "2. UX Planning & Structure",
+                description: "We create complete user journeys. The focus was on simplifying multi role interactions and creating a structured flow.",
+            },
+            {
+                title: "3. UI Design and Prototyping",
+                description: "We transformed flows into a clean user interface. Interactive prototypes were created to validate usability across all modules.",
+            },
+            {
+                title: "4. Development & Integration",
+                description: "The platform was developed using a scalable architecture across mobile applications and backend systems.",
+            },
+            {
+                title: "5. Testing & Launch",
+                description: "The platform went through a detailed testing to identify bugs before launch. Final optimizations lead to a smooth app rollout.",
+            },
+        ]
+    },
+    wireframes: {
+        title: <>UX and <span className="font-bold">Wireframes</span></>,
+        description: "The UX and wireframing phase focused on translating the vision into a user friendly experience. The team prioritized simplicity across a multi functional platform. Ensuring that services, social activities and events could coexist in one space without creating confusion for users. The wireframes below show how these structures came to life visually.",
+    },
+    branding: {
+        title: <>Brand & <span className="font-bold">Visual Direction</span></>,
+        description: "The brand identity for Chubbs Army was created to feel warm, playful yet deeply connected to the pet loving community it was built for. The visual direction focused on balancing energy and usability. We introduced both light and dark modes to improve accessibility and to reduce visual fatigue. It actually gives users a more comfortable experience across different environments.",
+    },
+    techStack: {
+        title: <>The <span className="font-bold">Technical Foundation</span></>,
+        description: "The technology stack behind Chubbs Army was carefully planned to support performance and long term platform growth. We used cross platform mobile development to create a consistent experience across both iOS and Android. Alongside the mobile applications, a web based admin panel was developed to provide centralized control. AR integration was implemented to further enhance user interaction and content creation.",
+    },
+    outcomes: {
+        title: <>Product <span className="font-bold"><br /> Outcomes & <br /> Growth</span></>,
+        description: "The platform successfully established a strong and active niche community of pet lovers. It brought together owners, service providers and event organizers in one connected platform. It not only encouraged consistent user engagement but also created genuine value for businesses by making it possible for the service providers to directly sell and offer their services within the app. Additionally, the integration of subscriptions and event based features laid the groundwork for a monetization model. Overall, the product delivered a balanced platform. It positions Chubbs Army as a sustainable platform ready for feature evolution.",
+        stats: [
+            { label: "registered users", value: "600+" },
+            { label: "downloads on iOS (App Store)", value: "200+" },
+            { label: "downloads on Android (Play Store)", value: "100+" },
+        ]
+    },
+    successStory: {
+        title: <>Your Next <span className="font-bold">Success Story Starts Here</span></>,
+        description: "If you’re building something beyond a basic app, we’re here for you. At Clicktap Solutions, every product we build is designed not just to go live, but to make an impact in the real world.",
+    }
+};
+
+export const MOBILE_APP_CONSULTING_CONTENT = {
+    meta: {
+        title: "Expert Mobile App Consulting Services | ClickTap",
+        description: "Get expert mobile app consulting services from ClickTap Solution. We help businesses with planning feature guidance and scalable support.",
+    },
+    hero: {
+        tagline: "",
+        title: <>Expert Mobile App <br /> Consulting Services</>,
+        description: "We help you shape the right mobile app idea with a clear strategy and expert consulting. Our team guides you at every step so you avoid mistakes and make confident decisions of your product.",
+        cta: "Get Free Consultation",
+    },
+    about: {
+        heading: <>Mobile App Consulting for <span className="font-bold">Smarter Product Decisions</span></>,
+        description: "ClickTap Solution brings 10+ years of experience in mobile app consulting across different industries. We have guided 300+ projects with clear planning , technical advice and product strategy support. Our focus is to help businesses understand what to build, why to build and how to plan it in the right way.",
+        content: "We work with startups and enterprises to reduce confusion and improve decision making. Our consulting approach is simple, practical and focused on real business outcomes.",
+        cta: "Book a Free Call",
+    },
+    services: {
+        heading: <>Custom Mobile App <span className="font-bold">Consulting Services</span></>,
+        description: "We provide complete mobile app consulting support to help you shape your product in the right direction with clear planning and simple guidance. Our focus is to understand your idea deeply and turn it into a structured roadmap. We help you avoid confusion by giving expert advice on features, user flow and long term product thinking. Every suggestion is based on real experience and business needs so your product starts with a strong clarity and direction.",
+        items: [
+            {
+                title: "Mobile App Strategy",
+                description: "We help you turn your idea into a clear and structured plan. This includes defining goals, understanding user needs and shaping a strong direction before anything starts. Our focus is to make your idea simple, practical and easy to move forward with confidence.",
+                icon: "/images/service-1.png",
+            },
+            {
+                title: "Mobile App Design & Development Consulting",
+                description: "We guide you on how your mobile app should look and function in a simple and user friendly way. We help you to understand the layout, user flow and feature structure so your idea becomes easy to use and easy to understand for the users.",
+                icon: "/images/service-2.png",
+            },
+            {
+                title: "Mobile App Audit & Performance Optimization",
+                description: "We review your existing idea or plan and identify what can be improved. This also helps you remove confusion, fix weak points and improve overall structure. Our main goal is to make your product idea quite more strong, clear and efficient.",
+                icon: "/images/service-3.png",
+            },
+            // {
+            //     title: "Custom Pricing to Fit Your Goals",
+            //     description: "We offer flexible consulting plans based on your project size and needs. Whether your idea is small or large, we also guide you with the right level of support so you only pay for what truly fits your business requirements.",
+            //     icon: "/images/service-4.png",
+            // },
+        ],
+        cta: "Let’s Get Started",
+    },
+    whyChooseUs: {
+        heading: <>Trusted Mobile App <span className="font-bold">Consulting Experts</span></>,
+        description: "We provide clear and practical mobile app consulting that help businesses make better decisions for their product. Clarity, direction and long term planning are our constant priorities. We make your idea easy to understand so you may process it without any difficulty. Every suggestion we give is based on real experience and business understanding.",
+        items: [
+            {
+                id: 1,
+                title: "Strong Industry Experience",
+                description: "We have strong experience in mobile app consulting across different industries. We assist companies in refining their concepts through systematic planning and structured thought. Because of our experience, we can point you in the proper direction immediately away.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 2,
+                title: "Simple Communication Style",
+                description: "We keep everything simple and easy to understand. We avoid technical confusion and explain every step in basic language so you always stay clear about your product direction and decisions.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 3,
+                title: "Clear Product Planning",
+                description: "We provide step by step planning assistance for your mobile app concept. Our goals is to make your idea simple to understand and implement by clearing up any confusion and providing you with a clear structure.",
+                icon: "/images/why-3.png",
+            },
+            {
+                id: 4,
+                title: "Scalable Thinking Approach",
+                description: "We guide you in building ideas that can grow in the future. Our consulting ensures your product is not just for today but also ready for long term business expansion.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 5,
+                title: "Reliable Support System",
+                description: "We stay involved during your planning journey and help you improve your decisions whenever needed. Our support makes sure you always have guidance when you feel stuck.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 6,
+                title: "Business First Strategy",
+                description: "We always focus on your business goals before anything else. Every suggestion is made to support your growth, clarity and long term success in the market.",
+                icon: "/images/why-3.png",
+            },
+        ],
+        cta: "Get Free Consultation",
+    },
+    techStack: {
+        heading: <>Modern Tools Used in <span className="font-bold">Mobile App Consulting</span></>,
+        description: "We use modern and industry knowledge to guide better decisions for mobile app planning. Our consulting covers different technologies so you can choose the right direction based on your business needs and future goals.",
+    },
+    industry: {
+        heading: <>Mobile App Consulting for <br /> <span className="font-bold">Different Industries</span></>,
+        description: "We provide mobile app consulting for different industries to help businesses shape clear ideas, improve planning and make better product decisions with simple and practical guidance.",
+        items: [
+            {
+                id: 1,
+                title: "Healthcare",
+                description: "We guide healthcare businesses in planning secure, simple and user friendly mobile app ideas which improve patient experience and service accessibility.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 2,
+                title: "Social Media",
+                description: "We help social platforms shape engaging and scalable product ideas which improve user interaction and long term audience growth strategies.",
+                icon: "/images/social.png",
+            },
+            {
+                id: 3,
+                title: "Dating & Matchmaking",
+                description: "We provide consulting for safe and well structured matchmaking app ideas focused on user trust, comfort and smooth interaction experience.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 4,
+                title: "Travel & Hospitality",
+                description: "We help travel businesses plan easy and smooth mobile app ideas which improve customer experience and simplify service accessibility.",
+                icon: "/images/travel.png",
+            },
+            {
+                id: 5,
+                title: "Ecommerce",
+                description: "We guide online businesses in building clear mobile app strategies which improve customer journey, usability and long term business growth.",
+                icon: "/images/health.png",
+            },
+            {
+                id: 6,
+                title: "Real Estate",
+                description: "We help real estate businesses structure simple and effective mobile app ideas which make property search and user interaction easier.",
+                icon: "/images/healthcare.png",
+            },
+             {
+                id: 7,
+                title: "Healthcare",
+                description: "We guide healthcare businesses in planning secure, simple and user friendly mobile app ideas which improve patient experience and service accessibility.",
+                icon: "/images/healthcare.png",
+            },
+            {
+                id: 8,
+                title: "Social Media",
+                description: "We help social platforms shape engaging and scalable product ideas which improve user interaction and long term audience growth strategies.",
+                icon: "/images/social.png",
+            },
+            {
+                id: 9,
+                title: "Dating & Matchmaking",
+                description: "We provide consulting for safe and well structured matchmaking app ideas focused on user trust, comfort and smooth interaction experience.",
+                icon: "/images/healthcare.png",
+            },
+        ],
+        cta: "Discuss Your Idea",
+    },
+    process: {
+        heading: <>Clear And Simple <span className="font-bold">Consulting Workflow</span></>,
+        description: "We follow a clear and step based consulting process to help businesses understand every stage of their mobile app planning journey. Our workflow keeps communication simple and transparent so you always know what is happening. Each step is designed to reduce confusion, improve decision making and create a strong direction for your product idea from the start to finish.",
+        items: [
+            {
+                number: "01",
+                title: "Discovery & Planning",
+                description: "We begin by understanding your business goals, target users and product expectations. This helps us to create a clear consulting direction and identify the right strategy for your mobile app idea and the long term planning.",
+            },
+            {
+                number: "02",
+                title: "UI/UX Design",
+                description: "We guide you on the user experience layout structure and simple navigation ideas. Our consulting focuses on creating smooth and user-friendly experiences which make your mobile app easier to understand and use.",
+            },
+            {
+                number: "03",
+                title: "Development Guidance",
+                description: "We provide consultation on suitable technologies, product structure and technical planning. Our goal is to help you choose the right direction which supports scalability, flexibility and better long term product performance.",
+            },
+            {
+                number: "04",
+                title: "Testing & QA",
+                description: "We review your product planning to identify gaps, usability concerns and possible performance issues. This helps improve clarity, reduce problems and create a more reliable mobile app strategy.",
+            },
+            {
+                number: "05",
+                title: "Sprint Demos",
+                description: "We conduct regular review sessions to discuss progress ideas and improvements. This keeps the consulting process transparent and helps businesses stay aligned with their product goals and expectations",
+            },
+            {
+                number: "06",
+                title: "Deployment Planning",
+                description: "We guide you on launch preparation platform requirements and rollout planning. Our consulting ensures your product direction stays organized, clear and ready for the next stage confidently.",
+            },
+            {
+                number: "07",
+                title: "Support & Scaling",
+                description: "We continue providing consulting support after planning stages to help businesses improve ideas, refine strategies and prepare for future product growth without confusion or uncertainty.",
+            },
+        ],
+    },
+    advantages: {
+        heading: <>Why Mobile App <br /> <span className="font-bold">Consulting Matters</span></>,
+        description: "Mobile app consulting helps you to avoid confusion and make smarter product decisions. It gives clarity before you invest time or money. It also helps you to understand your idea better and plan it in a structured way for long term success.",
+        items: [
+            {
+                title: "Clear Product Direction",
+                description: "We help you define exactly what your mobile app should focus on with clear structured consulting guidance.",
+            },
+            {
+                title: "Better Decision Making",
+                description: "We guide you in selecting the right features and strategy so your product moves in the correct direction confidently.",
+            },
+            {
+                title: "Reduced Mistakes",
+                description: "We help you avoid poor planning errors and wasted effort by giving clear consulting based direction early.",
+            },
+            {
+                title: "Strong Planning",
+                description: "We create a simple structured plan for your mobile app idea so everything stays organized and clear.",
+            },
+            {
+                title: "Future Ready Thinking",
+                description: "We guide you in planning long term growth so your idea stays scalable and adaptable for future needs.",
+            },
+            {
+                title: "Improved Business Clarity",
+                description: "We simplify your idea and remove confusion so you can clearly understand your product direction and purpose.",
+            },
+             {
+                title: "Clear Product Direction",
+                description: "We help you define exactly what your mobile app should focus on with clear structured consulting guidance.",
+            },
+            {
+                title: "Better Decision Making",
+                description: "We guide you in selecting the right features and strategy so your product moves in the correct direction confidently.",
+            },
+            {
+                title: "Reduced Mistakes",
+                description: "We help you avoid poor planning errors and wasted effort by giving clear consulting based direction early.",
+            },
+        ],
+        cta: "Build a Scalable mobile app strategy",
+    },
+    features: {
+        heading: <>What We Focus On in <br /> <span className="font-bold">Mobile App Consulting</span></>,
+        description: "Mobile app consulting helps businesses understand which features are important for the long term success and better user experience. Our team guides you in choosing practical and scalable features which match your business goals and user expectations. We help you avoid unnecessary complexity and focus on features that improve usability performance and future growth planning for your mobile app idea",
+        items: [
+            "Secure Login & Authentication",
+            "Push Notifications",
+            "Offline Access",
+            "AI & Voice Support",
+            "Analytics & Reporting",
+            "User Personalization",
+            "Multi Platform Guidance",
+            "Integration Planning",
+        ],
+        cta: "Get Feature Recommendations",
+    },
+    portfolio: {
+        heading: <>Real Mobile App <span className="font-bold">Consulting Impact</span></>,
+        description: "We have helped many businesses turn unclear ideas into structured mobile app strategies. Our consulting approach helps reduce confusion and improves clarity so businesses can move forward with confidence and better direction.",
+        items: [
+            {
+                img: "/images/slider-card-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-4.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-5.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+            {
+                img: "/images/slider-card-6.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+            },
+        ],
+        ctaTitle: <>Start Your Mobile App <span className="font-bold">Consulting Journey</span></>,
+        ctaDescription: "Get expert guidance to shape your mobile app idea into a clear and structured plan. We help you make better decisions before you start building anything.",
+        ctaButton: "Request Mobile App Quote",
+    },
+    testimonials: {
+        heading: <>What Clients Say About <span className="font-bold">Our Consulting</span></>,
+        description: "Our clients trust ClickTap Solution for expert mobile app consulting and strategic guidance that helps them build successful digital products.",
+        items: [
+            {
+                quote: "ClickTap Solution gave us clear direction from the beginning. Their consulting process helped us to organize our product idea properly and avoid unnecessary confusion during planning",
+                author: "Michael Carter",
+                role: "Product Manager, NexaSoft Solutions",
+            },
+            {
+                quote: "Their team explained every stage in simple words. We finally understood how to shape our mobile app idea into a practical business solution",
+                author: "Jennifer Adams",
+                role: "Founder, BrightPath Digital",
+            },
+            {
+                quote: "We needed guidance for feature planning and scalability. Their consulting support helped us make smarter product decisions with complete confidence",
+                author: "Daniel Brooks",
+                role: "Operations Director, Elevate Hub",
+            },
+            {
+                quote: "Very professional team with strong consulting experience. Their recommendations helped us improve our product strategy and long term planning significantly",
+                author: "Emily Roberts",
+                role: "CEO, Visionary Labs",
+            },
+            {
+                quote: "The communication stayed clear and transparent throughout the process. Their consulting support made our mobile app planning much easier to understand",
+                author: "Ryan Mitchell",
+                role: "Co Founder, CoreBridge Technologies",
+            },
+            {
+                quote: "ClickTap Solution Helped us simplify our product structure and focus on what actually mattered for users and business growth",
+                author: "Olivia Turner",
+                role: "Marketing Head, NovaSphere Inc",
+            },
+            {
+                quote: "Our team gained complete clarity after working with their consultants. Every discussion was practical simple and focused on business goals",
+                author: "Ethan Walker",
+                role: "Strategy Lead, PixelForge Systems",
+            },
+        ],
+        cta: "Work With Our Expert Team",
+    },
+    faqs: {
+        heading: <>Common Questions About <span className="font-bold">Mobile App Consulting</span></>,
+        items: [
+            {
+                question: "Do you provide mobile app consulting services?",
+                answer: "Yes. We provide complete mobile app consulting services to help business plan better ideas with clarity and confidence. Our team guides you through strategy feature planning, user experience and technical direction so you can make better decisions before moving forward with your product idea.",
+            },
+            {
+                question: "How long does consulting take?",
+                answer: "The consulting timeline depends on your project goals, ideas complexity and planning requirements. Some businesses need only a few consulting sessions while others require ongoing guidance for strategy refinement, feature planning and long term product direction to achieve better clarity and stronger decision making.",
+            },
+            {
+                question: "Can you help with feature planning?",
+                answer: "Yes. We help businesses understand which features are important for their mobile app goals and which features should be avoided. Our consulting approach focuses on simplicity , usability and long term value so your product stays focused practical and easier for users to understand.",
+            },
+            {
+                question: "Do you support startups?",
+                answer: "Yes. We work closely with startups and help them shape their mobile app ideas from the beginning. Our consulting services provide clear planning, structured thinking and practical guidance so startups can avoid confusion and move forward with stronger confidence and better product understanding.",
+            },
+            {
+                question: "Do you help after consulting?",
+                answer: "Yes. We continue supporting businesses after the consultation process whenever additional guidance is needed. Our team helps refine product ideas, improve planning strategies and provide clarity on future decisions so businesses can continue moving forward with confidence and long term direction.",
+            },
+            {
+                question: "Why is consulting important?",
+                answer: "Mobile app consulting helps businesses avoid costly mistakes and unclear planning before investing resources into their ideas. It provides clarity, direction and structured thinking so businesses can make smarter decisions, understand their goals better and create stronger strategies for future product success.",
+            },
+        ],
+    },
+    contact: {
+        heading: <>Get Mobile App <span className="font-bold">Consulting Support</span></>,
+        description: "Share your idea and we help you turn it into a clear and structured plan",
         cta: "Request Mobile App Consulting Quote",
     },
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface CaseStudy {
@@ -13,12 +14,13 @@ interface CaseStudy {
     accentColor: string;
     image: string;
     mockBg: string;
+    link?: string;
 }
 
 const caseStudies: CaseStudy[] = [
     {
         id: 1,
-        title: "Harmonious Learning",
+        title: "Chubb's Army",
         subtitle: "EdTech · Mobile App",
         description: "A calm, creative audio world for kids.",
         tag: "UX Design",
@@ -26,6 +28,7 @@ const caseStudies: CaseStudy[] = [
         accentColor: "#f97316",
         image: "/images/chubbss.webp",
         mockBg: "bg-gradient-to-br from-purple-900 via-indigo-800 to-slate-900",
+        link: "/case-studies/chubss-army"
     },
     {
         id: 2,
@@ -176,8 +179,8 @@ export default function CaseStudiesCard() {
                                         </p>
                                     </div>
 
-                                    <a
-                                        href="#"
+                                    <Link
+                                        href={study?.link || "#"}
                                         className="flex-shrink-0 ml-4 flex items-center gap-2 text-sm font-semibold group/btn"
                                         style={{ color: study.accentColor }}
                                     >
@@ -191,7 +194,7 @@ export default function CaseStudiesCard() {
                                         >
                                             →
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </article>
                         );

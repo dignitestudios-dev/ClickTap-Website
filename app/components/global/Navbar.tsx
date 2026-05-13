@@ -21,9 +21,10 @@ const navLinks: NavLink[] = [
       { label: "Custom Software Development", href: "/services/custom-software-development" },
       { label: "MVP Development Services", href: "/services/mvp-development-services" },
       { label: "UI/UX Design", href: "/services/ui-ux" },
+      { label: "Consultant", href: "/services/consultant" },
     ],
   },
-  { label: "Case Studies", href: "#" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "About Us", href: "#about" },
 ];
 
@@ -32,7 +33,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <nav className="w-full h-[70px] md:h-[91px] flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-20 sticky top-0 z-50 ">
+    <nav className="w-full h-[70px] md:h-[91px] flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-20  top-0 z-50 ">
       {/* Logo */}
       <Link href="/" className="flex items-center">
         <Image src="/images/logo.png" width={160} height={40} className="h-7 sm:h-8 md:h-10 w-auto" alt="Logo" priority />

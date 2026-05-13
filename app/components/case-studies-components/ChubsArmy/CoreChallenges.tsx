@@ -1,41 +1,26 @@
 import Image from "next/image";
 
-const data = [
-    {
-        "icon": "/images/challenge-1.png",
-        "title": "Market Research",
-        "description": "The platform needed to support three distinct user types: pet owners, service providers, event organizers. Each has different permissions and expectations. The core structural challenge was to design interactions across these roles without creating confusion."
-    },
-    {
-        "icon": "/images/challenge-2.png",
-        "title": "Market Research",
-        "description": "The platform needed to support three distinct user types: pet owners, service providers, event organizers. Each has different permissions and expectations. The core structural challenge was to design interactions across these roles without creating confusion."
-    },
-    {
-        "icon": "/images/challenge-3.png",
-        "title": "Market Research",
-        "description": "The platform needed to support three distinct user types: pet owners, service providers, event organizers. Each has different permissions and expectations. The core structural challenge was to design interactions across these roles without creating confusion."
-    },
-    {
-        "icon": "/images/challenge-4.png",
-        "title": "Market Research",
-        "description": "The platform needed to support three distinct user types: pet owners, service providers, event organizers. Each has different permissions and expectations. The core structural challenge was to design interactions across these roles without creating confusion."
-    }
-];
+type CoreChallengesProps = {
+    title: React.ReactNode;
+    items: {
+        title: string;
+        description: string;
+        icon?: string;
+    }[];
+};
 
-
-export default function CoreChallenges() {
+export default function CoreChallenges({ title, items }: CoreChallengesProps) {
     return (
-        <section className="py-10 px-20">
+        <section className="py-10 px-4 md:px-20">
             <div className="flex w-full flex-col items-center justify-center gap-3 sm:gap-4">
-                <h2 className="text-[66px] font-normal text-center capitalize text-[#00161D]" >The  <span className="font-bold">Core</span> Challenges</h2>
+                <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-normal text-center capitalize text-[#00161D]" >{title}</h2>
             </div>
-            <div className="grid grid-cols-4 gap-10 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10">
                 {
-                    data.map((item, idx) => (
-                        <article className="p-5 bg-[#FFFDF9] rounded-[16px] relative overflow-hidden">
+                    items.map((item, idx) => (
+                        <article key={idx} className="p-5 bg-[#FFFDF9] rounded-[16px] relative overflow-hidden">
                             <div className="flex flex-col gap-4 text-center">
-                                <Image src={item.icon} alt={item.title} width={111} height={111} className="mx-auto" />
+                                <Image src={item.icon || `/images/challenge-${idx + 1}.png`} alt={item.title} width={111} height={111} className="mx-auto" />
                                 <h3 className="text-[24px] mt-10 font-medium leading-tight text-[#714927] relative z-10">
                                     {item.title}
                                 </h3>
@@ -51,4 +36,4 @@ export default function CoreChallenges() {
             </div>
         </section>
     )
-}
+}

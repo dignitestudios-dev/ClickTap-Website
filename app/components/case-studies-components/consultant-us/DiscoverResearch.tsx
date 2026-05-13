@@ -14,9 +14,10 @@ type DiscoverResearchProps = {
 type CardProps = {
     title: string;
     items: string[];
+    bgImg: string;
 };
 
-function TiltCard({ title, items }: CardProps) {
+function TiltCard({ title, items, bgImg }: CardProps) {
     const rotateX = useMotionValue(0);
     const rotateY = useMotionValue(0);
 
@@ -63,11 +64,11 @@ function TiltCard({ title, items }: CardProps) {
                 rotateY: smoothRotateY,
                 transformStyle: "preserve-3d",
             }}
-            className="relative w-full max-w-[635px] h-[400px] md:h-[450px] rounded-[16px] overflow-hidden cursor-pointer"
+            className="relative w-[645px] h-[450px] rounded-[16px] overflow-hidden cursor-pointer"
         >
             {/* Background */}
             <Image
-                src="/images/discovery-bg.webp"
+                src={bgImg}
                 alt="discovery-bg"
                 fill
                 className="object-cover rounded-[16px]"
@@ -122,9 +123,9 @@ export default function DiscoverResearch({
     userResearch,
 }: DiscoverResearchProps) {
     return (
-        <section className="py-10 px-4 md:px-20 perspective-[2000px]">
+        <section className="py-10 px-20 perspective-[2000px]">
             <div className="flex w-full flex-col items-center justify-center gap-3 sm:gap-4">
-                <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-normal text-center capitalize text-[#00161D]">
+                <h2 className="text-[66px] font-normal text-center capitalize text-[#00161D]">
                     {title}
                 </h2>
 
@@ -133,14 +134,16 @@ export default function DiscoverResearch({
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
+            <div className="flex items-center justify-center gap-3 mt-10">
                 <TiltCard
                     title="Market Research:"
+                    bgImg="/images/consultant-research2.png"
                     items={marketResearch}
                 />
 
                 <TiltCard
                     title="User Research:"
+                    bgImg="/images/consultant-research.png"
                     items={userResearch}
                 />
             </div>

@@ -7,10 +7,11 @@ type Props = {
   title: string | React.ReactNode;
   description: string;
   cta: any;
+  details?: { label: string; value: string }[];
   children?: React.ReactNode;
 }
 
-export default function Hero({ title, description }: Props) {
+export default function Hero({ title, description, details }: Props) {
   return (
     <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
       {/* Hero Content */}
@@ -19,9 +20,7 @@ export default function Hero({ title, description }: Props) {
         {/* Main Title */}
         <div className="max-w-[1200px] ">
           <h1 className="text-3xl md:text-5xl lg:text-[80px] font-bold text-[#00161D] leading-[0.95] tracking-tight">
-
             {title}
-
           </h1>
         </div>
 
@@ -32,8 +31,20 @@ export default function Hero({ title, description }: Props) {
           </p>
         </div>
 
+        {/* Project Details (Timeline, Sector, Scope) */}
+        {/* {details && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-[1100px] my-8 py-8 border-y border-gray-100">
+            {details.map((detail, index) => (
+              <div key={index} className="flex flex-col gap-2">
+                <span className="text-[12px] font-bold uppercase tracking-widest text-[#7D4F28]">{detail.label}</span>
+                <span className="text-[15px] font-medium text-[#00161D]">{detail.value}</span>
+              </div>
+            ))}
+          </div>
+        )} */}
+
         {/* CTA Button */}
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-4">
           <button className="h-[48px] w-[231px] group bg-[#7D4F28] justify-center text-white rounded-[16px] flex items-center gap-2 cursor-pointer transition-all active:scale-95 shadow-lg">
             <Image src="/images/apple.webp" alt="Arrow Right" width={16} height={16} />
             <span className="font-medium text-[16px]">Download for Iphone</span>
@@ -42,13 +53,12 @@ export default function Hero({ title, description }: Props) {
             <Image src="/images/andriod.webp" alt="Arrow Right" width={16} height={16} />
             <span className="font-medium text-[16px]">Download for Android</span>
           </button>
-
         </div>
         <div className="relative">
           <Image
             src="/images/chubs-army-hero.webp"
             alt="web-app-dev.png"
-            width={1200}
+            width={1300}
             height={600}
             className="relative z-[1] mt-4 mx-auto"
           />
