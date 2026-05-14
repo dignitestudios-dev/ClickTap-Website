@@ -23,6 +23,19 @@ export const metadata: Metadata = {
 };
 
 export default function AiAppDevelopment() {
+    const wireframes = [
+        { id: 12 },
+        { id: 13 },
+        { id: 14 },
+        { id: 8 },
+        { id: 9 },
+        { id: 10 },
+        { id: 11 },
+        { id: 12 },
+        { id: 13 },
+        { id: 14 },
+    ];
+
     return (
         <div className="flex flex-col min-h-screen overflow-x-hidden">
             {/* Navigation */}
@@ -90,6 +103,7 @@ export default function AiAppDevelopment() {
                         title={CHUBBS_ARMY_CONTENT.outcomes.title}
                         description={CHUBBS_ARMY_CONTENT.outcomes.description}
                         stats={CHUBBS_ARMY_CONTENT.outcomes.stats}
+                        wireframes={wireframes}                      
                     />
 
                     <div className="px-4 md:px-20 py-10">

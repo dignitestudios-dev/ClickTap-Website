@@ -92,13 +92,13 @@ export const MarqueeSection = ({ images, speed = 45, dragSensitivity = 0.08 }: M
                     {[...images, ...images].map((src, index) => (
                         <div
                             key={index}
-                            className="mx-1 shrink-0 cursor-pointer transition-transform duration-300 hover:scale-105"
+                            className="mx-1  shrink-0 cursor-pointer transition-transform duration-300 hover:scale-105"
                         >
                             <img
                                 src={src}
                                 alt="marquee item"
                                 draggable={false}
-                                className="h-[346px] w-[160px]"
+                                className="h-[346px] w-[200px]"
                             />
                         </div>
                     ))}

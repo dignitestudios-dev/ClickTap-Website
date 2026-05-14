@@ -2,14 +2,15 @@ import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import Navbar from "../../components/global/Navbar";
 import { CONSULTANT_US_CONTENT } from "../../constants/content";
-import KeyChallenges from "@/app/components/case-studies-components/consultant-us/KeyChallenges";
-import WorkflowSection from "@/app/components/case-studies-components/consultant-us/WorkflowSection";
 import ProductOutcomes from "@/app/components/case-studies-components/ChubsArmy/ProductOutComes";
 // Dynamic imports
 const Footer = dynamic(() => import("../../components/global/Footer"), { ssr: true });
-const Hero = dynamic(() => import("@/app/components/case-studies-components/consultant-us/Hero"), { ssr: true });
-const SolutionSelection = dynamic(() => import("@/app/components/case-studies-components/consultant-us/SolutionSelection"), { ssr: true });
-const DiscoverResearch = dynamic(() => import("@/app/components/case-studies-components/consultant-us/DiscoverResearch"), { ssr: true });
+const Hero = dynamic(() => import("@/app/components/case-studies-components/love-stored/Hero"), { ssr: true });
+const VisionBehind = dynamic(() => import("@/app/components/case-studies-components/love-stored/vision-behind"), { ssr: true });
+const DiscoverResearch = dynamic(() => import("@/app/components/case-studies-components/love-stored/DiscoveryResearch"), { ssr: true });
+const KeyChallenges = dynamic(() => import("@/app/components/case-studies-components/love-stored/KeyChallenges"), { ssr: true });
+const TheSolution = dynamic(() => import("@/app/components/case-studies-components/love-stored/TheSolution"), { ssr: true });
+const WorkflowTimeline = dynamic(() => import("@/app/components/case-studies-components/love-stored/WorkflowTimeline"), { ssr: true });
 const UxWireframingSection = dynamic(() => import("@/app/components/case-studies-components/consultant-us/UxWireframingSection"), { ssr: true });
 const BrandIdentity = dynamic(() => import("@/app/components/case-studies-components/consultant-us/BrandIdentity"), { ssr: true });
 const TechStackMarquee = dynamic(() => import("@/app/components/case-studies-components/consultant-us/TechStackMarquee"), { ssr: true });
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     description: CONSULTANT_US_CONTENT.meta.description,
 };
 
-export default function ConsultantUsPage() {
+export default function LoveRestoredPage() {
     const wireframes = [
         { id: 15 },
         { id: 16 },
@@ -52,7 +53,7 @@ export default function ConsultantUsPage() {
                         description={CONSULTANT_US_CONTENT.hero.description}
                         details={projectDetails}
                     />
-                    <DiscoverResearch
+                    <VisionBehind
                         title={CONSULTANT_US_CONTENT.research.title}
                         description={CONSULTANT_US_CONTENT.research.description}
                         marketResearch={CONSULTANT_US_CONTENT.research.marketResearch}
@@ -60,9 +61,10 @@ export default function ConsultantUsPage() {
                         keyInsight={CONSULTANT_US_CONTENT.research.keyInsight}
 
                     />
+                    <DiscoverResearch />
                     <KeyChallenges />
-                    <SolutionSelection />
-                    <WorkflowSection />
+                    <TheSolution />
+                    <WorkflowTimeline />
                     <UxWireframingSection />
                     <BrandIdentity />
                     <TechStackMarquee />

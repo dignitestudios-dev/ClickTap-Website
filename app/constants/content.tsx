@@ -3829,9 +3829,9 @@ export const CHUBBS_ARMY_CONTENT = {
         title: <>Product <span className="font-bold"><br /> Outcomes & <br /> Growth</span></>,
         description: "The platform successfully established a strong and active niche community of pet lovers. It brought together owners, service providers and event organizers in one connected platform. It not only encouraged consistent user engagement but also created genuine value for businesses by making it possible for the service providers to directly sell and offer their services within the app. Additionally, the integration of subscriptions and event based features laid the groundwork for a monetization model. Overall, the product delivered a balanced platform. It positions Chubbs Army as a sustainable platform ready for feature evolution.",
         stats: [
-            { label: "registered users", value: "600+" },
-            { label: "downloads on iOS (App Store)", value: "200+" },
-            { label: "downloads on Android (Play Store)", value: "100+" },
+            { label: "registered users", value: "600+", statsBg: "bg-[#FFFDF9]", statsColor: "text-[#8B5E3C]", borderColor: "#714927", labelColor: "#00161D" },
+            { label: "downloads on iOS (App Store)", value: "200+", statsBg: "bg-[#FFFDF9]", statsColor: "text-[#8B5E3C]", borderColor: "#714927", labelColor: "#00161D" },
+            { label: "downloads on Android (Play Store)", value: "100+", statsBg: "bg-[#FFFDF9]", statsColor: "text-[#8B5E3C]", borderColor: "#714927", labelColor: "#00161D" },
         ]
     },
     successStory: {
@@ -3971,7 +3971,7 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
                 description: "We help real estate businesses structure simple and effective mobile app ideas which make property search and user interaction easier.",
                 icon: "/images/healthcare.png",
             },
-             {
+            {
                 id: 7,
                 title: "Healthcare",
                 description: "We guide healthcare businesses in planning secure, simple and user friendly mobile app ideas which improve patient experience and service accessibility.",
@@ -4061,7 +4061,7 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
                 title: "Improved Business Clarity",
                 description: "We simplify your idea and remove confusion so you can clearly understand your product direction and purpose.",
             },
-             {
+            {
                 title: "Clear Product Direction",
                 description: "We help you define exactly what your mobile app should focus on with clear structured consulting guidance.",
             },
@@ -4206,4 +4206,123 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
         description: "Share your idea and we help you turn it into a clear and structured plan",
         cta: "Request Mobile App Consulting Quote",
     },
+};
+
+export const CONSULTANT_US_CONTENT = {
+    meta: {
+        title: "Consultants R US - Oil & Gas Workforce App Case Study",
+        description: "Case study of Consultants R US, a workforce app for oil & gas industry. It connects engineers with companies through smart profiles and hiring tools.",
+    },
+    hero: {
+        tagline: "Consultants R US Case Study",
+        title: "Introducing Consultants R US",
+        description: "Consultants R US is a mobile workforce management platform that was designed and developed for the U.S. oil and petroleum industry. This platform is meant to help companies connect with skilled engineering professionals through a more organized digital experience. The platform was built to make the hiring process more simple. We actually created a centralized space where engineers can show their qualifications, certifications, availability and work preferences. On the employer side, this app makes talent discovery more efficient through structured profiles and smart filtering capabilities. This reduces the time spent searching for suitable candidates. We also developed a dedicated admin panel alongside the mobile application to support platform management and overall system performance.",
+        cta: "Discuss Your Project",
+        details: [
+            { label: "Timeline", value: "Six Months" },
+            { label: "Sector", value: "Oil & Gas, Workforce Management Platform" },
+            { label: "Scope", value: "UI and UX Design, Admin Panel Development, Mobile App Development" },
+        ]
+    },
+    vision: {
+        title: <>The <span className="font-bold">App Vision</span></>,
+        description: "The app vision for Consultants R US is a focused digital solution to simplify hiring within the petroleum and oil industry. The idea came from understanding how fragmented and time consuming traditional recruitment processes are. Especially when you’re talking about dealing with highly specialized engineering roles. The goal of the product was to create a platform that brings structure to both sides of the hiring process. Engineers needed a reliable way to present their professional profiles. All while companies required a more precise method to evaluate talent based on better criteria like skills, availability and location. ClickTap Solutions designed the platform to fill this gap through an experience. That balanced the detailed professional data with effortless usability. The vision was to build an app with a system that actually improves how industry professionals collaborate.",
+    },
+    research: {
+        title: <>Insights and <span className="font-bold">Discovery</span></>,
+        description: "This phase focuses on understanding the actual needs behind the product before any design or development begins. It combined market analysis with user behavior insights to identify gaps in existing hiring systems and evaluate opportunities within the oil and petroleum recruitment space.",
+        marketResearch: [
+            "Studied hiring workflows in oil and petroleum industry recruitment systems",
+            "Identified inefficiencies in traditional contractor sourcing and manual hiring processes",
+            "Analyzed dependence on multiple disconnected platforms for talent acquisition"
+        ],
+        userResearch: [
+            "Examined how engineers present qualifications, certifications, and availability details",
+            "Evaluated employer needs for advanced filtering based on skills and location",
+            "Identified friction in accessing and comparing candidate profiles efficiently"
+        ],
+        keyInsight: "There was no unified digital platform that combined structured professional profiling with intelligent talent discovery. Existing systems were fragmented. Because they simply make it difficult for employers to evaluate candidates and slow down the overall hiring process significantly."
+    },
+    challenges: {
+        title: <>Key Challenges <span className="font-bold">We Faced</span></>,
+        items: [
+            {
+                title: "Complex Professional Data Structuring",
+                description: "One of the primary challenges was designing a system that was actually capable of handling highly variable professional data. Engineers needed to show certifications, qualifications, availability, shift preferences and location constraints. All in a structured yet flexible format.",
+            },
+            {
+                title: "Efficient Talent Filtering at Scale",
+                description: "Employers required a reliable yet quick way to filter through large volumes of candidate profiles without losing precision. The challenge was to build a filtering system that could process multiple parameters. While still delivering relevant results instantly.",
+            },
+            {
+                title: "Balancing Detail with Usability",
+                description: "The platform needed to support extremely detailed professional profiles without overwhelming users. The challenge was to present complex information in a clean interface. While making sure that both engineers and employers could understand and interact with the system.",
+            },
+        ]
+    },
+    solutions: {
+        title: <>Solutions <span className="font-bold">We Created</span></>,
+        items: [
+            {
+                title: "Structured Professional Profiles",
+                description: "Our team designed a structured profile system for engineers to address the complexity of managing detailed professional data. It allows users to clearly present certifications, qualifications, availability, shift preferences and location constraints in a consistent format.",
+            },
+            {
+                title: "Advanced Talent Filtering System",
+                description: "Then we had to solve the challenge of efficient talent discovery. So the team built an advanced filtering system for employers. It enables precise searches based on skills, experience, availability and location preferences. This significantly reduces manual effort.",
+            },
+            {
+                title: "Balanced UX with Dual Interfaces",
+                description: "In order to maintain usability, we designed a structured interface system tailored separately for engineers and employers all while handling complex data. Each experience was optimized for its user needs while still supporting detailed professional information.",
+            },
+        ]
+    },
+    workflow: {
+        title: <>The <span className="font-bold">Project Execution</span></>,
+        description: "To create Consultants R US from scratch, ClickTap Solutions followed a collaborative workflow. Each phase was carefully planned to make sure there’s alignment between business goals and technical execution.",
+        items: [
+            {
+                title: "1. Discovery Phase",
+                description: "We begin by understanding hiring workflows in the oil and gas industry and setting clear functional requirements.",
+            },
+            {
+                title: "2. UX Planning",
+                description: "We designed structured user journeys that simplified complex processes like profile creation and candidate evaluation for both user types.",
+            },
+            {
+                title: "3. System Architecture",
+                description: "We planned a scalable data structure capable of handling detailed professional profiles, filtering growing user activity.",
+            },
+            {
+                title: "4. Development",
+                description: "We built cross platform mobile applications with functionality and advanced search and filtering capabilities.",
+            },
+            
+        ]
+    },
+    wireframes: {
+        title: <>UX Design and <span className="font-bold">Wireframes</span></>,
+        description: "The teams at ClickTap Solutions focus on designing a clear user experience that could handle the complexity of detailed professional and employer workflows. The wireframing phase helped us define a structured layout for both engineers and companies. We organized profile creation for engineers into guided sections that made it easy to manage detailed information. We designed dashboards for employers that prioritized quick filtering and easy candidate evaluation.",
+    },
+    branding: {
+        title: <>Visual <span className="font-bold">Identity</span></>,
+        description: "The team created a brand identity that shows professionalism, clarity and trust. Mainly the qualities that are essential for the oil and petroleum industry. The visual direction was kept clean and minimal. The team used a structured design approach with consistent space and typography. Overall, the entire brand identity was designed to feel purposeful and professional.",
+    },
+    techStack: {
+        title: <>The Technological <span className="font-bold">Approach</span></>,
+        description: "We built Consultants R US using a modern technology stack that supports scalability. It was designed to support both performance and flexibility. We implemented a system that’s capable of handling large volumes of structured professional data, advanced filtering logic and smoother user interactions. Overall, the technology choices were focused on scalability and long term maintainability.",
+    },
+    outcomes: {
+        title: <>Outcomes and <span className="font-bold">Impact</span></>,
+        description: "The Consultants R US platform successfully optimized the hiring process within the oil and petroleum industry. The app we created brought a structured way for engineers and employers to connect. It reduced the dependency on fragmented recruitment channels by centralizing professional profiles and talent discovery. The platform improved hiring by offering faster access to relevant candidates through structured data. Engineers gained a clearer way to present their qualifications and the employers benefited from more accurate decision making. Alongside the mobile application, we created a centralized admin dashboard that gives the client complete visibility and control over engagement and platform management. The dashboard was designed to simplify moderation processes while helping administrators monitor interactions, review suspicious activity, and better understand platform performance.",
+        stats: [
+            { label: "registered users", value: "600+", statsBg: "bg-[#101D2D] text-center", statsColor: "text-[#C19A4D]", borderColor: "#C19A4D", labelColor: "text-[#C19A4D] opacity-70" },
+            { label: "downloads on iOS (App Store)", value: "200+", statsBg: "bg-[#FFFFFF] text-center", statsColor: "text-[#101D2D]", borderColor: "#C19A4D", labelColor: "text-[#101D2D]" },
+            { label: "downloads on Android (Play Store)", value: "100+", statsBg: "bg-[#101D2D] text-center", statsColor: "text-[#C19A4D]", borderColor: "#C19A4D", labelColor: "text-[#C19A4D] opacity-70" },
+        ]
+    },
+    successStory: {
+        title: <>Want Your Project Featured in <span className="font-bold">Our Next Success Story?</span></>,
+        description: "If you’re you’re ready to work on your idea, let’s collaborate and create the next success story worth showcasing! Talk to our team today and discuss your idea.",
+    }
 };

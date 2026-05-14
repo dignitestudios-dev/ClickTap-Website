@@ -15,9 +15,11 @@ type CardProps = {
     title: string;
     items: string[];
     bgImg: string;
+    bgWidth?: number;
+    bgHeight?: number;
 };
 
-function TiltCard({ title, items, bgImg }: CardProps) {
+function TiltCard({ title, items, bgImg, bgWidth, bgHeight }: CardProps) {
     const rotateX = useMotionValue(0);
     const rotateY = useMotionValue(0);
 
@@ -64,50 +66,41 @@ function TiltCard({ title, items, bgImg }: CardProps) {
                 rotateY: smoothRotateY,
                 transformStyle: "preserve-3d",
             }}
-            className="relative w-full max-w-[645px] h-[380px] md:h-[450px] rounded-[24px] overflow-hidden cursor-pointer"
+            className="relative w-full bg-[#0A0A0A] max-w-[645px] h-[380px] md:h-[450px] rounded-[24px] overflow-hidden cursor-pointer"
         >
-            {/* Background */}
-            <Image
-                src={bgImg}
-                alt="discovery-bg"
-                fill
-                className="object-cover rounded-[16px]"
-            />
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/30 z-[1]" />
 
-            {/* Glare Effect */}
-            <motion.div
-                style={{
-                    background: `radial-gradient(circle at ${glareX} ${glareY}, rgba(255,255,255,0.25), transparent 40%)`,
-                }}
-                className="absolute inset-0 z-[2]"
-            />
+
 
             {/* Content */}
             <div
                 style={{ transform: "translateZ(60px)" }}
-                className="relative z-10 h-full p-6 md:p-8 flex flex-col justify-between"
+                className="relative h-full"
             >
-                <h3 className="text-[20px] md:text-[24px] font-semibold text-white">
-                    {title}
-                </h3>
-
-                <div className="mt-6 md:mt-8 flex flex-col gap-3 md:gap-4">
+                {/* Background */}
+                <Image
+                    src={"/images/heart-group.png"}
+                    alt="discovery-bg"
+                    fill
+                    className="object-contain  relative z-5 rounded-[16px]"
+                />
+                <div className="p-16" >
+                    <Image
+                        src={bgImg}
+                        alt="card-1"
+                        width={bgWidth}
+                        height={bgHeight}
+                        className="object-contain   mx-auto rounded-[16px]"
+                    />
+                </div>
+                <div className="absolute w-full z-20! px-10 bottom-0 h-[115px]  bg-[#0A0A0A]/5  backdrop-blur-[20px]">
                     {items.map((item, index) => (
                         <p
                             key={index}
                             className="text-sm md:text-[16px] flex items-center gap-3 leading-relaxed text-white/90"
                             style={{ transform: "translateZ(40px)" }}
                         >
-                            <Image
-                                src="/images/dog-foot.png"
-                                alt="search"
-                                width={18}
-                                height={18}
-                                className="shrink-0"
-                            />
+
                             {item}
                         </p>
                     ))}
@@ -117,7 +110,7 @@ function TiltCard({ title, items, bgImg }: CardProps) {
     );
 }
 
-export default function DiscoverResearch({
+export default function VisionBehind({
     title,
     description,
     marketResearch,
@@ -138,14 +131,18 @@ export default function DiscoverResearch({
             <div className="flex flex-col lg:flex-row items-center justify-center gap-6 mt-12 md:mt-16">
                 <TiltCard
                     title="Market Research:"
-                    bgImg="/images/consultant-research2.png"
+                    bgImg="/images/love-card-1.png"
                     items={marketResearch}
+                    bgWidth={219}
+                    bgHeight={450}
                 />
 
                 <TiltCard
                     title="User Research:"
-                    bgImg="/images/consultant-research.png"
+                    bgImg="/images/love-card-2.png"
                     items={userResearch}
+                    bgWidth={406}
+                    bgHeight={243}
                 />
             </div>
         </section>

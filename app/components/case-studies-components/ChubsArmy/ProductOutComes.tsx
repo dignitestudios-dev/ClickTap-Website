@@ -3,32 +3,22 @@
 import { useEffect, useRef, useState } from "react";
 import { MarqueeSection } from "./MarqueeSection";
 
-const wireframes = [
-    { id: 12 },
-    { id: 13 },
-    { id: 14 },
-    { id: 8 },
-    { id: 9 },
-    { id: 10 },
-    { id: 11 },
-    { id: 12 },
-    { id: 13 },
-    { id: 14 },
-];
 
 type ProductOutcomesProps = {
     title: React.ReactNode;
     description: string;
-    stats: { label: string; value: string }[];
+    stats: { label: string; value: string, statsBg?: string, statsColor?: string, labelColor?: string, borderColor?: string }[];
+    wireframes: any,
 };
 
 const ProductOutcomes = ({
     title,
     description,
     stats,
+    wireframes,
 }: ProductOutcomesProps) => {
     const images = wireframes.map(
-        (frame) => `/images/s${frame.id}.webp`
+        (frame: any) => `/images/s${frame.id}.webp`
     );
 
     return (
@@ -53,6 +43,10 @@ const ProductOutcomes = ({
                             count={stat.value}
                             label={stat.label}
                             isLast={index === stats.length - 1}
+                            statsColor={stat?.statsColor}
+                            statsBg={stat?.statsBg}
+                            labelColor={stat?.labelColor}
+                            borderColor={stat?.borderColor}
                         />
                     ))}
                 </div>
@@ -67,10 +61,18 @@ const StatCard = ({
     count,
     label,
     isLast,
+    statsColor,
+    statsBg,
+    labelColor,
+    borderColor,
 }: {
     count: string;
     label: string;
     isLast?: boolean;
+    statsColor?: string;
+    statsBg?: string;
+    labelColor?: string;
+    borderColor?: string;
 }) => {
     const [displayValue, setDisplayValue] = useState(0);
 
@@ -118,16 +120,16 @@ const StatCard = ({
     return (
         <div
             ref={ref}
-            className={`p-10 flex flex-col justify-center bg-[#FFFDF9]
-            ${!isLast ? "border-r border-[#714927]" : ""}
+            className={`p-10 flex flex-col justify-center ${statsBg}
+            ${!isLast ? `border-r ${borderColor}` : ""}
             `}
         >
-            <h3 className="text-5xl font-bold text-[#8B5E3C] mb-4">
+            <h3 className={`text-5xl font-bold ${statsColor} mb-4`}>
                 {displayValue}
                 {suffix}
             </h3>
 
-            <p className="text-gray-500 text-sm font-medium">
+            <p className={`text-sm font-medium ${labelColor}`}>
                 {label}
             </p>
         </div>
