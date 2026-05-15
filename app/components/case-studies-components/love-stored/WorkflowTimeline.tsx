@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { LOVE_STORED_CONTENT } from '@/app/constants/content';
-import Image from 'next/image';
+
 
 interface WorkflowStep {
     id: number;
@@ -132,7 +132,7 @@ export default function WorkflowTimeline() {
                             {/* Decorative heart accent */}
                             <div className={`absolute w-8 h-8 sm:w-10 sm:h-10 pointer-events-none transition-transform duration-300 group-hover:scale-110 -rotate-[15deg] ${step.heartPosition === 'top-left' ? '-top-3 -left-2' : '-top-3 -right-2'
                                 }`}>
-                                <Image src="/images/center.png" alt="Decorative Accent" fill className="object-contain" />
+                                <img src="/images/center.png" alt="Decorative Accent" className="object-contain w-full h-full" />
                             </div>
                             <h3 className="font-['Inter_Tight',sans-serif] text-sm sm:text-base font-bold mb-1.5 text-center">
                                 {step.phaseTitle}
@@ -204,7 +204,7 @@ export default function WorkflowTimeline() {
                                         <div className={`absolute w-10 h-10 -z-1 pointer-events-none transition-transform duration-300 group-hover:scale-110 -rotate-[15deg] ${step.heartPosition === 'top-left' ? '-top-4 -left-2' :
                                             step.heartPosition === 'top-right' ? '-top-4 -right-2' : '-bottom-4 -right-2'
                                             }`}>
-                                            <Image src="/images/center.png" alt="Decorative Accent" fill className="object-contain" />
+                                            <img src="/images/center.png" alt="Decorative Accent" className="object-contain w-full h-full" />
                                         </div>
                                         <h3 className="font-['Inter_Tight',sans-serif] text-base font-bold mb-2 text-center">{step.phaseTitle}</h3>
                                         <p className="font-['Inter_Tight',sans-serif] text-[11px] md:text-xs text-gray-500 text-center leading-relaxed group-hover:text-gray-300 transition-colors">{step.description}</p>
@@ -213,7 +213,7 @@ export default function WorkflowTimeline() {
                                     {/* Connector Pin */}
                                     <div className="relative flex -left-28 flex-col items-center h-16 w-full">
                                         <div className="w-[24px] h-[98px]">
-                                            <Image src="/images/lines.png" alt="" className='w-[20px] h-[80px]' width={10} height={98} />
+                                            <img src="/images/lines.png" alt="" className='w-[20px] h-[80px]' width={10} height={98} />
                                         </div>
                                     </div>
                                 </>
@@ -223,7 +223,7 @@ export default function WorkflowTimeline() {
                                     <div className="relative -left-28 flex flex-col items-center h-16 w-full">
                                         <div className="relative flex flex-col items-center h-16 w-full">
                                             <div className="w-[24px] h-[98px]">
-                                                <Image src="/images/lines.png" alt="" className='w-[18px] h-[60px]' width={10} height={98} />
+                                            <img src="/images/lines.png" alt="" className='w-[18px] h-[60px]' width={10} height={98} />
                                             </div>
                                         </div>
                                     </div>
@@ -233,7 +233,7 @@ export default function WorkflowTimeline() {
                                         <div className={`absolute w-10 h-10 pointer-events-none transition-transform duration-300 group-hover:scale-110 -rotate-[15deg] ${step.heartPosition === 'top-left' ? '-top-4 -left-2' :
                                             step.heartPosition === 'top-right' ? '-top-4 -right-2' : '-bottom-4 -right-2'
                                             }`}>
-                                            <Image src="/images/center.png" alt="Decorative Accent" fill className="object-contain" />
+                                            <img src="/images/center.png" alt="Decorative Accent" className="object-contain w-full h-full" />
                                         </div>
                                         <h3 className="font-['Inter_Tight',sans-serif] text-base font-bold mb-2 text-center">{step.phaseTitle}</h3>
                                         <p className="font-['Inter_Tight',sans-serif] text-[11px] md:text-xs text-gray-500 text-center leading-relaxed group-hover:text-gray-300 transition-colors">{step.description}</p>

@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
+
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 
 const ArrowIcon = () => (
@@ -153,11 +153,10 @@ const AboutSection: React.FC<Props> = ({ tagline, heading, paragraphs, ctaText, 
                                                     : 'h-[160px] sm:h-[200px] lg:h-[230px] lg:order-2',
                                             ].join(' ')}
                                         >
-                                            <Image
+                                            <img
                                                 src={stat.image}
                                                 alt={stat.label}
-                                                fill
-                                                className="object-cover"
+                                                className="object-cover w-full h-full"
                                             />
                                         </div>
                                     )}

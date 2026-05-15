@@ -1,6 +1,6 @@
 import React from 'react';
 import { LOVE_STORED_CONTENT } from '@/app/constants/content';
-import Image from 'next/image';
+
 
 interface SolutionPoint {
     id: number;
@@ -22,13 +22,12 @@ export default function TheSolution() {
                     {/* Mobile Image Container */}
                     <div className="relative w-full  -left-14 top-16 lg:mx-0 flex items-center ">
                         {/* Mobile Image Placement */}
-                        <Image
-                            src="/images/love-solution.png" // Apni mobile image ka path yahan lagayein
+                        <img
+                            src="/images/love-solution.png"
                             alt="Mobile Mockup Application Screenshot"
                             width={720}
                             height={633}
-                            className="object-contain transform   transition-transform duration-500"
-                            priority
+                            className="object-contain transform transition-transform duration-500"
                         />
                     </div>
                 </div>

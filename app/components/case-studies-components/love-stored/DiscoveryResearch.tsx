@@ -1,6 +1,6 @@
 import React from 'react';
 import { LOVE_STORED_CONTENT } from '@/app/constants/content';
-import Image from 'next/image';
+
 
 interface ResearchItem {
     id: number;
@@ -28,7 +28,7 @@ export default function DiscoveryResearch() {
                             <li key={index} className="flex items-start gap-2 text-sm md:text-base opacity-90">
                                 <div className="flex-shrink-0  relative mt-1">
                                     {/* Heart Image Placeholder */}
-                                    <Image
+                                    <img
                                         src="/images/Isolation_Mode.png"
                                         alt="Heart icon"
                                         width={25}
@@ -52,7 +52,7 @@ export default function DiscoveryResearch() {
                             <li key={index} className="flex items-start gap-2 text-sm md:text-base text-gray-800  opacity-90 transition-colors duration-300">
                                 <div className="flex-shrink-0  relative mt-1">
                                     {/* Heart Image Placeholder */}
-                                    <Image
+                                    <img
                                         src="/images/Isolation_Mode.png"
                                         alt="Heart icon"
                                         width={25}
