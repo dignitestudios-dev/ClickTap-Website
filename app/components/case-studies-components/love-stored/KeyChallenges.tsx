@@ -17,7 +17,7 @@ export default function KeyChallenges() {
             </h2>
 
             {/* Cards Responsive Grid */}
-            <Image src="/images/key-challenges.png" alt="key-challenges"  fill className='object-contain mt-14 w-full h-full' />
+            <Image src="/images/key-challenges.png" alt="key-challenges" fill className='object-contain mt-14 w-full h-full' />
             <div className="grid md:grid-cols-3 gap-6 items-stretch" >
 
                 {LOVE_STORED_CONTENT.challenges.items.map((challenge, index) => (

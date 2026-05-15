@@ -2,11 +2,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import classNames from "classnames";
+import Link from "next/link";
+import { ArrowUpIcon } from "lucide-react";
 
 type Project = {
   name: string;
   title: string;
   img: string;
+  link?: any;
 };
 
 type Props = {
@@ -14,7 +17,13 @@ type Props = {
   description: string;
   projects: Project[];
 }
-
+const ArrowIcon = () => (
+  <div className="w-7 h-7 flex items-center justify-center bg-[#01C2FE] text-white rounded-full transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 19L19 5M19 5H9M19 5V15" />
+    </svg>
+  </div>
+);
 export default function Portfolio({ heading, description, projects }: Props) {
   const [activeItem, setActiveItem] = useState(0); // Start with the first item active
 
@@ -57,6 +66,7 @@ export default function Portfolio({ heading, description, projects }: Props) {
                 <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                   {projects[activeItem].title}
                 </p>
+
               </div>
             </li>
 
@@ -139,6 +149,14 @@ export default function Portfolio({ heading, description, projects }: Props) {
                     <p className="text-xs md:text-sm lg:text-[16px] text-white/80">
                       {project.title}
                     </p>
+                    {
+                      project?.link && (
+
+                        <Link href={project?.link} className="flex mt-5 items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
+                          View More <ArrowIcon />
+                        </Link>
+                      )
+                    }
                   </div>
                 </li>
               );

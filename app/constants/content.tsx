@@ -80,32 +80,36 @@ export const HOME_CONTENT = {
         description: "As an experienced development partner, we have worked with startups and growing businesses. Check out the case studies to see how ClickTap Solutions created functional apps just from ideas. Every project that we share here shows the challenges our clients had to deal with and the solutions we provided. Also, the outcomes we have achieved as a team.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -605,32 +609,36 @@ export const MOBILE_APP_CONTENT = {
         description: "See the case studies by yourself to see how Clicktap Solutions created functional apps just from ideas. Every mobile application that we share here explains the challenges our clients had to deal with so the custom solutions we created and implemented show our professionalism.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -983,32 +991,36 @@ export const IOS_APP_Development = {
         description: "You can explore how ClickTap Solutions has helped businesses create successful digital products. These case studies highlight challenges and outcomes that demonstrate our abilities. Take a closer look at the examples below to understand how we create these solutions.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -1364,32 +1376,36 @@ export const CUSTOM_SOFTWARE_CONTENT = {
         description: "We have delivered successful Tech solutions across multiple industries, including enterprise systems and digital platforms. Our work demonstrates the strong performance, scalability and efficiency through practical development strategies adapted to real business needs.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -1736,32 +1752,36 @@ export const AI_APP_CONTENT = {
         description: "We have delivered AI solutions for startups and enterprises. Our projects focus on solving real problems and improving business performance. Each solution is built with clear planning and strong execution to ensure long term success.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -2108,32 +2128,36 @@ export const ANDROID_APP_CONTENT = {
         description: "ClickTap Solutions’s case studies show all the projects where we took an idea and created a functional, high performing mobile application. Each project highlights our approach and focus on delivering measurable business results across different industries.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -2461,32 +2485,36 @@ export const PWA_CONTENT = {
         description: "The case studies we mentioned show Progressive Web App projects we have successfully completed across different industries. Each project highlights our approach to solving complex challenges through strategic development. These examples demonstrate how our PWAs enhance speed. Explore our work to understand how we turn ideas into high performing digital solutions tailored to client needs.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -2828,32 +2856,36 @@ export const WEB_APP_CONTENT = {
         description: "Our case studies highlight the projects ClickTap Solutions has worked on for clients across different industries. Each project we show here highlights how we solve complex business challenges through custom web application development. Each project reflects our approach along with the measurable impact achieved after implementation.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -3219,32 +3251,36 @@ export const UIUX_CONTENT = {
         description: "Our UI/UX design projects helped businesses improve user experience, simplify navigation and increase customer engagement through modern interfaces and practical design strategies made for different industries and business requirements.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -3602,32 +3638,36 @@ export const MVP_CONTENT = {
         description: "We have helped multiple startups turn ideas into working MVPs by focusing on only essential features. This approach allowed them to launch faster, gather real user feedback, improve product direction and confidently scale into the full platforms with the reduced risk and better clarity.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
@@ -4105,32 +4145,36 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
         description: "We have helped many businesses turn unclear ideas into structured mobile app strategies. Our consulting approach helps reduce confusion and improves clarity so businesses can move forward with confidence and better direction.",
         items: [
             {
-                img: "/images/slider-card-1.png",
+                img: "/images/portfolio-1.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/chubss-army"
+            },
+            {
+                img: "/images/case-2.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/consultant-us"
+            },
+            {
+                img: "/images/case-3.png",
+                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
+                name: "TitanX",
+                link: "/case-studies/love-restored"
+
+            },
+            {
+                img: "/images/portfolio-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-2.png",
+                img: "/images/portfolio-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
             {
-                img: "/images/slider-card-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-5.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-            },
-            {
-                img: "/images/slider-card-6.png",
+                img: "/images/portfolio-4.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "TitanX",
             },
