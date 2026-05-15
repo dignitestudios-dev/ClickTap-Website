@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { motion } from "framer-motion";
 interface SuccessStoryProps {
     /** Source path for the primary phone mockup graphic */
@@ -38,13 +38,13 @@ export default function SuccessStory({
                     className="group inline-flex cursor-pointer items-center gap-4 rounded-xl bg-white py-3 pl-6 pr-4 font-semibold text-black transition-transform duration-200 hover:-translate-y-0.5"
                 >
                     <span>{cta}</span>
-                        <img
-                            src="/images/cta-button-chubs.png"
-                            alt="Arrow Right"
-                            width={32}
-                            height={32}
-                            className="w-[32px] h-[32px]"
-                        />
+                    <Image
+                        src="/images/cta-button-chubs.png"
+                        alt="Arrow Right"
+                        width={32}
+                        height={32}
+                        className="w-[32px] h-[32px]"
+                    />
                 </button>
             </div>
 
@@ -54,10 +54,13 @@ export default function SuccessStory({
 
                     {/* Layer 1: Background Concentric Pattern */}
                     <div className="absolute inset-0  h-full top-15 z-0 scale-125 opacity-40">
-                        <img
+                        <Image
                             src={bgPatternSrc}
                             alt="Decorative background grid system pattern"
-                            className="object-contain w-full h-full"
+                            fill
+                            sizes="(max-w-768px) 100vw, 50vw"
+                            priority
+                            className="object-contain"
                         />
                     </div>
 
@@ -72,10 +75,12 @@ export default function SuccessStory({
                         className="relative z-10 -bottom-16 left-10  aspect-[4/3]"
                     >
                         <div className="relative h-full w-full scale-90">
-                            <img
+                            <Image
                                 src={deviceImageSrc}
                                 alt="App performance user interface layout mockup"
-                                className="object-contain w-full h-full"
+                                fill
+                                priority
+                                className="object-contain"
                             />
                         </div>
                     </motion.div>

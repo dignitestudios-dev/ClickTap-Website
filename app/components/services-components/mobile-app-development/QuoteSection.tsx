@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-
+import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -21,12 +21,12 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
 
                 {/* Background Shape - Ripple effect */}
                 <div className="absolute hidden md:flex md:-right-20 md:-right-5 w-full md:w-[750px] -bottom-10 md:bottom-0  z-10 opacity-40 md:opacity-60">
-                    <img
+                    <Image
                         src="/images/bg-shape.png"
                         alt="Background Shape"
                         width={700}
                         height={300}
-                        className="w-full h-[250px] md:h-[350px] object-contain"
+                        className="w-full h-[250px] md:h-[350px]  w-full object-contain"
                     />
                 </div>
 
@@ -67,10 +67,12 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="relative w-[280px] sm:w-[320px] md:w-[500px] h-[300px] md:h-[550px] -mb-1"
                     >
-                        <img
+                        <Image
                             src="/images/hand-image.png"
                             alt="Hand holding phone"
-                            className="object-contain md:-ml-18 object-bottom w-full h-full"
+                            fill
+                            className="object-contain md:-ml-18 object-bottom"
+                            priority
                         />
                     </motion.div>
                 </div>

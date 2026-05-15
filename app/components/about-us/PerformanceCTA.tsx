@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import React from 'react';
 
 type PerformanceCTAProps = {
@@ -12,10 +12,12 @@ export default function PerformanceCTA({ title, description, buttonText }: Perfo
         <section className="w-full bg-[#00161D] mb-20 mt-20 py-20 px-6 flex justify-center relative overflow-hidden rounded-[32px]">
             {/* Background Glow Image - Positioned absolutely to the right with full height */}
             <div className="absolute right-0 top-0 h-full w-full sm:w-[50%] pointer-events-none z-0">
-                <img
+                <Image
                     src="/images/glow-frame.png"
                     alt="About Us CTA Glow Background"
-                    className="object-cover hidden lg:block object-right w-full h-full"
+                    fill
+                    priority
+                    className="object-cover hidden lg:block object-right"
                 />
             </div>
 
