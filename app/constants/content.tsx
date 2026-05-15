@@ -3862,25 +3862,30 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
         description: "We provide complete mobile app consulting support to help you shape your product in the right direction with clear planning and simple guidance. Our focus is to understand your idea deeply and turn it into a structured roadmap. We help you avoid confusion by giving expert advice on features, user flow and long term product thinking. Every suggestion is based on real experience and business needs so your product starts with a strong clarity and direction.",
         items: [
             {
-                title: "Mobile App Strategy",
-                description: "We help you turn your idea into a clear and structured plan. This includes defining goals, understanding user needs and shaping a strong direction before anything starts. Our focus is to make your idea simple, practical and easy to move forward with confidence.",
+                title: "Idea Validation and Strategy Development",
+                description: "We help businesses analyze their mobile app idea and identity whether they are quite practical, valuable and market ready. Our consulting process focuses on the user needs business goals and long term strategy so your idea with the strong direction clarity and better decision making from the beginning.",
                 icon: "/images/service-1.png",
             },
             {
-                title: "Mobile App Design & Development Consulting",
-                description: "We guide you on how your mobile app should look and function in a simple and user friendly way. We help you to understand the layout, user flow and feature structure so your idea becomes easy to use and easy to understand for the users.",
+                title: "UI/UX Consultation",
+                description: "We guide businesses on creating simple user friendly and engaging mobile app experiences. Our consultation focuses on the layout structure navigation and usability so the users can easily interact with the product while the businesses improve customer satisfaction engagement and overall product experience through smarter interface planning.",
                 icon: "/images/service-2.png",
             },
             {
-                title: "Mobile App Audit & Performance Optimization",
-                description: "We review your existing idea or plan and identify what can be improved. This also helps you remove confusion, fix weak points and improve overall structure. Our main goal is to make your product idea quite more strong, clear and efficient.",
+                title: "Technology Selection",
+                description: "We help businesses choose the right technologies, frameworks and platforms based on the product goals, scalability and future requirements. Our consulting process simplifies technical decisions and ensures businesses select practical solutions which support better performance flexibility and long term product growth without any unnecessary technical complexity.",
                 icon: "/images/service-3.png",
             },
-            // {
-            //     title: "Custom Pricing to Fit Your Goals",
-            //     description: "We offer flexible consulting plans based on your project size and needs. Whether your idea is small or large, we also guide you with the right level of support so you only pay for what truly fits your business requirements.",
-            //     icon: "/images/service-4.png",
-            // },
+            {
+                title: "Mobile App Architecture Planning",
+                description: "We provide consultation on structuring mobile app ideas with clear architecture planning and organized workflows. Our focus is to help businesses build scalable, flexible and easy to manage product structures which support future improvements, better stability and smooth long term digital growth planning.",
+                icon: "/images/service-4.png",
+            },
+            {
+                title: "MVP Planning and Feature Prioritization",
+                description: "We help businesses identify important features for their MVP and remove unnecessary complexity during early planning stages. Our consulting approach focuses on creating practical user focused product strategies which help businesses launch quite faster, validate ideas early and improve long term product direction confidently.",
+                icon: "/images/service-5.png",
+            },
         ],
         cta: "Let’s Get Started",
     },
@@ -3929,7 +3934,7 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
     },
     techStack: {
         heading: <>Modern Tools Used in <span className="font-bold">Mobile App Consulting</span></>,
-        description: "We use modern and industry knowledge to guide better decisions for mobile app planning. Our consulting covers different technologies so you can choose the right direction based on your business needs and future goals.",
+        description: "We use modern and industry knowledge to guide better decisions for mobile app planning. Our consulting covers different technologies including Frontend (React, Vue), Backend (Node.js, Laravel), Mobile (Flutter, React Native), and Databases (MongoDB, PostgreSQL) so you can choose the right direction based on your business needs and future goals.",
     },
     industry: {
         heading: <>Mobile App Consulting for <br /> <span className="font-bold">Different Industries</span></>,
@@ -4062,19 +4067,23 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
                 description: "We simplify your idea and remove confusion so you can clearly understand your product direction and purpose.",
             },
             {
-                title: "Clear Product Direction",
-                description: "We help you define exactly what your mobile app should focus on with clear structured consulting guidance.",
-            },
-            {
-                title: "Better Decision Making",
-                description: "We guide you in selecting the right features and strategy so your product moves in the correct direction confidently.",
-            },
-            {
                 title: "Reduced Mistakes",
                 description: "We help you avoid poor planning errors and wasted effort by giving clear consulting based direction early.",
             },
+            {
+                title: "Strong Planning",
+                description: "We create a simple structured plan for your mobile app idea so everything stays organized and clear.",
+            },
+            {
+                title: "Future Ready Thinking",
+                description: "We guide you in planning long term growth so your idea stays scalable and adaptable for future needs.",
+            },
+            {
+                title: "Improved Business Clarity",
+                description: "We simplify your idea and remove confusion so you can clearly understand your product direction and purpose.",
+            },
         ],
-        cta: "Build a Scalable mobile app strategy",
+        cta: "Build a Scalable Mobile App Strategy",
     },
     features: {
         heading: <>What We Focus On in <br /> <span className="font-bold">Mobile App Consulting</span></>,
@@ -4297,7 +4306,7 @@ export const CONSULTANT_US_CONTENT = {
                 title: "4. Development",
                 description: "We built cross platform mobile applications with functionality and advanced search and filtering capabilities.",
             },
-            
+
         ]
     },
     wireframes: {
@@ -4326,3 +4335,211 @@ export const CONSULTANT_US_CONTENT = {
         description: "If you’re you’re ready to work on your idea, let’s collaborate and create the next success story worth showcasing! Talk to our team today and discuss your idea.",
     }
 };
+export const LOVE_STORED_CONTENT = {
+    meta: {
+        title: "LoveStored.Ai Case Study - AI-Powered Dating Platform",
+        description: "See how we designed and developed LoveStored.Ai.  An AI-powered dating platform focused on social engagement and interactive relationship experiences.",
+    },
+    hero: {
+        tagline: "LoveStored.Ai",
+        title: "Introducing LoveStored.Ai",
+        description: "The team of developers created LoveStored.Ai to make online dating feel more interactive and personal. The goal was to design an experience that prioritizes connections through conversation rather than building a traditional platform which is focused on swipes. Alongside helping users discover compatible partners for themselves, the platform also allows people to recommend matches for friends. This option adds a more social layer to the experience. We also integrated an AI powered “Love Guru” chatbot that offers relationship advice to make interactions more engaging. Our team designed and developed the complete mobile experience.",
+        cta: "Talk to our experts",
+        details: [
+            { label: "Timeline", value: "Six Months" },
+            { label: "Sector", value: "Relationship Platform and dating" },
+            { label: "Scope", value: "Mobile App Development, Chatbot Integration, UI and UX Design." },
+        ]
+    },
+    vision: {
+        title: <>The <span className="font-bold">Product Vision</span></>,
+        description: "The vision behind LoveStored.Ai was to turn an online dating app into an emotionally engaging experience. We wanted to create a platform that is beyond traditional matchmaking and actually encourages genuine communication and better digital connections. We introduced community driven features, which means users can recommend compatible partners for friends instead of focusing only on direct user interactions. This one feature makes the entire experience feel more engaging and relationship focused. To further personalize interactions, the team then integrated an AIpowered Love Guru chatbot that is actually designed to provide relationship advice.",
+    },
+    research: {
+        title: <>User Insights <span className="font-bold">and Research</span></>,
+        description: "Our research showed that users were looking for dating experiences that felt more personal and emotionally engaging instead of platforms that are built for transactional interactions.",
+        marketResearch: [
+            "Analyzed interaction patterns across modern dating and social networking platforms.",
+            "Studied engagement trends in AIpowered conversational and experiences that are more focused on experiences.",
+            "Explored retention strategies used by leading matchmaking and social communication apps.",
+            "Evaluated how interactive features influence long term user engagement and platform activity."
+        ],
+        userResearch: [
+            "Identified frustrations with superficial swiping and low quality digital interactions.",
+            "Studied user expectations around emotional connection.",
+            "Explored demand for relationship guidance and AI assisted conversational experiences.",
+            "Analyzed how matchmaking could improve trust between users."
+        ],
+        keyInsight: "Our research showed that users were looking for dating experiences that felt more personal and emotionally engaging instead of platforms that are built for transactional interactions."
+    },
+    challenges: {
+        title: <>Key Product <span className="font-bold">Challenges</span></>,
+        items: [
+            {
+                title: "Balancing Social and Dating Experiences",
+                description: "One of the primary challenges was creating a platform that successfully blend traditional matchmaking with community driven and social interaction features.",
+            },
+            {
+                title: "AI Conversation Relevance",
+                description: "The Love Guru chatbot needed a very conversational flows that felt natural, emotionally aware and contextually relevant to dating & relationship discussions.",
+            },
+            {
+                title: "User Engagement Retention",
+                description: "Many dating platforms experience declining engagement after the initial matching phase, making long term retention a key challenge for the project.",
+            },
+        ]
+    },
+    solutions: {
+        title: <>Our Approach <span className="font-bold">& Solution</span></>,
+        items: [
+            {
+                title: "Simplified Social Matchmaking Experience",
+                description: "We created a clean and structured user experience. The platform architecture was carefully planned to ensure users could navigate tools without being distracted by unnecessary complexity.",
+            },
+            {
+                title: "AIPowered Relationship Interaction",
+                description: "The Love Guru chatbot was added to deliver emotionally aware conversations across the platform. We focused on creating interaction flows that support relationship discussions.",
+            },
+            {
+                title: "Long-Term User Engagement Features",
+                description: "The team introduced interactive features that includes matchmaking for friends and personalized communication experiences. It encourages retention beyond the initial matching experience.",
+            },
+        ]
+    },
+    workflow: {
+        title: <>Development <span className="font-bold">Process Flow</span></>,
+        description: "We followed a structured workflow to transform the idea of LoveStored.Ai into an entirely functional product. The process began with a detailed research that helped us define the core feature set.",
+        items: [
+            {
+                title: "Discovery Phase",
+                description: "Researching modern dating behaviors and identifying opportunities for deeper user engagement.",
+            },
+            {
+                title: "UX Planning",
+                description: "Designing smooth journeys for matchmaking, chatbot interaction and social engagement features.",
+            },
+            {
+                title: "Development",
+                description: "Building scalable mobile experiences with live interaction and AI chatbot functionality.",
+            },
+            {
+                title: "Integration Phase",
+                description: "Connecting AI systems, matchmaking logic, and social features into a unified platform experience.",
+            },
+            {
+                title: "Testing & Launch",
+                description: "Optimizing performance, refining user interactions, and preparing the platform for deployment.",
+            },
+        ]
+    },
+    wireframes: {
+        title: <>Wireframes and <span className="font-bold">User Flow</span></>,
+        description: "Our UX approach focused on creating an experience that feels engaging and emotionally connected from the very first interaction. we carefully planned user flows to keep navigation simple forevery feature. We plan interaction patterns that support smooth transitions between conversations, profile discovery and engagement tools during the wireframing stage. All without overwhelming users. We also encourage longer interaction sessions throughout the experience.",
+    },
+    branding: {
+        title: <>Creating <span className="font-bold">Visual Identity</span></>,
+        description: "The visual identity of LoveStored.Ai was designed to feel welcoming and emotionally engaging while maintaining a clean and polished digital experience. We focused on creating a aesthetic that’s focused on relationships that reflects connection and trust. We didn’t rely on overly traditional dating app visuals. Soft design elements, balanced typography, modern color combinations and minimal interface styling were used. Every visual create a more approachable and comfortable user experienc.",
+    },
+    techStack: {
+        title: <>Platform <span className="font-bold">Technology Stack</span></>,
+        description: "LoveStored.Ai was built using modern mobile technologies that are basically designed to support smooth navigation and scalable platform performance. Our development approach focused on creating a stable user experience across matchmaking and social engagement. We integrated OpenAI technology to power the Love Guru chatbot. It enables more intelligent and context aware relationship conversations throughout the platform.",
+    },
+    outcomes: {
+        title: <>Outcomes and <span className="font-bold">Achievements</span></>,
+        description: "LoveStored.Ai successfully introduced a more interactive approach to modern digital matchmaking. The platform created an experience that feels more engaging than traditional dating applications by combining social engagement features and personalized interaction tools.  The addition of friend based matchmaking and the Love Guru chatbot helped encourage longer user interaction across the platform. The platform was built with usability while making it easier for the client to expand features over time. The final result was an impressive mobile experience that balances emotional connection and intelligent technology within a single platform. We created a centralized admin dashboard that gives the client complete visibility and control over engagement and platform management. The dashboard was designed to simplify moderation processes while helping administrators monitor interactions. Every feature was structured to support a secure platform. We also implemented reporting tools that allow administrators to review suspicious activity. The dashboard provides insights into interaction patterns while helping the client better understand platform performance.",
+        stats: [
+            { label: "registered users", value: "600+", statsBg: "bg-transparent text-center rounded-r-[20px] border-r-2 border-dashed! border-[#B8832D]", statsColor: "text-[#00161D]", borderColor: "#B8832D", labelColor: "text-[#00161D] opacity-70" },
+            { label: "downloads on iOS (App Store)", value: "200+", statsBg: "bg-[#FFFFFF] text-center border-none!  ", statsColor: "text-[#101D2D]", borderColor: "#B8832D", labelColor: "text-[#00161D]" },
+            { label: "downloads on Android (Play Store)", value: "100+", statsBg: "bg-transparent text-center border-l-2!  border-dashed! border-[#B8832D] rounded-l-[20px] ", statsColor: "text-[#00161D]", borderColor: "#B8832D", labelColor: "text-[#00161D] opacity-70" },
+        ]
+    },
+    successStory: {
+        title: <>Are You Ready To Launch <span className="font-bold">Your Idea With Us?</span></>,
+        description: "Building a successful digital platform requires more than just functionality so At Clicktap Solutions, our team focuses on building products that are built for growth.",
+        cta: "Talk to our experts"
+    }
+};
+
+export const ABOUT_US_CONTENT = {
+    meta: {
+        title: "About Us - ClickTap Solutions",
+        description: "ClickTap Solution helps businesses turn ideas into powerful digital products through smart strategy, creative thinking and reliable technology solutions.",
+    },
+    hero: {
+        title: "Building Digital Solutions With Purpose",
+        description: "ClickTap Solution helps businesses turn ideas into powerful digital products through smart strategy, creative thinking and reliable technology solutions. Our team focuses on the quality innovation and long term partnerships which help brands grow faster in today’s competitive digital world.",
+    },
+    story: {
+        title: "Our Story",
+        paragraphs: [
+            "ClickTap Solution started with a simple goal to help businesses bring their digital ideas to life with confidence and clarity. Over many years we have worked with the startups growing companies and enterprises across different industries. Our team believes every business deserves solutions that are also practical, scalable and easy to use.",
+            "We focus on understanding business goals before creating any strategy or the digital solution. This approach helps us to build long term partnerships which are based on communication and real results. Our team works directly with customers at entry level, from mobile platforms to personalised digital experiences, to guarantee smooth cooperation and improved results.",
+            "With a skilled staff that is passionate about creativity, innovation and problem solving ClickTap Solution is still expanding today. In addition, we are also dedicated to assisting companies in adjusting to evolve the technological trends while maintaining the quality of the user experience and company expansion at the core of everything we do."
+        ],
+        cta: "Learn More"
+    },
+    values: {
+        title: "Our Value Section",
+        mission: {
+            title: "Our Mission",
+            description: "Our mission is to help businesses grow through innovative digital solutions, clear communication and reliable technology services. We focus on creating user friendly experiences which solve real business challenges and support long term success through creativity strategy and strong client partnerships built on trust and transparency."
+        },
+        objectives: {
+            title: "Our Objectives",
+            description: "We intend to become the go to partner for the digital transformation for the companies all over the world by providing the most innovative, scalable and future ready solution. Through unique teamwork and continuous improvement, we seek to assist brands in adjusting to current technological trends, enhancing customer experience and achieving sustainable growth while building the long term success, quality and trust"
+        }
+    },
+    whyChooseUs: {
+        title: "Why Businesses Choose ClickTap",
+        description: "",
+        items: [
+            {
+                id: 1,
+                title: "100% Custom Development",
+                description: "Made for the digital solutions created specifically around your business goals, user needs and long term growth plans.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 2,
+                title: "Specialized Engineering Teams",
+                description: "Experienced professionals working together to deliver reliable scalable and high quality digital solutions for every project.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 3,
+                title: "24/7 Support",
+                description: "Dedicated support teams available anytime to resolve issues provide guidance and ensure smooth communication throughout projects.",
+                icon: "/images/why-3.png",
+            },
+            {
+                id: 4,
+                title: "200+ Skilled Technology Experts",
+                description: "The strong team of technology specialists delivers innovative ideas, practical solutions and reliable digital expertise for businesses.",
+                icon: "/images/why-1.png",
+            },
+            {
+                id: 5,
+                title: "Flexible Engagement models",
+                description: "Flexible working approaches designed to match your project size business goals budget and long term requirements effectively.",
+                icon: "/images/why-2.png",
+            },
+            {
+                id: 6,
+                title: "Transparent Process",
+                description: "Clear communication, regular updates and complete transparency throughout every stage to keep clients informed and confident always.",
+                icon: "/images/why-3.png",
+            }
+        ]
+    },
+    socialProof: {
+        title: "Trusted By Businesses Across Industries",
+        description: "ClickTap Solution has earned the trust of businesses through quality work, strong communication and reliable digital solutions. Our team has worked with startups growing brands and enterprises across different industries to deliver results focused on the digital experiences. Clients choose us because we understand their goals and provide practical solutions which support long term growth.\n\nWe have established a reputation over the years for upholding transparency, fulfilling project requirements and providing dependable assistance at every turn. Our focus on innovation, user experience and scalable technological solutions which have assisted companies in increasing their online presence and boosting client interaction. We continue building long term partnerships by providing dependable services which helps brands grow confidently in a fast digital market."
+    },
+    cta: {
+        title: "Let’s build Something Meaningful Together",
+        description: "Whether you are starting with a new idea or improving an existing digital product ClickTap Solution is here to help. Our team combines creativity strategy and technology expertise to deliver the solutions which support your business goals, improve user experience and create the long term growth opportunities for your brand in the digital market.",
+        buttonText: "Get Started Today"
+    }
+};
+
+

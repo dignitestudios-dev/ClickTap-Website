@@ -1,8 +1,7 @@
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import Navbar from "../../components/global/Navbar";
-import { CONSULTANT_US_CONTENT } from "../../constants/content";
-import ProductOutcomes from "@/app/components/case-studies-components/ChubsArmy/ProductOutComes";
+import { LOVE_STORED_CONTENT } from "../../constants/content";
 // Dynamic imports
 const Footer = dynamic(() => import("../../components/global/Footer"), { ssr: true });
 const Hero = dynamic(() => import("@/app/components/case-studies-components/love-stored/Hero"), { ssr: true });
@@ -11,36 +10,37 @@ const DiscoverResearch = dynamic(() => import("@/app/components/case-studies-com
 const KeyChallenges = dynamic(() => import("@/app/components/case-studies-components/love-stored/KeyChallenges"), { ssr: true });
 const TheSolution = dynamic(() => import("@/app/components/case-studies-components/love-stored/TheSolution"), { ssr: true });
 const WorkflowTimeline = dynamic(() => import("@/app/components/case-studies-components/love-stored/WorkflowTimeline"), { ssr: true });
-const UxWireframingSection = dynamic(() => import("@/app/components/case-studies-components/consultant-us/UxWireframingSection"), { ssr: true });
-const BrandIdentity = dynamic(() => import("@/app/components/case-studies-components/consultant-us/BrandIdentity"), { ssr: true });
-const TechStackMarquee = dynamic(() => import("@/app/components/case-studies-components/consultant-us/TechStackMarquee"), { ssr: true });
-const SuccessSection = dynamic(() => import("@/app/components/case-studies-components/consultant-us/SuccessSection"), { ssr: true });
-const projectDetails = CONSULTANT_US_CONTENT.hero.details.map((detail, index) => ({
+const UxWireframingSection = dynamic(() => import("@/app/components/case-studies-components/love-stored/UxWireframingSection"), { ssr: true });
+const TechStack = dynamic(() => import("@/app/components/case-studies-components/love-stored/TechStack"), { ssr: true });
+const BrandIdentity = dynamic(() => import("@/app/components/case-studies-components/love-stored/BrandIdentity"), { ssr: true });
+const ProductOutcomes = dynamic(() => import("@/app/components/case-studies-components/ChubsArmy/ProductOutComes"), { ssr: true });
+const SuccessSection = dynamic(() => import("@/app/components/case-studies-components/love-stored/SuccessSection"), { ssr: true });
+const projectDetails = LOVE_STORED_CONTENT.hero.details.map((detail, index) => ({
     ...detail,
     imageSrc: `/images/consultant-hero${index + 1}.png`
 }));
 export const metadata: Metadata = {
-    title: CONSULTANT_US_CONTENT.meta.title,
-    description: CONSULTANT_US_CONTENT.meta.description,
+    title: LOVE_STORED_CONTENT.meta.title,
+    description: LOVE_STORED_CONTENT.meta.description,
 };
 
 export default function LoveRestoredPage() {
     const wireframes = [
-        { id: 15 },
-        { id: 16 },
-        { id: 17 },
-        { id: 18 },
-        { id: 19 },
-        { id: 15 },
-        { id: 16 },
-        { id: 17 },
-        { id: 18 },
-        { id: 19 },
+        { id: 25 },
+        { id: 26 },
+        { id: 27 },
+        { id: 28 },
+        { id: 29 },
+        { id: 25 },
+        { id: 26 },
+        { id: 27 },
+        { id: 28 },
+        { id: 29 },
 
     ];
 
     return (
-        <div className="flex flex-col min-h-screen overflow-x-hidden">
+        <div className="flex w= flex-col min-h-screen overflow-x-hidden">
             {/* Navigation */}
             <Navbar />
 
@@ -49,16 +49,16 @@ export default function LoveRestoredPage() {
                 <div className="flex flex-col gap-10 md:gap-0">
                     {/* Hero Section */}
                     <Hero
-                        title={CONSULTANT_US_CONTENT.hero.title}
-                        description={CONSULTANT_US_CONTENT.hero.description}
+                        title={LOVE_STORED_CONTENT.hero.title}
+                        description={LOVE_STORED_CONTENT.hero.description}
                         details={projectDetails}
                     />
                     <VisionBehind
-                        title={CONSULTANT_US_CONTENT.research.title}
-                        description={CONSULTANT_US_CONTENT.research.description}
-                        marketResearch={CONSULTANT_US_CONTENT.research.marketResearch}
-                        userResearch={CONSULTANT_US_CONTENT.research.userResearch}
-                        keyInsight={CONSULTANT_US_CONTENT.research.keyInsight}
+                        title={LOVE_STORED_CONTENT.research.title}
+                        description={LOVE_STORED_CONTENT.research.description}
+                        marketResearch={LOVE_STORED_CONTENT.research.marketResearch}
+                        userResearch={LOVE_STORED_CONTENT.research.userResearch}
+                        keyInsight={LOVE_STORED_CONTENT.research.keyInsight}
 
                     />
                     <DiscoverResearch />
@@ -67,12 +67,13 @@ export default function LoveRestoredPage() {
                     <WorkflowTimeline />
                     <UxWireframingSection />
                     <BrandIdentity />
-                    <TechStackMarquee />
+                    <TechStack />
                     <ProductOutcomes
-                        title={CONSULTANT_US_CONTENT.outcomes.title}
-                        description={CONSULTANT_US_CONTENT.outcomes.description}
-                        stats={CONSULTANT_US_CONTENT.outcomes.stats}
+                        title={LOVE_STORED_CONTENT.outcomes.title}
+                        description={LOVE_STORED_CONTENT.outcomes.description}
+                        stats={LOVE_STORED_CONTENT.outcomes.stats}
                         wireframes={wireframes}
+                        loveRestored={true}
                     />
                     <SuccessSection />
                 </div>

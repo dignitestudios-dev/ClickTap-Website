@@ -13,7 +13,6 @@ interface CaseStudy {
     bgColor: string;
     accentColor: string;
     image: string;
-    mockBg: string;
     link?: string;
 }
 
@@ -26,42 +25,30 @@ const caseStudies: CaseStudy[] = [
         tag: "UX Design",
         bgColor: "from-slate-800 via-slate-700 to-slate-900",
         accentColor: "#f97316",
-        image: "/images/chubbss.webp",
-        mockBg: "bg-gradient-to-br from-purple-900 via-indigo-800 to-slate-900",
+        image: "/images/case-1.png",
         link: "/case-studies/chubss-army"
     },
     {
         id: 2,
-        title: "WingX",
-        subtitle: "Dating · Social",
-        description: "Redefining dating through friend-powered matchmaking.",
+        title: "Consultants R Us",
+        subtitle: "Consulting · Business",
+        description: "Connect with verified industry experts for instant guidance.",
         tag: "Product Design",
         bgColor: "from-sky-300 via-blue-200 to-sky-400",
         accentColor: "#0ea5e9",
-        image: "/wingx-mockup.png",
-        mockBg: "bg-gradient-to-br from-sky-300 via-blue-200 to-cyan-300",
+        image: "/images/case-2.png",
+        link: "/case-studies/consultant-us"
     },
     {
         id: 3,
-        title: "FinFlow",
-        subtitle: "Fintech · Dashboard",
-        description: "Intelligent personal finance at a glance.",
+        title: "LoveStored",
+        subtitle: "Dating · Social",
+        description: "Rediscover love with AI-powered guidance and meaningful connections.",
         tag: "UI Design",
         bgColor: "from-emerald-800 via-teal-700 to-emerald-900",
         accentColor: "#10b981",
-        image: "/finflow-mockup.png",
-        mockBg: "bg-gradient-to-br from-emerald-700 via-teal-600 to-green-900",
-    },
-    {
-        id: 4,
-        title: "Orbitly",
-        subtitle: "SaaS · Web App",
-        description: "Simplifying team collaboration across time zones.",
-        tag: "Branding",
-        bgColor: "from-violet-900 via-purple-800 to-fuchsia-900",
-        accentColor: "#a855f7",
-        image: "/orbitly-mockup.png",
-        mockBg: "bg-gradient-to-br from-violet-800 via-purple-700 to-fuchsia-800",
+        image: "/images/case-3.png",
+        link: "/case-studies/love-restored"
     },
 ];
 
@@ -113,7 +100,7 @@ export default function CaseStudiesCard() {
                             >
                                 {/* Card image area */}
                                 <div
-                                    className={`relative h-80 bg-gradient-to-br ${study.bgColor} overflow-hidden flex items-center justify-center`}
+                                    className={`relative h-80  overflow-hidden flex items-center justify-center`}
                                 >
                                     {/* Zoom overlay tint on hover */}
                                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500 z-10" />
@@ -144,7 +131,7 @@ export default function CaseStudiesCard() {
                                             width={950}
                                             height={950}
                                             alt="image"
-                                            className="w-[95%] max-w-[500px] object-contain"
+                                            className="w-[100%]  object-contain"
                                         />
                                     </div>
 

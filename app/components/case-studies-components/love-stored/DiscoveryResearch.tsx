@@ -1,4 +1,5 @@
 import React from 'react';
+import { LOVE_STORED_CONTENT } from '@/app/constants/content';
 import Image from 'next/image';
 
 interface ResearchItem {
@@ -7,19 +8,11 @@ interface ResearchItem {
 }
 
 export default function DiscoveryResearch() {
-    // Dummy data for list items
-    const dummyPoints: ResearchItem[] = [
-        { id: 1, text: "Analyzed behavior patterns across modern dating and social networking platforms" },
-        { id: 2, text: "Analyzed behavior patterns across modern dating and social networking platforms" },
-        { id: 3, text: "Analyzed behavior patterns across modern dating and social networking platforms" },
-        { id: 4, text: "Analyzed behavior patterns across modern dating and social networking platforms" },
-    ];
-
     return (
         <section className="bg-white py-16 px-4 max-w-6xl mx-auto font-sans">
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0a192f] mb-12">
-                Discovery & Research
+                {LOVE_STORED_CONTENT.research.title}
             </h2>
 
             {/* Cards Container */}
@@ -31,8 +24,8 @@ export default function DiscoveryResearch() {
                         Market Research
                     </h3>
                     <ul className="space-y-4">
-                        {dummyPoints.map((item) => (
-                            <li key={item.id} className="flex items-start gap-2 text-sm md:text-base opacity-90">
+                        {LOVE_STORED_CONTENT.research.marketResearch.map((item, index) => (
+                            <li key={index} className="flex items-start gap-2 text-sm md:text-base opacity-90">
                                 <div className="flex-shrink-0  relative mt-1">
                                     {/* Heart Image Placeholder */}
                                     <Image
@@ -43,7 +36,7 @@ export default function DiscoveryResearch() {
                                         className="object-contain"
                                     />
                                 </div>
-                                <span>{item.text}</span>
+                                <span>{item}</span>
                             </li>
                         ))}
                     </ul>
@@ -55,8 +48,8 @@ export default function DiscoveryResearch() {
                         User Research
                     </h3>
                     <ul className="space-y-4">
-                        {dummyPoints.map((item) => (
-                            <li key={item.id} className="flex items-start gap-2 text-sm md:text-base text-gray-800  opacity-90 transition-colors duration-300">
+                        {LOVE_STORED_CONTENT.research.userResearch.map((item, index) => (
+                            <li key={index} className="flex items-start gap-2 text-sm md:text-base text-gray-800  opacity-90 transition-colors duration-300">
                                 <div className="flex-shrink-0  relative mt-1">
                                     {/* Heart Image Placeholder */}
                                     <Image
@@ -67,7 +60,7 @@ export default function DiscoveryResearch() {
                                         className="object-contain"
                                     />
                                 </div>
-                                <span>{item.text}</span>
+                                <span>{item}</span>
                             </li>
                         ))}
                     </ul>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LOVE_STORED_CONTENT } from '@/app/constants/content';
 import Image from 'next/image';
 
 interface ChallengeCard {
@@ -8,39 +9,20 @@ interface ChallengeCard {
 }
 
 export default function KeyChallenges() {
-    // Dummy data for the three challenge cards
-    const challenges: ChallengeCard[] = [
-        {
-            id: 1,
-            title: "Balancing Social & Dating Experiences",
-            description: "Analyzed behavior patterns across modern dating and social networking platforms."
-        },
-        {
-            id: 2,
-            title: "AI Conversation Relevance",
-            description: "The Love Guru chatbot required conversational flows that felt engaging, supportive, and contextually relevant to relationship discussions."
-        },
-        {
-            id: 3,
-            title: "User Engagement Retention",
-            description: "Creating long-term engagement beyond initial matching was important to prevent user drop-offs common in dating platforms."
-        }
-    ];
-
     return (
         <section className="bg-white py-16 relative px-4 max-w-6xl mx-auto font-sans select-none">
             {/* Section Heading */}
             <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0a192f] mb-16">
-                Key Challenges
+                {LOVE_STORED_CONTENT.challenges.title}
             </h2>
 
             {/* Cards Responsive Grid */}
             <Image src="/images/key-challenges.png" alt="key-challenges"  fill className='object-contain mt-14 w-full h-full' />
             <div className="grid md:grid-cols-3 gap-6 items-stretch" >
 
-                {challenges.map((challenge) => (
+                {LOVE_STORED_CONTENT.challenges.items.map((challenge, index) => (
                     <div
-                        key={challenge.id}
+                        key={index}
                         className="relative bg-[#F1F1F180]/50 backdrop-blur-lg text-black p-8 rounded-3xl min-h-[340px] flex flex-col items-center justify-between text-center overflow-hidden border border-gray-100 shadow-sm transition-all duration-300 group"
                     >
 

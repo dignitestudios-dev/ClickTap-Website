@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { MarqueeSection } from "./MarqueeSection";
-
+import { MarqueeSection as MarqueeSectionChubsArmy } from "./MarqueeSection";
+import { MarqueeSection as MarqueeSectionLoveRestored } from "../love-stored/MarqueeSection";
 
 type ProductOutcomesProps = {
     title: React.ReactNode;
     description: string;
     stats: { label: string; value: string, statsBg?: string, statsColor?: string, labelColor?: string, borderColor?: string }[];
     wireframes: any,
+    loveRestored?: boolean
 };
 
 const ProductOutcomes = ({
@@ -16,6 +17,7 @@ const ProductOutcomes = ({
     description,
     stats,
     wireframes,
+    loveRestored
 }: ProductOutcomesProps) => {
     const images = wireframes.map(
         (frame: any) => `/images/s${frame.id}.webp`
@@ -36,7 +38,7 @@ const ProductOutcomes = ({
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 overflow-hidden border border-[#714927] rounded-[16px] bg-[#FFFDF9] md:grid-cols-3 mb-20">
+                <div className="grid grid-cols-1 overflow-hidden border-2 border-dashed border-[#B8832D] rounded-[16px] bg-[#FFFDF9] md:grid-cols-3 mb-20">
                     {stats.map((stat, index) => (
                         <StatCard
                             key={index}
@@ -52,7 +54,7 @@ const ProductOutcomes = ({
                 </div>
             </div>
 
-            <MarqueeSection images={images} />
+            {loveRestored ? <MarqueeSectionLoveRestored images={wireframes} /> : <MarqueeSectionChubsArmy images={images} />}
         </section>
     );
 };

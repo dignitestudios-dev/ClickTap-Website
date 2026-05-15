@@ -4,6 +4,7 @@ import { NavLink } from "@/types";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
@@ -21,17 +22,19 @@ const navLinks: NavLink[] = [
       { label: "Custom Software Development", href: "/services/custom-software-development" },
       { label: "MVP Development Services", href: "/services/mvp-development-services" },
       { label: "UI/UX Design", href: "/services/ui-ux" },
-      { label: "Consultant", href: "/services/consultant" },
+      {
+        label: "Mobile App Consulting Services", href: "/services/mobile-app-consulting-services"
+      },
     ],
   },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "About Us", href: "#about" },
+  { label: "About Us", href: "/about-us" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-
+  const router = useRouter();
   return (
     <nav className="w-full h-[70px] md:h-[91px] flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-20  top-0 z-50 ">
       {/* Logo */}
@@ -88,7 +91,7 @@ export default function Navbar() {
 
       {/* CTA Button */}
       {/* CTA Button */}
-      <button className="hidden md:flex items-center justify-center bg-[#A9C921] text-[#1E2600] text-[13px] lg:text-[15px] font-semibold rounded-2xl px-4 lg:px-5 py-2 h-[50px] lg:h-[61px] hover:opacity-90 transition-opacity">
+      <button onClick={() => router.push("/contact-us")} className="cursor-pointer hidden md:flex items-center justify-center bg-[#A9C921] text-[#1E2600] text-[13px] lg:text-[15px] font-semibold rounded-2xl px-4 lg:px-5 py-2 h-[50px] lg:h-[61px] hover:opacity-90 transition-opacity">
         Contact Us
       </button>
 

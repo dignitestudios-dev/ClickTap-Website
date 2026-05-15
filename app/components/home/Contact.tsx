@@ -97,8 +97,8 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
                                 <div className="flex flex-col gap-3">
                                     <label className="text-[#00161D]/60 text-[16px]">Number</label>
                                     <div className="flex items-center gap-2 bg-[#F1F1F1] border border-[#F5F5F5] rounded-2xl px-4 py-4">
-                                        <div className="flex items-center gap-2 border-r border-[#E3E3E3] pr-2">
-                                            <Image src="/images/flag.png" alt="flag" width={24} height={16} className="w-6 h-4 object-contain" />
+                                        <div>
+                                            <Image src="/images/flag.png" alt="flag" width={40} height={20} className="w-14 h-4 " />
                                         </div>
                                         <input
                                             name="phone"
