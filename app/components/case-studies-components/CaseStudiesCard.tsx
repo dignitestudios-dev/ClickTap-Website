@@ -41,14 +41,14 @@ const caseStudies: CaseStudy[] = [
     },
     {
         id: 3,
-        title: "LoveStored",
+        title: "Love Restored.ai",
         subtitle: "Dating · Social",
         description: "Rediscover love with AI-powered guidance and meaningful connections.",
         tag: "UI Design",
         bgColor: "from-emerald-800 via-teal-700 to-emerald-900",
         accentColor: "#10b981",
         image: "/images/case-3.png",
-        link: "/case-studies/love-restored"
+        link: "/case-studies/love-restored.ai"
     },
 ];
 
@@ -58,7 +58,7 @@ export default function CaseStudiesCard() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
     return (
-        <section className="min-h-screen py-24  font-sans">
+        <section className="min-h-screen py-24  ">
             {/* Decorative blobs */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
                 <div className="absolute -top-0 -right-40 w-96 h-96 rounded-full bg-[#01C2FE]/40 blur-[80px]" />
@@ -68,12 +68,8 @@ export default function CaseStudiesCard() {
             <div className="relative  mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#A9C921] mb-3">
-                        Portfolio
-                    </p>
                     <h2
                         className="text-6xl md:text-7xl font-black text-slate-900 leading-none tracking-tight"
-                        style={{ fontFamily: "'Georgia', serif" }}
                     >
                         Case Studies
                     </h2>
@@ -136,7 +132,7 @@ export default function CaseStudiesCard() {
                                     </div>
 
                                     {/* Tag badge */}
-                                    <div className="absolute top-4 right-4 z-30">
+                                    {/* <div className="absolute top-4 right-4 z-30">
                                         <span
                                             className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-sm"
                                             style={{
@@ -147,7 +143,7 @@ export default function CaseStudiesCard() {
                                         >
                                             {study.tag}
                                         </span>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* Card footer */}

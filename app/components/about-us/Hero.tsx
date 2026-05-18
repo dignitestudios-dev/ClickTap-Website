@@ -41,7 +41,7 @@ export default function Hero({ title, description, details }: Props) {
 
 
                 {/* Central Phone Mockup Showcase */}
-                <div className="relative mt-10 lg:-mt-64  w-full  mx-auto  px-2">
+                <div className="relative mt-10  w-full  mx-auto  px-2">
                         <Image
                             src="/images/about-us-hero.png"
                             alt="Mobile App Preview"

@@ -56,14 +56,14 @@ export default function Services() {
               <Image src="/images/line.png" alt="iOS" fill className="object-contain mt-3 h-full" />
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[16px] md:text-[24px] mb-1">iOS App Development</h3>
-                <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/ios-app-development" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[20px] md:text-[24px] mb-3">iOS App Development</h3>
                 <p className="text-white/90 text-[15px] leading-[24px]">{serviceDescriptions["iOS App Development"]}</p>
-                <Link href="#" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/ios-app-development" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -78,14 +78,14 @@ export default function Services() {
             <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[20px] md:text-[24px] mb-1">Android App Development</h3>
-                <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/andriod-app-development" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[24px] mb-3">Android App Development</h3>
                 <p className="text-white/90 text-[15px] leading-[24px]">{serviceDescriptions["Android App Development"]}</p>
-                <Link href="#" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/andriod-app-development" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default function Services() {
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[22px] mb-3">PWA Development</h3>
                 <p className="text-white/90 text-[14px] leading-[22px]">{serviceDescriptions["PWA Development"]}</p>
-                <Link href="#" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
+                <Link href="/services/progressive-web-app" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -128,7 +128,7 @@ export default function Services() {
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[22px] mb-3">MVP Development</h3>
                 <p className="text-white/90 text-[14px] leading-[22px]">{serviceDescriptions["MVP Development"]}</p>
-                <Link href="#" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
+                <Link href="/services/mvp-development-services" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -160,7 +160,7 @@ export default function Services() {
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[22px] mb-3 leading-tight">Mobile App Consulting Services</h3>
                 <p className="text-white/90 text-[14px] leading-[22px]">{serviceDescriptions["Mobile App Consulting"]}</p>
-                <Link href="#" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
+                <Link href="/services/mobile-app-consulting-services" className="mt-4 flex items-center gap-2 text-white font-bold text-[14px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -175,14 +175,14 @@ export default function Services() {
             <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-20 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[24px] mb-1">AI App Development</h3>
-                <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/ai-app-development" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[24px] mb-3">AI App Development</h3>
                 <p className="text-white/90 text-[15px] leading-[24px]">{serviceDescriptions["AI App Development"]}</p>
-                <Link href="#" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/ai-app-development" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
@@ -202,14 +202,14 @@ export default function Services() {
             <div className="bg-[#EAF6FB] rounded-[24px] relative overflow-hidden h-[350px] md:h-[420px] p-6 md:p-8 flex flex-col group hover:bg-[#e2f3fa] transition-colors">
               <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-[#00161D] font-bold text-[24px] mb-1">Mobile App Development</h3>
-                <Link href="#" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/mobile-app-development" className="flex items-center gap-2 text-[#01C2FE] font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>
               <div className="absolute inset-0 z-20 rounded-[24px] bg-[#00161D]/80 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
                 <h3 className="text-white font-bold text-[24px] mb-3">Mobile App Development</h3>
                 <p className="text-white/90 text-[15px] leading-[24px]">{serviceDescriptions["Mobile App Development"]}</p>
-                <Link href="#" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
+                <Link href="/services/mobile-app-development" className="mt-6 flex items-center gap-2 text-white font-bold text-[15px] group/btn w-fit">
                   Learn More <ArrowIcon />
                 </Link>
               </div>

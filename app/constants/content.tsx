@@ -3866,7 +3866,7 @@ export const CHUBBS_ARMY_CONTENT = {
         description: "The technology stack behind Chubbs Army was carefully planned to support performance and long term platform growth. We used cross platform mobile development to create a consistent experience across both iOS and Android. Alongside the mobile applications, a web based admin panel was developed to provide centralized control. AR integration was implemented to further enhance user interaction and content creation.",
     },
     outcomes: {
-        title: <>Product <span className="font-bold"><br /> Outcomes & <br /> Growth</span></>,
+        title: <>Product <span className="font-bold"><br /> Outcomes &  Growth</span></>,
         description: "The platform successfully established a strong and active niche community of pet lovers. It brought together owners, service providers and event organizers in one connected platform. It not only encouraged consistent user engagement but also created genuine value for businesses by making it possible for the service providers to directly sell and offer their services within the app. Additionally, the integration of subscriptions and event based features laid the groundwork for a monetization model. Overall, the product delivered a balanced platform. It positions Chubbs Army as a sustainable platform ready for feature evolution.",
         stats: [
             { label: "registered users", value: "600+", statsBg: "bg-[#FFFDF9]", statsColor: "text-[#8B5E3C]", borderColor: "#714927", labelColor: "#00161D" },
@@ -4381,13 +4381,13 @@ export const CONSULTANT_US_CONTENT = {
 };
 export const LOVE_STORED_CONTENT = {
     meta: {
-        title: "LoveStored.Ai Case Study - AI-Powered Dating Platform",
-        description: "See how we designed and developed LoveStored.Ai.  An AI-powered dating platform focused on social engagement and interactive relationship experiences.",
+        title: "LoveRestored.Ai Case Study - AI-Powered Dating Platform",
+        description: "See how we designed and developed LoveRestored.Ai.  An AI-powered dating platform focused on social engagement and interactive relationship experiences.",
     },
     hero: {
-        tagline: "LoveStored.Ai",
-        title: "Introducing LoveStored.Ai",
-        description: "The team of developers created LoveStored.Ai to make online dating feel more interactive and personal. The goal was to design an experience that prioritizes connections through conversation rather than building a traditional platform which is focused on swipes. Alongside helping users discover compatible partners for themselves, the platform also allows people to recommend matches for friends. This option adds a more social layer to the experience. We also integrated an AI powered “Love Guru” chatbot that offers relationship advice to make interactions more engaging. Our team designed and developed the complete mobile experience.",
+        tagline: "LoveRestored.Ai",
+        title: "Introducing LoveRestored.Ai",
+        description: "The team of developers created LoveRestored.Ai to make online dating feel more interactive and personal. The goal was to design an experience that prioritizes connections through conversation rather than building a traditional platform which is focused on swipes. Alongside helping users discover compatible partners for themselves, the platform also allows people to recommend matches for friends. This option adds a more social layer to the experience. We also integrated an AI powered “Love Guru” chatbot that offers relationship advice to make interactions more engaging. Our team designed and developed the complete mobile experience.",
         cta: "Talk to our experts",
         details: [
             { label: "Timeline", value: "Six Months" },
@@ -4397,7 +4397,7 @@ export const LOVE_STORED_CONTENT = {
     },
     vision: {
         title: <>The <span className="font-bold">Product Vision</span></>,
-        description: "The vision behind LoveStored.Ai was to turn an online dating app into an emotionally engaging experience. We wanted to create a platform that is beyond traditional matchmaking and actually encourages genuine communication and better digital connections. We introduced community driven features, which means users can recommend compatible partners for friends instead of focusing only on direct user interactions. This one feature makes the entire experience feel more engaging and relationship focused. To further personalize interactions, the team then integrated an AIpowered Love Guru chatbot that is actually designed to provide relationship advice.",
+        description: "The vision behind LoveRestored.Ai was to turn an online dating app into an emotionally engaging experience. We wanted to create a platform that is beyond traditional matchmaking and actually encourages genuine communication and better digital connections. We introduced community driven features, which means users can recommend compatible partners for friends instead of focusing only on direct user interactions. This one feature makes the entire experience feel more engaging and relationship focused. To further personalize interactions, the team then integrated an AIpowered Love Guru chatbot that is actually designed to provide relationship advice.",
     },
     research: {
         title: <>User Insights <span className="font-bold">and Research</span></>,
@@ -4452,7 +4452,7 @@ export const LOVE_STORED_CONTENT = {
     },
     workflow: {
         title: <>Development <span className="font-bold">Process Flow</span></>,
-        description: "We followed a structured workflow to transform the idea of LoveStored.Ai into an entirely functional product. The process began with a detailed research that helped us define the core feature set.",
+        description: "We followed a structured workflow to transform the idea of LoveRestored.Ai into an entirely functional product. The process began with a detailed research that helped us define the core feature set.",
         items: [
             {
                 title: "Discovery Phase",
@@ -4482,15 +4482,15 @@ export const LOVE_STORED_CONTENT = {
     },
     branding: {
         title: <>Creating <span className="font-bold">Visual Identity</span></>,
-        description: "The visual identity of LoveStored.Ai was designed to feel welcoming and emotionally engaging while maintaining a clean and polished digital experience. We focused on creating a aesthetic that’s focused on relationships that reflects connection and trust. We didn’t rely on overly traditional dating app visuals. Soft design elements, balanced typography, modern color combinations and minimal interface styling were used. Every visual create a more approachable and comfortable user experienc.",
+        description: "The visual identity of LoveRestored.Ai was designed to feel welcoming and emotionally engaging while maintaining a clean and polished digital experience. We focused on creating a aesthetic that’s focused on relationships that reflects connection and trust. We didn’t rely on overly traditional dating app visuals. Soft design elements, balanced typography, modern color combinations and minimal interface styling were used. Every visual create a more approachable and comfortable user experienc.",
     },
     techStack: {
         title: <>Platform <span className="font-bold">Technology Stack</span></>,
-        description: "LoveStored.Ai was built using modern mobile technologies that are basically designed to support smooth navigation and scalable platform performance. Our development approach focused on creating a stable user experience across matchmaking and social engagement. We integrated OpenAI technology to power the Love Guru chatbot. It enables more intelligent and context aware relationship conversations throughout the platform.",
+        description: "LoveRestored.Ai was built using modern mobile technologies that are basically designed to support smooth navigation and scalable platform performance. Our development approach focused on creating a stable user experience across matchmaking and social engagement. We integrated OpenAI technology to power the Love Guru chatbot. It enables more intelligent and context aware relationship conversations throughout the platform.",
     },
     outcomes: {
         title: <>Outcomes and <span className="font-bold">Achievements</span></>,
-        description: "LoveStored.Ai successfully introduced a more interactive approach to modern digital matchmaking. The platform created an experience that feels more engaging than traditional dating applications by combining social engagement features and personalized interaction tools.  The addition of friend based matchmaking and the Love Guru chatbot helped encourage longer user interaction across the platform. The platform was built with usability while making it easier for the client to expand features over time. The final result was an impressive mobile experience that balances emotional connection and intelligent technology within a single platform. We created a centralized admin dashboard that gives the client complete visibility and control over engagement and platform management. The dashboard was designed to simplify moderation processes while helping administrators monitor interactions. Every feature was structured to support a secure platform. We also implemented reporting tools that allow administrators to review suspicious activity. The dashboard provides insights into interaction patterns while helping the client better understand platform performance.",
+        description: "LoveRestored.Ai successfully introduced a more interactive approach to modern digital matchmaking. The platform created an experience that feels more engaging than traditional dating applications by combining social engagement features and personalized interaction tools.  The addition of friend based matchmaking and the Love Guru chatbot helped encourage longer user interaction across the platform. The platform was built with usability while making it easier for the client to expand features over time. The final result was an impressive mobile experience that balances emotional connection and intelligent technology within a single platform. We created a centralized admin dashboard that gives the client complete visibility and control over engagement and platform management. The dashboard was designed to simplify moderation processes while helping administrators monitor interactions. Every feature was structured to support a secure platform. We also implemented reporting tools that allow administrators to review suspicious activity. The dashboard provides insights into interaction patterns while helping the client better understand platform performance.",
         stats: [
             { label: "registered users", value: "600+", statsBg: "bg-transparent text-center rounded-r-[20px] border-r-2 border-dashed! border-[#B8832D]", statsColor: "text-[#00161D]", borderColor: "#B8832D", labelColor: "text-[#00161D] opacity-70" },
             { label: "downloads on iOS (App Store)", value: "200+", statsBg: "bg-[#FFFFFF] text-center border-none!  ", statsColor: "text-[#101D2D]", borderColor: "#B8832D", labelColor: "text-[#00161D]" },

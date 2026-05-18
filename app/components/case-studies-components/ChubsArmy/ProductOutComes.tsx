@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { MarqueeSection as MarqueeSectionChubsArmy } from "./MarqueeSection";
-import { MarqueeSection as MarqueeSectionLoveRestored } from "../love-stored/MarqueeSection";
+import { MarqueeSection as MarqueeSectionLoveRestored } from "../love-restored-ai/MarqueeSection";
 
 type ProductOutcomesProps = {
     title: React.ReactNode;
@@ -27,12 +27,12 @@ const ProductOutcomes = ({
         <section className="bg-white py-20 px-4 md:px-0 font-sans">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="grid grid-cols-12 gap-0 mb-16">
-                    <h2 className="text-[clamp(1.75rem,5vw,3rem)] col-span-12 md:col-span-4 leading-tight text-gray-900 mb-6 md:mb-0">
+                <div className="gap-5 mb-16 text-center flex flex-col items-center">
+                    <h2 className="text-[clamp(1.75rem,5vw,3rem)] leading-tight text-gray-900 mb-6 md:mb-0">
                         {title}
                     </h2>
 
-                    <p className="text-[#00161D] col-span-12 md:col-span-8 text-[15px] leading-relaxed pt-2">
+                    <p className="text-[#00161D] text-[15px] leading-relaxed pt-2 max-w-5xl">
                         {description}
                     </p>
                 </div>

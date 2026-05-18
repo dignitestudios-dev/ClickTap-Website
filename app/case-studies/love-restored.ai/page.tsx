@@ -4,17 +4,17 @@ import Navbar from "../../components/global/Navbar";
 import { LOVE_STORED_CONTENT } from "../../constants/content";
 // Dynamic imports
 const Footer = dynamic(() => import("../../components/global/Footer"), { ssr: true });
-const Hero = dynamic(() => import("@/app/components/case-studies-components/love-stored/Hero"), { ssr: true });
-const VisionBehind = dynamic(() => import("@/app/components/case-studies-components/love-stored/vision-behind"), { ssr: true });
-const DiscoverResearch = dynamic(() => import("@/app/components/case-studies-components/love-stored/DiscoveryResearch"), { ssr: true });
-const KeyChallenges = dynamic(() => import("@/app/components/case-studies-components/love-stored/KeyChallenges"), { ssr: true });
-const TheSolution = dynamic(() => import("@/app/components/case-studies-components/love-stored/TheSolution"), { ssr: true });
-const WorkflowTimeline = dynamic(() => import("@/app/components/case-studies-components/love-stored/WorkflowTimeline"), { ssr: true });
-const UxWireframingSection = dynamic(() => import("@/app/components/case-studies-components/love-stored/UxWireframingSection"), { ssr: true });
-const TechStack = dynamic(() => import("@/app/components/case-studies-components/love-stored/TechStack"), { ssr: true });
-const BrandIdentity = dynamic(() => import("@/app/components/case-studies-components/love-stored/BrandIdentity"), { ssr: true });
+const Hero = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/Hero"), { ssr: true });
+const VisionBehind = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/vision-behind"), { ssr: true });
+const DiscoverResearch = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/DiscoveryResearch"), { ssr: true });
+const KeyChallenges = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/KeyChallenges"), { ssr: true });
+const TheSolution = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/TheSolution"), { ssr: true });
+const WorkflowTimeline = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/WorkflowTimeline"), { ssr: true });
+const UxWireframingSection = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/UxWireframingSection"), { ssr: true });
+const TechStack = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/TechStack"), { ssr: true });
+const BrandIdentity = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/BrandIdentity"), { ssr: true });
 const ProductOutcomes = dynamic(() => import("@/app/components/case-studies-components/ChubsArmy/ProductOutComes"), { ssr: true });
-const SuccessSection = dynamic(() => import("@/app/components/case-studies-components/love-stored/SuccessSection"), { ssr: true });
+const SuccessSection = dynamic(() => import("@/app/components/case-studies-components/love-restored-ai/SuccessSection"), { ssr: true });
 const projectDetails = LOVE_STORED_CONTENT.hero.details.map((detail, index) => ({
     ...detail,
     imageSrc: `/images/consultant-hero${index + 1}.png`
