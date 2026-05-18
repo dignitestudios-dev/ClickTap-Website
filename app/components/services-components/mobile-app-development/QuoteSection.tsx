@@ -14,7 +14,7 @@ type Props = {
 const QuoteSection = ({ heading, description, ctaText }: Props) => {
     return (
         <section className="px-6 md:px-20 py-10">
-            <div className="relative w-full max-w-[1440px] mx-auto h-auto min-h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#01C2FE80] flex flex-col lg:flex-row items-center">
+            <div className="relative w-full max-w-[1440px] mx-auto h-auto min-h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#01C2FE80] flex flex-col lg:flex-row justify-center items-center">
 
                 {/* Gradient Overlay for the blue effect */}
                 <div className="absolute inset-0 bottom-0 z-0 w-full bg-cover! bg-no-repeat! " style={{ background: `url("/images/bg-start.png") ` }} />

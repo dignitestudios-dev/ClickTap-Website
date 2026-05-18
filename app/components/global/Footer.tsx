@@ -57,7 +57,8 @@ export default function Footer() {
             alt="Clicktap Solutions Logo"
           />
           <p className="font-normal text-[14px] leading-relaxed text-white/70">
-            Elit enim porttitor pellentesque mauris at. Sit pharetra amet facilisis pretium purus nibh nam proin consectetur.
+            Have an idea worth building?
+            Let’s turn it into something exceptional.
           </p>
 
           {/* Social Icons */}
@@ -81,6 +82,15 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
+        <div className="flex gap-16 sm:gap-24 lg:gap-32 flex-wrap md:flex-nowrap">
+          {/* Services Links */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-white font-medium text-[16px] md:text-[18px]">Location</h3>
+            <iframe className="w-[350px] h-[200px] rounded-[16px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401291.52539922635!2d-96.10343240424484!3d29.737503243118855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e7bc6ea6e0d9%3A0x4d5d015dceec04a3!2sClickTap%20Solutions!5e1!3m2!1sen!2s!4v1779096883929!5m2!1sen!2s" loading="lazy" ></iframe>
+          </div>
+        </div>
+
 
         {/* Right Columns: Links Container */}
         <div className="flex gap-16 sm:gap-24 lg:gap-32 flex-wrap md:flex-nowrap">
