@@ -12,7 +12,7 @@ type Props = {
 
 export default function Hero({ tagline, title, description, ctaText }: Props) {
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[1000px] bg-white overflow-hidden flex flex-col items-center">
+    <section className="relative w-full min-h-[450px] md:min-h-[1000px] bg-white overflow-hidden flex flex-col items-center">
 
       {/* Background Grid Image */}
       <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
@@ -78,7 +78,7 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
         </button>
 
         {/* Hero Image */}
-        <div className="relative z-10 w-full max-w-[300px] sm:max-w-[500px] md:max-w-[932px] px-4">
+        <div className="relative z-10 w-full max-w-[800px] sm:max-w-[800px] md:max-w-[932px] px-4">
           <Image
             src="/images/mobile-app-dev-hero.webp"
             alt="mobile-app-dev-hero.png"
@@ -89,7 +89,7 @@ export default function Hero({ tagline, title, description, ctaText }: Props) {
         </div>
       </div>
       {/* Bottom Blend Effect */}
-      <div className="absolute bottom-0  left-0 w-full h-[30px] z-20 pointer-events-none">
+      <div className="absolute bottom-0  left-0 w-full h-[20px] md:h-[30px] z-20 pointer-events-none">
 
         {/* Blur Layer */}
         <div className="absolute inset-0 backdrop-blur-[50px]" />

@@ -33,7 +33,7 @@ export default function ProgressiveWebAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-10">
                     {/* Hero Section */}
                     <Hero
                         tagline={PWA_CONTENT.hero.tagline}

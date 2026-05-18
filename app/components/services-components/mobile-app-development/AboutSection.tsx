@@ -64,21 +64,17 @@ type Props = {
 
 const AboutSection: React.FC<Props> = ({ tagline, heading, paragraphs, ctaText, stats }) => {
     return (
-        <section className="overflow-hidden bg-[#F3FBFD] px-5 py-16 md:px-10 lg:px-20 lg:py-24">
-            <div className="mx-auto flex w-full  flex-col items-center justify-between gap-10 lg:gap-14 lg:flex-row lg:items-start">
+        <section className="overflow-hidden bg-[#F3FBFD] px-5 py-0 md:px-10 lg:px-20 lg:py-24">
+            <div className="mx-auto flex w-full  flex-col items-center justify-between gap-5 lg:gap-14 lg:flex-row lg:items-start">
 
                 {/* LEFT CONTENT */}
-                <div className="w-full lg:flex-1  pt-4">
-                    <span className="text-[16px] font-medium text-[#00161D]">
-                        {tagline}
-                    </span>
-
-                    <h2 className="mt-5 text-3xl md:text-[36px] leading-[1.1] text-[#00161D]">
+                <div className="w-full lg:flex-1  md:pt-4">                   
+                    <h2 className="md:mt-5 text-3xl md:text-[36px] leading-[1.1] text-[#00161D]">
                         {heading}
                     </h2>
 
                     {paragraphs.map((p, i) => (
-                        <p key={i} className="mt-8 text-[17px] leading-[1.9] text-[#00161D]/80">
+                        <p key={i} className="mt-4 md:mt-8 text-[17px] leading-[1.9] text-[#00161D]/80">
                             {p}
                         </p>
                     ))}

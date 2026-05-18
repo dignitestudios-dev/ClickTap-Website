@@ -19,7 +19,7 @@ type Props = {
 }
 
 const techData: Record<string, TechItem[]> = {
-  "Front end": [
+  "Frontend": [
     { title: "React", icon: FaReact },
     { title: "Vue.js", icon: FaVuejs },
     { title: "Angular", icon: FaAngular },
@@ -27,7 +27,7 @@ const techData: Record<string, TechItem[]> = {
     { title: "React Native", icon: FaReact },
     { title: "Next.js", icon: TbBrandNextjs },
   ],
-  "Back end": [
+  "Backend": [
     { title: "Node.js", icon: FaNodeJs },
     { title: "Python", icon: FaPython },
     { title: "Go Lang", icon: FaGolang },
@@ -54,7 +54,7 @@ const techData: Record<string, TechItem[]> = {
 };
 
 export default function TechStack({ heading, description }: Props) {
-  const [activeTab, setActiveTab] = useState("Front end");
+  const [activeTab, setActiveTab] = useState("Frontend");
 
   return (
     <section className="w-full bg-[#F1FCFF] py-16 md:py-20 px-6 sm:px-10 md:px-20">

@@ -4,7 +4,7 @@ import Link from "next/link";
 const serviceLinks = [
   { name: "Mobile App Development", href: "/services/mobile-app-development" },
   { name: "iOS App Development", href: "/services/ios-app-development" },
-  { name: "Android App Development", href: "/services/android-app-development" },
+  { name: "Android App Development", href: "/services/andriod-app-development" },
   { name: "PWA Development", href: "/services/progressive-web-app" },
   { name: "Web App Development", href: "/services/web-app-development" },
   { name: "Custom Software Development", href: "/services/custom-software-development" },
@@ -16,17 +16,17 @@ const serviceLinks = [
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/about-us" },
+  { name: "Contact", href: "/contact-us" },
   { name: "Teams & Conditions", href: "#" },
   { name: "Privacy Policy", href: "#" },
 ];
 
 const socialLinks = [
-  { name: "Twitter", icon: "/images/tiwiter.png" },
-  { name: "Facebook", icon: "/images/fb.png" },
-  { name: "Instagram", icon: "/images/insta.png" },
-  { name: "LinkedIn", icon: "/images/linkedin.png" },
+  { name: "Twitter", icon: "/images/tiwiter.png", link: "https://x.com/ClickTapS" },
+  { name: "Facebook", icon: "/images/fb.png", link: "https://www.facebook.com/ClickTapSolutions" },
+  { name: "Instagram", icon: "/images/insta.png", link: "https://www.instagram.com/clicktapsolutions" },
+  { name: "LinkedIn", icon: "/images/linkedin.png", link: "https://www.linkedin.com/company/clicktap-solutions/" },
 ];
 
 export default function Footer() {
@@ -65,7 +65,8 @@ export default function Footer() {
             {socialLinks.map((social) => (
               <Link
                 key={social.name}
-                href="#"
+                href={social.link}
+                target="_blank"
                 aria-label={social.name}
                 className="hover:opacity-80 transition-opacity"
               >

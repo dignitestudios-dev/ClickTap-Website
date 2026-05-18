@@ -41,15 +41,16 @@ export default function Hero({ title, description, details }: Props) {
 
 
                 {/* Central Phone Mockup Showcase */}
-                <div className="relative mt-10  w-full  mx-auto  px-2">
-                        <Image
-                            src="/images/about-us-hero.png"
-                            alt="Mobile App Preview"
+                <div className="relative mt-10 w-full  mx-auto  px-2">
+                    <Image
+                        src="/images/about-us-hero.png"
+                        alt="Mobile App Preview"
                         width={700}
                         height={600}
-                        className="w-full hidden md:block h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.08)]"
-                            priority
-                        />
+                        className=" w-full block h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.08)]"
+                        priority
+                    />
+
                     {detailsData && detailsData.length > 0 && (
                         <div className="w-[1000px] lg:-mt-15 relative z-40 mx-auto border-y border-[#E2F1F8] bg-[#E8F7FE]">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full divide-y sm:divide-y-0 sm:divide-x divide-[#D0E7F4]">

@@ -52,7 +52,7 @@ export default function TechStack() {
                 </div>
 
                 {/* Row 2: 2 Centered Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-[50%] lg:max-w-[50%]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full  lg:max-w-[50%]">
                     {techData.slice(4).map((tech, idx) => (
                         <div
                             key={idx}

@@ -82,36 +82,36 @@ export const HOME_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-4.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
         ],
     },
@@ -611,26 +611,26 @@ export const MOBILE_APP_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -993,26 +993,26 @@ export const IOS_APP_Development = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -1378,26 +1378,26 @@ export const CUSTOM_SOFTWARE_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -1754,26 +1754,26 @@ export const AI_APP_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -2130,26 +2130,26 @@ export const ANDROID_APP_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -2290,6 +2290,7 @@ export const PWA_CONTENT = {
                 description: "The team usually generally uses a clear development process. It make sure you get consistent quality throughout the project lifecycle. Every phase is carefully managed to reduce risks and improve delivery speed.",
                 icon: "/images/why-2.png",
             },
+
             {
                 id: 3,
                 title: "Clear Client Communication",
@@ -2310,10 +2311,11 @@ export const PWA_CONTENT = {
             },
             {
                 id: 6,
-                title: "Technical Talent",
-                description: "The development team consists of experienced developers and designers who specialize in modern tech. We deliver high quality solutions that are aligned with your business goals for maximum performance.",
-                icon: "/images/why-3.png",
+                title: "Experience Expertise",
+                description: "We bring proven industry knowledge to every project with over 10+ years of experience in PWA development. Our team has successfully delivered 300+ digital products across multiple domains.",
+                icon: "/images/why-1.png",
             },
+
         ],
     },
     techStack: {
@@ -2487,26 +2489,26 @@ export const PWA_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -2858,26 +2860,26 @@ export const WEB_APP_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -3253,26 +3255,26 @@ export const UIUX_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -3640,26 +3642,26 @@ export const MVP_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",
@@ -4147,26 +4149,26 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
             {
                 img: "/images/portfolio-1.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Chubbs Army",
                 link: "/case-studies/chubss-army"
             },
             {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                name: "Consultants R US",
                 link: "/case-studies/consultant-us"
             },
             {
                 img: "/images/case-3.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
-                link: "/case-studies/love-restored"
+                name: "Love Restored.ai",
+                link: "/case-studies/love-restored.ai"
 
             },
             {
                 img: "/images/portfolio-2.png",
-                title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
-                name: "TitanX",
+                title: "",
+                name: "",
             },
             {
                 img: "/images/portfolio-3.png",

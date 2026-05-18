@@ -33,7 +33,7 @@ export default function MVPDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1  w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-10">
                     {/* Hero Section */}
                     <Hero
                         tagline={MVP_CONTENT.hero.tagline}

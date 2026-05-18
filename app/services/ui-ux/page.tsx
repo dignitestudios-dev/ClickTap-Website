@@ -33,7 +33,7 @@ export default function UIUXDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1  w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-10">
                     {/* Hero Section */}
                     <Hero
                         tagline={UIUX_CONTENT.hero.tagline}

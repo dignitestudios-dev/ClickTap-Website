@@ -33,7 +33,7 @@ export default function ConsultantPage() {
 
             {/* Main Content */}
             <main className="flex-1  w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-10">
                     {/* Hero Section */}
                     <Hero
                         tagline={MOBILE_APP_CONSULTING_CONTENT.hero.tagline}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import classNames from "classnames";
 import Link from "next/link";
 import { ArrowUpIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 type Project = {
   name: string;
@@ -24,9 +25,10 @@ const ArrowIcon = () => (
     </svg>
   </div>
 );
+
 export default function Portfolio({ heading, description, projects }: Props) {
   const [activeItem, setActiveItem] = useState(0); // Start with the first item active
-
+  const router = useRouter();
   return (
     <div className="flex h-full w-full items-center justify-center py-5 md:py-24 bg-[#F1FCFF]">
       <div className="  w-full flex flex-col gap-12">
@@ -36,9 +38,6 @@ export default function Portfolio({ heading, description, projects }: Props) {
           <h2 className="text-[#00161D]  text-4xl sm:text-5xl md:text-[72px] leading-tight tracking-tight">
             {heading}
           </h2>
-          <p className="text-[#00161D] text-[15px] md:text-[18px] leading-[28px] opacity-80 max-w-[850px] mt-4 px-6 md:px-0">
-            {description}
-          </p>
         </div>
         <div className="absolute h-[200px] md:h-[300px] w-full">
           <Image src="/images/portfolio.png" alt="portfolio-bg-circle" width={300} height={300} className="absolute left-0 bottom-0 z-1 w-[200px] h-[200px] md:w-[300px] md:h-[300px]" />
@@ -48,7 +47,11 @@ export default function Portfolio({ heading, description, projects }: Props) {
           <ul className="flex flex-col w-full gap-4 px-6">
 
             {/* Active Large Image */}
-            <li className="relative overflow-hidden rounded-[32px] h-[300px] sm:h-[400px]">
+            <li onClick={() => {
+              if (projects[activeItem]?.link) {
+                router.push(projects[activeItem]?.link)
+              }
+            }} className="relative z-10 cursor-pointer overflow-hidden rounded-[32px] h-[300px] sm:h-[400px]">
               <Image
                 className="absolute inset-0 h-full w-full object-cover"
                 src={projects[activeItem].img}
@@ -63,9 +66,9 @@ export default function Portfolio({ heading, description, projects }: Props) {
                   {projects[activeItem].name}
                 </p>
 
-                <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
+                {/* <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                   {projects[activeItem].title}
-                </p>
+                </p> */}
 
               </div>
             </li>
@@ -111,7 +114,12 @@ export default function Portfolio({ heading, description, projects }: Props) {
               return (
                 <li
                   key={index}
-                  onClick={() => setActiveItem(index)}
+                  onClick={() => {
+                    setActiveItem(index)
+                    if (isActive && project?.link) {
+                      router.push(project?.link)
+                    }
+                  }}
                   className={classNames(
                     "relative cursor-pointer overflow-hidden rounded-[32px] transition-all duration-[800ms] group",
                     "h-[300px] md:h-full",
@@ -146,9 +154,9 @@ export default function Portfolio({ heading, description, projects }: Props) {
                       {project.name}
                     </p>
 
-                    <p className="text-xs md:text-sm lg:text-[16px] text-white/80">
+                    {/* <p className="text-xs md:text-sm lg:text-[16px] text-white/80">
                       {project.title}
-                    </p>
+                    </p> */}
                     {
                       project?.link && (
 

@@ -56,7 +56,7 @@ export default function Hero({ title, description, details }: Props) {
         </div>
 
         {/* Central Phone Mockup Showcase */}
-        <div className="relative w-full  mx-auto  px-2">
+        <div className="relative mt-10 md:mt-0 w-full  mx-auto  px-2">
           <Image
             src="/images/love-stored-hero.png"
             alt="Mobile App Preview"
@@ -68,7 +68,7 @@ export default function Hero({ title, description, details }: Props) {
         </div>
 
         {details && details.length > 0 && (
-          <div className="relative w-full -mt-15 z-10 bg-[#0A0A0A]/5  backdrop-blur-[10px] border border-dashed border-[#B37C26] ">
+          <div className="relative w-full -mt-6 md:-mt-15 z-10 bg-[#0A0A0A]/5  backdrop-blur-[10px] border border-dashed border-[#B37C26] ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full divide-x divide-dashed divide-[rgba(179,124,38,0.6)]">
               {details.map((detail, index) => (
                 <div

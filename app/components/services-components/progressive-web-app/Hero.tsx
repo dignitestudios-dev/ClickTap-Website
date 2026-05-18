@@ -58,7 +58,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
             alt="web-app-dev.png"
             width={1100}
             height={800}
-            className="relative z-[1] mx-auto w-full max-w-[500px] sm:max-w-[700px] md:max-w-[1100px] px-4"
+            className="relative mt-8 md:mt-0  z-[1] mx-auto w-full max-w-[600px] sm:max-w-[900px] md:max-w-[1100px] px-4"
           />
         </div>
       </div>
