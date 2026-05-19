@@ -436,14 +436,14 @@ export default function ContactSection() {
                                 }}
                             >
                                 By checking this box, I consent to receive SMS messages from
-                                Dignite Studios at the phone number I provided. Message and data
+                                ClickTap Solutions at the phone number I provided. Message and data
                                 rates may apply. Message frequency may vary. For assistance,
                                 reply HELP or email us at{" "}
                                 <a
-                                    href="mailto:support@dignitestudios.com"
+                                    href="mailto:support@clicktap.com"
                                     style={{ color: "#01C2FE", textDecoration: "none" }}
                                 >
-                                    support@dignitestudios.com
+                                    support@clicktap.com
                                 </a>
                                 . You may opt out at any time by replying STOP. See our{" "}
                                 <a href="#" style={{ color: "#00161D" }}>
