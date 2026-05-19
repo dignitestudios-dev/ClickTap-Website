@@ -6,11 +6,11 @@ import { CONSULTANT_US_CONTENT } from '@/app/constants/content';
 
 export default function SuccessSection() {
     return (
-        <section className="relative w-full bg-[#0a111e] text-white px-6 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto my-12 md:my-20 flex flex-col lg:flex-row items-center justify-between gap-12 min-h-fit py-12 lg:py-0">
+        <section className="relative w-full bg-[#0a111e] text-white px-6 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 min-h-fit">
 
             {/* Left Content Side */}
             <div className="flex-1 z-10 text-center lg:text-left">
-                <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold tracking-tight text-white mb-6 leading-tight">
+                <h2 className="text-[40px] lg:text-[60px] font-bold tracking-tight text-white mb-6 leading-tight">
                     {CONSULTANT_US_CONTENT.successStory.title}
                 </h2>
 
@@ -54,11 +54,11 @@ export default function SuccessSection() {
                     }}
                     className="relative w-[180px] left-36 sm:w-[240px] md:w-[300px] h-full rounded-[32px] overflow-visible"
                 >
-                    <Image 
-                        src="/images/success-img-1.png" 
+                    <Image
+                        src="/images/success-img-1.png"
                         fill
-                        className="object-contain object-bottom" 
-                        alt="success-img-1" 
+                        className="object-contain object-bottom"
+                        alt="success-img-1"
                     />
                 </motion.div>
 
@@ -75,11 +75,11 @@ export default function SuccessSection() {
                     }}
                     className="relative w-[180px] sm:w-[240px] md:w-[230px] h-full rounded-[32px] z-20 overflow-visible"
                 >
-                    <Image 
-                        src="/images/success-img-2.png" 
+                    <Image
+                        src="/images/success-img-2.png"
                         fill
-                        className="object-contain object-bottom" 
-                        alt="success-img-2" 
+                        className="object-contain object-bottom"
+                        alt="success-img-2"
                     />
                 </motion.div>
 

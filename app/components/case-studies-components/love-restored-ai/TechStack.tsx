@@ -20,10 +20,10 @@ export default function TechStack() {
 
 
     return (
-        <div className="w-full max-w-[1200px] mx-auto bg-white py-16 px-4 font-['Plus_Jakarta_Sans',sans-serif] text-[#0A0A0A]">
+        <div className="w-full max-w-[1200px] mx-auto bg-white px-4 font-['Plus_Jakarta_Sans',sans-serif] text-[#0A0A0A]">
             {/* Headings */}
             <div className="text-center max-w-3xl mx-auto mb-14">
-                <h2 className="text-5xl font-bold tracking-tight mb-5">
+                <h2 className="text-[40px] lg:text-[60px] font-bold tracking-tight mb-5">
                     {LOVE_STORED_CONTENT.techStack.title}
                 </h2>
                 <p className="text-[13px] leading-relaxed text-gray-700 max-w-2xl mx-auto font-medium">

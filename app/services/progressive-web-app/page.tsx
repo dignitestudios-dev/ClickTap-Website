@@ -33,7 +33,7 @@ export default function ProgressiveWebAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={PWA_CONTENT.hero.tagline}
@@ -107,6 +107,7 @@ export default function ProgressiveWebAppDevelopment() {
 
                     {/* Features Section */}
                     <FeaturesSection
+                        description={PWA_CONTENT.features.description}
                         heading={PWA_CONTENT.features.heading}
                         features={PWA_CONTENT.features.items.map((title, idx) => ({
                             title,

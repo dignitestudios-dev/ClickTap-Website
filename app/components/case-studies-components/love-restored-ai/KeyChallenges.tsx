@@ -10,9 +10,9 @@ interface ChallengeCard {
 
 export default function KeyChallenges() {
     return (
-        <section className="bg-white py-16 relative px-4 max-w-6xl mx-auto font-sans select-none">
+        <section className="bg-white relative px-4 max-w-6xl mx-auto font-sans select-none">
             {/* Section Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0a192f] mb-16">
+            <h2 className="text-[40px] lg:text-[60px] font-bold text-center text-[#0a192f] mb-16">
                 {LOVE_STORED_CONTENT.challenges.title}
             </h2>
 

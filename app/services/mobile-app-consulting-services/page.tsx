@@ -32,8 +32,8 @@ export default function ConsultantPage() {
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1  w-full">
-                <div className="flex flex-col gap-10">
+            <main className="flex-1 w-full">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={MOBILE_APP_CONSULTING_CONTENT.hero.tagline}
@@ -71,6 +71,7 @@ export default function ConsultantPage() {
                         heading={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.heading}
                         para={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.description}
                         items={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.items}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.whyChooseUs.cta}
                     />
 
                     {/* Tech Stack Section */}
@@ -84,6 +85,7 @@ export default function ConsultantPage() {
                         heading={MOBILE_APP_CONSULTING_CONTENT.industry.heading}
                         description={MOBILE_APP_CONSULTING_CONTENT.industry.description}
                         cards={MOBILE_APP_CONSULTING_CONTENT.industry.items}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.industry.cta}
                     />
 
                     {/* Process Section */}
@@ -103,6 +105,7 @@ export default function ConsultantPage() {
                             description: item.description,
                             icon: `/images/benefit-${(idx % 6) + 1}.png`
                         }))}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.advantages.cta}
                     />
 
                     {/* Features Section */}
@@ -113,6 +116,7 @@ export default function ConsultantPage() {
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`
                         }))}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.features.cta}
                     />
 
                     {/* Portfolio Section */}
@@ -143,6 +147,7 @@ export default function ConsultantPage() {
                             rating: 5,
                             avatar: "/images/person.png"
                         }))}
+                        ctaText={MOBILE_APP_CONSULTING_CONTENT.testimonials.cta}
                     />
 
                     {/* FAQs */}

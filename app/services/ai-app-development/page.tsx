@@ -33,7 +33,7 @@ export default function AiAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={AI_APP_CONTENT.hero.tagline}
@@ -71,6 +71,7 @@ export default function AiAppDevelopment() {
                         heading={AI_APP_CONTENT.whyChooseUs.heading}
                         para={AI_APP_CONTENT.whyChooseUs.description}
                         items={AI_APP_CONTENT.whyChooseUs.items}
+                        ctaText={"Get Free Consultation "}
                     />
 
                     {/* Tech Stack Section */}
@@ -84,6 +85,7 @@ export default function AiAppDevelopment() {
                         heading={AI_APP_CONTENT.industry.heading}
                         description={AI_APP_CONTENT.industry.description}
                         cards={AI_APP_CONTENT.industry.items}
+                        ctaText="Discuss yous Idea"
                     />
 
                     {/* Process Section */}
@@ -103,6 +105,7 @@ export default function AiAppDevelopment() {
                             description: item.description,
                             icon: `/images/benefit-${idx + 1}.png`
                         }))}
+                        ctaText="Create a Mobile App That Is Scalable "
                     />
 
                     {/* Features Section */}
@@ -112,6 +115,8 @@ export default function AiAppDevelopment() {
                             title,
                             icon: `/images/feature-${idx + 1}.png`
                         }))}
+                        description={AI_APP_CONTENT.features.description}
+                        ctaText="Request Mobile App Quote "
                     />
 
                     {/* Portfolio Section */}
@@ -142,6 +147,7 @@ export default function AiAppDevelopment() {
                             rating: 5,
                             avatar: "/images/person.png"
                         }))}
+                        ctaText={AI_APP_CONTENT.testimonials.cta}
                     />
 
                     {/* FAQs */}

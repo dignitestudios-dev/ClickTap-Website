@@ -92,7 +92,7 @@ export default function WorkFlow({ title, description, items }: WorkFlowProps) {
     }
 `}</style>
 
-            <section className="mx-auto flex max-w-[1440px] flex-col items-center gap-16 px-6 py-12 md:gap-[100px] md:px-20 md:py-[50px]">
+            <section className="mx-auto flex max-w-[1440px] flex-col items-center gap-16 px-6 md:gap-[100px] md:px-20">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="max-w-[800px] text-center text-[clamp(2rem,6vw,4.125rem)] font-bold capitalize leading-[0.98] tracking-tight text-[#00161D]">
                         {title}

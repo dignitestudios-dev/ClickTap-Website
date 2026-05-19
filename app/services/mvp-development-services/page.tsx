@@ -32,8 +32,8 @@ export default function MVPDevelopment() {
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1  w-full">
-                <div className="flex flex-col gap-10">
+            <main className="flex-1 w-full">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={MVP_CONTENT.hero.tagline}
@@ -71,6 +71,7 @@ export default function MVPDevelopment() {
                         heading={MVP_CONTENT.whyChooseUs.heading}
                         para={MVP_CONTENT.whyChooseUs.description}
                         items={MVP_CONTENT.whyChooseUs.items}
+                        ctaText={MVP_CONTENT.whyChooseUs.cta}
                     />
 
                     {/* Tech Stack Section */}
@@ -84,6 +85,7 @@ export default function MVPDevelopment() {
                         heading={MVP_CONTENT.industry.heading}
                         description={MVP_CONTENT.industry.description}
                         cards={MVP_CONTENT.industry.items}
+                        ctaText={MVP_CONTENT.industry.cta}
                     />
 
                     {/* Process Section */}
@@ -103,6 +105,7 @@ export default function MVPDevelopment() {
                             description: item.description,
                             icon: `/images/benefit-${(idx % 6) + 1}.png`
                         }))}
+                        ctaText={MVP_CONTENT.advantages.cta}
                     />
 
                     {/* Features Section */}
@@ -113,6 +116,7 @@ export default function MVPDevelopment() {
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`
                         }))}
+                        ctaText={MVP_CONTENT.features.cta}
                     />
 
                     {/* Portfolio Section */}
@@ -132,7 +136,7 @@ export default function MVPDevelopment() {
                     {/* Testimonials */}
                     <TestimonialPage
                         heading={MVP_CONTENT.testimonials.heading}
-                        description={MVP_CONTENT.testimonials.description}
+                        description={""}
                         testimonials={MVP_CONTENT.testimonials.items.map((item, idx) => ({
                             id: idx + 1,
                             name: item.author,
@@ -143,6 +147,7 @@ export default function MVPDevelopment() {
                             rating: 5,
                             avatar: "/images/person.png"
                         }))}
+                        ctaText={MVP_CONTENT.testimonials.cta}
                     />
 
                     {/* FAQs */}

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from "next/image";
@@ -23,17 +23,18 @@ type Props = {
     heading: React.ReactNode;
     description: string;
     cards: BenefitsCard[];
+    ctaText?: string;
 }
 
-export default function BenefitsSection({ heading, description, cards }: Props) {
+export default function BenefitsSection({ heading, description, cards, ctaText }: Props) {
     return (
-        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF] py-0 md:py-20">
+        <section className="flex min-h-screen w-full items-center justify-center bg-[#F1FCFF]">
             <div className="flex w-full  flex-col items-center gap-[60px]">
-                <div className="flex flex-col items-center gap-6 text-center">
-                    <h2 className="text-[50px] md:text-[66px] leading-tight text-[#00161D] capitalize">
+                <div className="flex flex-col relative z-50 items-center gap-6 text-center">
+                    <h2 className="text-[40px] lg:text-[60px] leading-tight text-[#00161D] capitalize">
                         {heading}
                     </h2>
-                    <p className="max-w-[800px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
+                    <p className="max-w-[360px] md:max-w-[800px] text-[13px] sm:text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
                         {description}
                     </p>
                 </div>
@@ -94,7 +95,7 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                 </div>
 
                 {/* Custom Navigation */}
-                <div className="flex items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
+                <div className="-mt-20 flex items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
                     <button
                         className="industry-prev industry-nav-btn"
                         aria-label="Previous"
@@ -108,6 +109,19 @@ export default function BenefitsSection({ heading, description, cards }: Props) 
                         <ArrowRight className="h-6 w-6" />
                     </button>
                 </div>
+                {ctaText && (
+                    <div className="flex justify-center">
+                        <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
+                            <span className="text-[16px] font-semibold text-[#00161D]">
+                                {ctaText}
+                            </span>
+
+                            <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
+                                <ArrowUpRight size={18} />
+                            </div>
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

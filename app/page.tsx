@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 main-body-section w-full">
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-36">
           {/* Hero Section */}
           <Hero
             tagline={HOME_CONTENT.hero.tagline}

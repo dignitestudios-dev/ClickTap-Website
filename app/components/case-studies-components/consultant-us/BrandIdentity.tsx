@@ -3,7 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 // 2. Font configuration setup karein (subsets aur weights define karein)
 const plusJakartaSans = Plus_Jakarta_Sans({
     subsets: ["latin"],
-    weight: ["200","300", "400", "500", "600", "700"],
+    weight: ["200", "300", "400", "500", "600", "700"],
     display: "swap",
 });
 
@@ -15,7 +15,7 @@ export default function BrandIdentity() {
 
                 {/* Heading Container */}
                 <div className="flex flex-col justify-center items-center gap-6 self-stretch text-center max-w-[850px] mx-auto">
-                    <h2 className="text-[32px] sm:text-[44px] md:text-[56px] lg:text-[66px] font-bold leading-tight">
+                    <h2 className="text-[40px] lg:text-[60px] font-bold leading-tight">
                         <span className='font-extrabold'>Brand</span> Identity
                     </h2>
                     <div className="flex flex-col items-center gap-4">

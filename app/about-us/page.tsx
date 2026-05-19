@@ -6,7 +6,6 @@ import ValuesSection from "../components/about-us/ValuesSection";
 import WhyChooseUs from "../components/home/why-choose-us";
 import SocialProofSection from "../components/about-us/SocialProofSection";
 import PerformanceCTA from "../components/about-us/PerformanceCTA";
-import OurStory from "../components/about-us/OurStory";
 
 // Dynamic imports
 const Footer = dynamic(() => import("../components/global/Footer"), { ssr: true });
@@ -25,7 +24,7 @@ export default function AboutUsPage() {
 
             {/* Main Content */}
             <main className="flex-1 w-full">
-                <div className="flex flex-col gap-10 md:gap-0">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         title={ABOUT_US_CONTENT.hero.title}

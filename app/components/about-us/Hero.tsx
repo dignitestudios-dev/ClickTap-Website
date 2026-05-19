@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { FaGooglePlay } from "react-icons/fa";
+import OurStory from "./OurStory";
+import { ABOUT_US_CONTENT } from "@/app/constants/content";
 
 type DetailItem = {
     label: string;
@@ -73,19 +75,11 @@ export default function Hero({ title, description, details }: Props) {
                             </div>
                         </div>
                     )}
-                    <section className=" py-16 px-6 md:py-24 md:px-12 text-center flex flex-col items-center justify-center">
-                        {/* Subtitle / Eyebrow Text */}
-                        <span className="text-[14px] md:text-[16px] font-medium text-[#4A5568] tracking-wide mb-6">
-                            Why Choose <strong className="font-semibold text-[#0F172A]">ClickTap Solution</strong>
-                        </span>
-
-                        {/* Main Headline */}
-                        <h2 className="max-w-7xl text-[24px] sm:text-[32px] md:text-[40px] font-medium leading-[1.35] text-[#0F172A] tracking-tight">
-                            ClickTap Solution Starts With A Clear Vision: To Provide Carefully Crafted Digital Products
-                            That Are Not Just Put Together. To Guarantee Performance, Scalability, And Long-Term
-                            Value, We Also Adopted A Nearly 100% Custom Development Methodology.
-                        </h2>
-                    </section>
+                    <OurStory
+                        title={ABOUT_US_CONTENT.story.title}
+                        paragraphs={ABOUT_US_CONTENT.story.paragraphs}
+                        cta={ABOUT_US_CONTENT.story.cta}
+                    />
 
 
                 </div>

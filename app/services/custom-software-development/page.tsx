@@ -33,7 +33,7 @@ export default function CustomSoftwareDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={CUSTOM_SOFTWARE_CONTENT.hero.tagline}
@@ -71,6 +71,7 @@ export default function CustomSoftwareDevelopment() {
                         heading={CUSTOM_SOFTWARE_CONTENT.whyChooseUs.heading}
                         para={CUSTOM_SOFTWARE_CONTENT.whyChooseUs.description}
                         items={CUSTOM_SOFTWARE_CONTENT.whyChooseUs.items}
+                        ctaText={CUSTOM_SOFTWARE_CONTENT.whyChooseUs.ctaText}
                     />
 
                     {/* Tech Stack Section */}
@@ -84,6 +85,7 @@ export default function CustomSoftwareDevelopment() {
                         heading={CUSTOM_SOFTWARE_CONTENT.industry.heading}
                         description={CUSTOM_SOFTWARE_CONTENT.industry.description}
                         cards={CUSTOM_SOFTWARE_CONTENT.industry.items}
+                        ctaText={CUSTOM_SOFTWARE_CONTENT.industry.cta}
                     />
 
                     {/* Process Section */}
@@ -103,6 +105,7 @@ export default function CustomSoftwareDevelopment() {
                             description: item.description,
                             icon: `/images/benefit-${idx + 1}.png`
                         }))}
+                        ctaText={CUSTOM_SOFTWARE_CONTENT.advantages.cta}
                     />
 
                     {/* Features Section */}
@@ -112,6 +115,7 @@ export default function CustomSoftwareDevelopment() {
                             title,
                             icon: `/images/feature-${idx + 1}.png`
                         }))}
+                        description={CUSTOM_SOFTWARE_CONTENT.features.description}
                     />
 
                     {/* Portfolio Section */}
@@ -142,6 +146,7 @@ export default function CustomSoftwareDevelopment() {
                             rating: 5,
                             avatar: "/images/person.png"
                         }))}
+                        ctaText={CUSTOM_SOFTWARE_CONTENT.testimonials.cta}
                     />
 
                     {/* FAQs */}

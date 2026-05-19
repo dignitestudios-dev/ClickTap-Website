@@ -64,12 +64,12 @@ type Props = {
 
 const AboutSection: React.FC<Props> = ({ tagline, heading, paragraphs, ctaText, stats }) => {
     return (
-        <section className="overflow-hidden bg-[#F3FBFD] px-5 py-0 md:px-10 lg:px-20 lg:py-24">
+        <section className="overflow-hidden bg-[#F3FBFD] px-5 md:px-10 lg:px-20">
             <div className="mx-auto flex w-full  flex-col items-center justify-between gap-5 lg:gap-14 lg:flex-row lg:items-start">
 
                 {/* LEFT CONTENT */}
-                <div className="w-full lg:flex-1  md:pt-4">                   
-                    <h2 className="md:mt-5 text-3xl md:text-[36px] leading-[1.1] text-[#00161D]">
+                <div className="w-full lg:flex-1  md:pt-4">
+                    <h2 className="md:mt-5 text-[40px] lg:text-[60px] leading-[1.1] text-[#00161D]">
                         {heading}
                     </h2>
 

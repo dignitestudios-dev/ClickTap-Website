@@ -22,7 +22,7 @@ const Wireframes = ({ title, description }: WireframesProps) => {
     const images = wireframes.map(frame => `/images/s${frame.id}.webp`);
 
     return (
-        <div className="py-16 overflow-hidden">
+        <div className="overflow-hidden">
             <div className="max-w-screen-2xl mx-auto">
                 {/* Header */}
                 <motion.div
@@ -32,7 +32,7 @@ const Wireframes = ({ title, description }: WireframesProps) => {
                     viewport={{ once: true }}
                     className="mb-12 text-center"
                 >
-                    <h2 className="mb-4 text-[clamp(2rem,8vw,4.125rem)] leading-none px-4">
+                    <h2 className="mb-4 text-[40px] lg:text-[60px] leading-none px-4">
                         {title}
                     </h2>
 

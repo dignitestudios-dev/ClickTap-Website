@@ -31,7 +31,7 @@ export default function IOSAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={IOS_APP_Development.hero.tagline}
@@ -96,6 +96,7 @@ export default function IOSAppDevelopment() {
                     {/* Features Section */}
                     <FeaturesSection
                         heading={IOS_APP_Development.features.heading}
+                        description={IOS_APP_Development.features.description}
                         features={IOS_APP_Development.features.items.map((title, idx) => ({
                             title,
                             icon: `/images/feature-${idx + 1}.png`

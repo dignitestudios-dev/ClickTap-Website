@@ -122,9 +122,9 @@ export default function DiscoverResearch({
     userResearch,
 }: DiscoverResearchProps) {
     return (
-        <section className="py-10 px-4 md:px-20 perspective-[2000px]">
+        <section className="px-4 md:px-20 perspective-[2000px]">
             <div className="flex w-full flex-col items-center justify-center gap-3 sm:gap-4">
-                <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-normal text-center capitalize text-[#00161D]">
+                <h2 className="text-[40px] lg:text-[60px] font-normal text-center capitalize text-[#00161D]">
                     {title}
                 </h2>
 

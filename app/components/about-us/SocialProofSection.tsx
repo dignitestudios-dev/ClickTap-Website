@@ -7,14 +7,14 @@ type SocialProofSectionProps = {
 
 export default function SocialProofSection({ title, description }: SocialProofSectionProps) {
     return (
-        <section className=" w-full py-16 px-6 md:px-12 lg:px-20 flex justify-center">
+        <section className="w-full px-6 md:px-12 lg:px-20 flex justify-center">
             <div className="max-w-[1200px] w-full flex flex-col gap-16">
 
                 {/* Top Content Row */}
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
                     {/* Left Heading */}
                     <div className="w-full lg:w-[30%]">
-                        <h2 className="text-[32px] font-bold text-[#111c24] leading-[1.2] tracking-tight whitespace-pre-line">
+                        <h2 className="text-[40px] lg:text-[60px] font-bold text-[#111c24] leading-[1.2] tracking-tight whitespace-pre-line">
                             {title}
                         </h2>
                     </div>
@@ -39,7 +39,7 @@ export default function SocialProofSection({ title, description }: SocialProofSe
                     </div>
 
                     {/* techreviewer */}
-                   <div className="">
+                    <div className="">
                         <img
                             src="/images/marque-about-2.png"
                             alt="techreviewer"
@@ -48,7 +48,7 @@ export default function SocialProofSection({ title, description }: SocialProofSe
                     </div>
 
                     {/* GoodFirms */}
-                 <div className="">
+                    <div className="">
                         <img
                             src="/images/marque-about-3.png"
                             alt="GoodFirms"

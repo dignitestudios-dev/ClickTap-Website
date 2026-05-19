@@ -6,11 +6,11 @@ import { LOVE_STORED_CONTENT } from '@/app/constants/content';
 
 export default function SuccessSection() {
     return (
-        <section className="relative w-full bg-[#0a111e] text-white px-6 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto my-12 md:my-20 flex flex-col lg:flex-row items-center justify-between gap-12 min-h-fit py-12 lg:py-0">
+        <section className="relative w-full bg-[#0a111e] text-white px-6 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12  min-h-fit">
 
             {/* Left Content Side */}
             <div className="flex-1 z-10 text-center lg:text-left">
-                <h2 className="text-[28px] md:text-[30px] lg:text-[36px] font-bold tracking-tight text-white mb-6 leading-tight">
+                <h2 className="text-[40px] lg:text-[60px] font-bold tracking-tight text-white mb-6 leading-tight">
                     {LOVE_STORED_CONTENT.successStory.title}
                 </h2>
 
@@ -35,7 +35,7 @@ export default function SuccessSection() {
                             </svg>
                         </div>
                     </button>
-                </div> 
+                </div>
             </div>
 
             {/* Right Mobile Mockups Side */}

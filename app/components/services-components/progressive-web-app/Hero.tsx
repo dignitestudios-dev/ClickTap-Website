@@ -15,7 +15,7 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
     <section className="relative bg-white w-full flex flex-col items-center  overflow-hidden" >
 
       {/* Background Grid Image */}
-      <div className="w-full absolute top-10 z-0 h-[400px] md:h-[650px]">
+      <div className="w-full absolute top-10 z-0  ">
         <Image
           src="/images/grid-frame.webp"
           alt="grid-frame"
@@ -56,8 +56,8 @@ export default function Hero({ tagline, title, description, cta, children }: Pro
           <Image
             src="/images/progresive-web-app.webp"
             alt="web-app-dev.png"
-            width={1100}
-            height={800}
+            width={900}
+            height={500}
             className="relative mt-8 md:mt-0  z-[1] mx-auto w-full max-w-[600px] sm:max-w-[900px] md:max-w-[1100px] px-4"
           />
         </div>

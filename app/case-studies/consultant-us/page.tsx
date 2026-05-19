@@ -45,7 +45,7 @@ export default function ConsultantUsPage() {
 
             {/* Main Content */}
             <main className="flex-1 w-full">
-                <div className="flex flex-col gap-10 md:gap-0">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         title={CONSULTANT_US_CONTENT.hero.title}

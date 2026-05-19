@@ -346,8 +346,10 @@ export const MOBILE_APP_CONTENT = {
     },
     about: {
         heading: <>Behind the name of <span className="font-bold" >ClickTap Solutions</span></>,
-        description: "We are a mobile app development company that has been focused on creating highly impactful mobile applications for your business. The team has worked on 450+ projects and has the experience of over 10 years and has worked with growing businesses and established brands.",
-        content: "The approach is simple because we have learned over the years that great apps are more than just coding. You don’t just need coders when you care about your product. You need people who actually understand where you’re coming from. So our approach starts with spending time understanding the idea and the users it’s meant for before anything is built.\n\nThe team focuses on making the development journey structured and easy to follow. It creates ease for the clients to always know what’s being built and how each decision connects back to the bigger picture.",
+        description: <>
+            We are a mobile app development company that has been focused on creating highly impactful mobile applications for your business. The team has worked on 450+ projects and has the experience of over 10 years and has worked with growing businesses and established brands.
+        </>,
+        content: `We are a mobile app development company that has been focused on creating highly impactful mobile applications for your business. The team has worked on 450+ projects and has the experience of over 10 years and has worked with growing businesses and established brands.\n\n The approach is simple because we have learned over the years that great apps are more than just coding. You don’t just need coders when you care about your product. You need people who actually understand where you’re coming from. So our approach starts with spending time understanding the idea and the users it’s meant for before anything is built.\n\nThe team focuses on making the development journey structured and easy to follow. It creates ease for the clients to always know what’s being built and how each decision connects back to the bigger picture.`,
         cta: "Find More About Us",
     },
     services: {
@@ -684,7 +686,7 @@ export const MOBILE_APP_CONTENT = {
         cta: "Work With Our Expert Team",
     },
     faqs: {
-        heading: <>People Commonly <br /> <span className="font-bold" >Ask:</span></>,
+        heading: <>People Commonly <br /> <span className="font-bold" >Ask</span></>,
         description: "Find answers to frequently asked questions about our development process and services.",
         items: [
             {
@@ -1206,6 +1208,8 @@ export const CUSTOM_SOFTWARE_CONTENT = {
                 icon: "/images/why-3.png",
             },
         ],
+
+        ctaText: "Get Free Consultation",
     },
     techStack: {
         heading: <>Modern Technologies <span className="font-bold">We Use</span></>,
@@ -1357,7 +1361,7 @@ export const CUSTOM_SOFTWARE_CONTENT = {
         cta: "Build a Scalable software",
     },
     features: {
-        heading: <>Must Have Featured in Your <br /> <span className="font-bold">Custom Software</span></>,
+        heading: <>Must Have Features in Your <br /> <span className="font-bold">Custom Software</span></>,
         description: "Everyone needs strong features for success. Our custom software development ensures your software performs well and meets the user's expectations.",
         items: [
             "Secure Login",
@@ -1506,12 +1510,12 @@ export const AI_APP_CONTENT = {
     about: {
         heading: <>Strategic AI <br /> <span className="font-bold">Development Services</span></>,
         description: "With 10+ years of experience, ClickTap Solution has delivered over 300+ successful projects. We offer expert AI development services across the industries. Our group prioritizes solid execution, smart planning and trustworthy assistance. We help businesses improve user experiences, automated procedures and make the decision wiser. We take a straightforward, goal oriented approach. We guide you at every step with clear communication and practical solutions which deliver real value.",
-        content: "We deliver advanced AI focused solutions designed to help businesses automate processes, improve decision making and scale faster. Our team builds intelligent systems that are reliable, secure and tailored to the real business needs with the long term performance in mind.",
+        content: "",
         cta: "Book a Free Call",
     },
     services: {
         heading: <>Custom AI App <br /> <span className="font-bold">Development Services</span></>,
-        description: "We build smart AI powered applications that solve real business problems using data driven intelligence. These solutions improve automatic, enhance user experience and help companies make faster and more accurate decisions with the scalable architecture and strong system performance.",
+        description: "We deliver advanced AI focused solutions designed to help businesses automate processes, improve decision making and scale faster. Our team builds intelligent systems that are reliable , secure and  tailored to the real business needs with the long term performance in mind.",
         items: [
             {
                 title: "AI App Development Services",
@@ -1582,6 +1586,7 @@ export const AI_APP_CONTENT = {
                 icon: "/images/why-3.png",
             },
         ],
+
     },
     techStack: {
         heading: <>Modern Technology Stack <br /> <span className="font-bold">for AI Solutions</span></>,
@@ -1788,11 +1793,11 @@ export const AI_APP_CONTENT = {
         ],
         ctaTitle: <>Start Your AI <br /> <span className="font-bold">Project Today</span></>,
         ctaDescription: "Work with experts who understand your business needs. We help you build smart AI solutions with strong performance and scalability.",
-        ctaButton: "Request AI App Quote",
+        ctaButton: "Request Mobile App Quote ",
     },
     testimonials: {
         heading: <>What Clients Say <br /> <span className="font-bold">About Our AI Solutions</span></>,
-        description: "Our clients consistently trust us for delivering high quality AI solutions with reliable performance and smooth user experience. As a team, we also focus on clear communication, strong planning and practical execution which helps businesses achieve real growth and long term success.",
+        description: "",
         items: [
             {
                 quote: "ClickTap Solution helped us automate several manual tasks that were slowing down our operations. Their team understood our goals clearly and delivered an AI system that improved workflow efficiency across sour departments",
@@ -2239,7 +2244,7 @@ export const PWA_CONTENT = {
         tagline: "",
         title: <>Expert Progressive Web App <br /> Development Services</>,
         description: "Looking for Progressive Web App development services? You just found team that helps businesses like yours create engaging experiences across all devices. Our expert developers build scalable PWAs for your business with improved user experiences.",
-        cta: "Request Mobile App Consulting Quote",
+        cta: "Talk to the team",
     },
     about: {
         heading: <>About the Team at <br /> <span className="font-bold">ClickTap Solution</span></>,
@@ -3028,7 +3033,7 @@ export const UIUX_CONTENT = {
         items: [
             {
                 id: 1,
-                title: "Deep Design Experience",
+                title: "Design Experience",
                 description: "Our team brings strong experience in creating UI UX designs for different industries. We understand user behavior well and turn complex ideas into simple, clear and effective interfaces.",
                 icon: "/images/why-1.png",
             },
@@ -3161,7 +3166,7 @@ export const UIUX_CONTENT = {
             {
                 number: "02",
                 title: "UI UX Design",
-                description: "We create wireframes, user flows and visual concepts. This stage focuses on building simple, clean and user friendly interface design which improve user experience.",
+                description: "We create wireframes, user flows and visual concepts. This stage focuses on building simple, clean and user friendly interface design which improves user experience.",
             },
             {
                 number: "03",

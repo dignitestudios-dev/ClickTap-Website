@@ -18,7 +18,7 @@ const BrandIdentity = ({ title, description }: BrandIdentityProps) => {
     };
 
     return (
-        <section className="px-4 md:px-20 py-10 bg-white text-[#0a0a0a] font-sans">
+        <section className="px-4 md:px-20 bg-white text-[#0a0a0a] font-sans">
             {/* Header Section */}
             <div className="text-center mb-24">
                 <h1 className="text-[clamp(2rem,8vw,4.125rem)] mb-6 tracking-tight">{title}</h1>

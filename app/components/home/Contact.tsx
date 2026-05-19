@@ -29,12 +29,12 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
     };
 
     return (
-        <section id="contact" className="w-full bg-[#F1FCFF]  md:pb-0 mb-5 md:-mb-2 relative overflow-hidden isolate">
+        <section id="contact" className="w-full bg-[#F1FCFF] md:- relative overflow-hidden isolate">
             <div className="mx-auto flex flex-col lg:flex-row gap-12 items-start relative z-10">
                 {/* Left content */}
-                <div className="flex  flex-col gap-10 w-full md:w-[579px] flex-shrink-0">
+                <div className="flex  flex-col gap-10 w-full md:w-[700px] flex-shrink-0">
                     <div className="flex px-5 md:px-20 flex-col gap-6">
-                        <h2 className="text-[#00161D] text-3xl sm:text-4xl md:text-[55px] font-bold leading-tight">
+                        <h2 className="text-[#00161D] text-[40px] lg:text-[60px] font-bold leading-tight">
                             {heading}
                         </h2>
                         <p className="text-[#00161D] text-[18px] leading-[28px] max-w-[500px] opacity-80">
@@ -43,8 +43,8 @@ export default function Contact({ heading, description, ctaText, fieldLabel = "P
                     </div>
 
                     {/* Phone mockup placeholder */}
-                    <div className="relative w-full h-[420px] left-0  hidden md:flex items-center justify-center">
-                        <Image src="/images/hand-contact.webp" alt="hand-contact" width={600} height={420} className="object-contain" />
+                    <div className="relative w-full h-[420px]   hidden md:flex items-center justify-center">
+                        <Image src="/images/hand-contact.webp" alt="hand-contact" width={600} height={420} className="absolute left-0 object-contain" />
                     </div>
                 </div>
 

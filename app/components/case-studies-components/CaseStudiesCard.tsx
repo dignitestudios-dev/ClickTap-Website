@@ -58,7 +58,7 @@ export default function CaseStudiesCard() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
     return (
-        <section className="min-h-screen py-24  ">
+        <section className="min-h-screen">
             {/* Decorative blobs */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
                 <div className="absolute -top-0 -right-40 w-96 h-96 rounded-full bg-[#01C2FE]/40 blur-[80px]" />
@@ -69,7 +69,7 @@ export default function CaseStudiesCard() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2
-                        className="text-6xl md:text-7xl font-black text-slate-900 leading-none tracking-tight"
+                        className="text-[40px] lg:text-[60px] font-black text-slate-900 leading-none tracking-tight"
                     >
                         Case Studies
                     </h2>

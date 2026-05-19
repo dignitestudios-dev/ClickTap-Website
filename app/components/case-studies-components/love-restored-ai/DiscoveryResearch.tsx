@@ -9,9 +9,9 @@ interface ResearchItem {
 
 export default function DiscoveryResearch() {
     return (
-        <section className="bg-white py-16 px-4 max-w-6xl mx-auto font-sans">
+        <section className="bg-white px-4 max-w-6xl mx-auto font-sans">
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0a192f] mb-12">
+            <h2 className="text-[40px] lg:text-[60px] font-bold text-center text-[#0a192f] mb-12">
                 {LOVE_STORED_CONTENT.research.title}
             </h2>
 

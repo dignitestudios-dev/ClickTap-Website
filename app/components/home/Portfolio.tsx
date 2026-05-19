@@ -30,14 +30,19 @@ export default function Portfolio({ heading, description, projects }: Props) {
   const [activeItem, setActiveItem] = useState(0); // Start with the first item active
   const router = useRouter();
   return (
-    <div className="flex h-full w-full items-center justify-center py-5 md:py-24 bg-[#F1FCFF]">
+    <div className="flex h-full w-full items-center justify-center bg-[#F1FCFF]">
       <div className="  w-full flex flex-col gap-12">
 
         {/* Optional Title Section matching your previous design */}
         <div className="text-center relative z-10 flex flex-col items-center gap-4">
-          <h2 className="text-[#00161D]  text-4xl sm:text-5xl md:text-[72px] leading-tight tracking-tight">
+          <h2 className="text-[#00161D] text-[40px] lg:text-[60px] leading-tight tracking-tight">
             {heading}
           </h2>
+          {description && (
+            <p className="max-w-[900px] text-center text-[15px] md:text-[18px] font-normal leading-relaxed text-[#00161D] opacity-80">
+              {description}
+            </p>
+          )}
         </div>
         <div className="absolute h-[200px] md:h-[300px] w-full">
           <Image src="/images/portfolio.png" alt="portfolio-bg-circle" width={300} height={300} className="absolute left-0 bottom-0 z-1 w-[200px] h-[200px] md:w-[300px] md:h-[300px]" />

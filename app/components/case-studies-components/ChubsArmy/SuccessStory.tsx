@@ -22,7 +22,7 @@ export default function SuccessStory({
     cta,
 }: SuccessStoryProps) {
     return (
-        <section className="relative flex flex-col overflow-hidden rounded-[32px] min-h-[400px] items-center justify-between bg-[#7D5B3F] md:flex-row md:gap-16 py-10 md:py-0">
+        <section className="relative flex flex-col overflow-hidden rounded-[32px] min-h-[400px] items-center justify-between bg-[#7D5B3F] md:flex-row md:gap-16">
             {/* Left Column: Typography Content */}
             <div className="z-10 w-full max-w-xl px-6 md:px-10  text-white">
                 <h1 className="mb-6 text-[36px] font-normal leading-tight tracking-tight ">

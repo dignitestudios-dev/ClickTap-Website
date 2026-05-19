@@ -43,7 +43,7 @@ export default function AiAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 w-full">
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={CHUBBS_ARMY_CONTENT.hero.tagline}

@@ -73,9 +73,9 @@ export default function SolutionsSection({ title, items }: SolutionsSectionProps
     }, []);
 
     return (
-        <section className="min-h-screen bg-white flex flex-col items-center justify-center py-20 px-4 md:px-20">
+        <section className="min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-20">
             {/* Heading */}
-            <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-light text-[#1a1a1a] mb-12 text-center tracking-tight">
+            <h2 className="text-[40px] lg:text-[60px] font-light text-[#1a1a1a] mb-12 text-center tracking-tight">
                 {title}
             </h2>
 

@@ -10,12 +10,12 @@ interface SolutionPoint {
 
 export default function TheSolution() {
     return (
-        <section className="bg-black text-white  w-full mt-10 font-sans select-none overflow-hidden">
+        <section className="bg-black text-white w-full font-sans select-none overflow-hidden">
             <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-[600px]">
 
                 {/* Left Column: Title & Mobile Mockup Mock */}
                 <div className="flex flex-col py-16 px-6 md:px-12 justify-between h-full  space-y-12 lg:space-y-0">
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+                    <h2 className="text-[40px] lg:text-[60px] font-bold tracking-tight text-white">
                         {LOVE_STORED_CONTENT.solutions.title}
                     </h2>
 

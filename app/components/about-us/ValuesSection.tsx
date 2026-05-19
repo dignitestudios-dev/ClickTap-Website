@@ -27,9 +27,9 @@ const ValuesSection = ({ title, mission, objectives }: ValuesSectionProps) => {
     ];
 
     return (
-        <section className="w-full bg-[#F4F9FC] py-16 px-6 md:py-24 md:px-12 flex flex-col items-center justify-center">
+        <section className="w-full bg-[#F4F9FC] px-6 md:px-12 flex flex-col items-center justify-center">
             {/* Main Title */}
-            <h2 className="text-[36px] sm:text-[44px] md:text-[52px] font-bold text-[#0F172A] tracking-tight mb-12 text-center">
+            <h2 className="text-[40px] lg:text-[60px] font-bold text-[#0F172A] tracking-tight mb-12 text-center">
                 {title}
             </h2>
 
@@ -39,8 +39,8 @@ const ValuesSection = ({ title, mission, objectives }: ValuesSectionProps) => {
                     <div
                         key={index}
                         className={`relative min-h-[480px] md:min-h-[520px] rounded-[24px] p-8 md:p-12 flex flex-col justify-end text-left overflow-hidden border border-[#ffffff]/10 shadow-2xl ${card.bgClass} bg-cover bg-center bg-no-repeat`}
-                    >                      
-                       
+                    >
+
 
                         {/* Card Content Area */}
                         <div className="relative z-10 max-w-xl">

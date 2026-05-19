@@ -83,7 +83,7 @@ export default function FAQs({ heading, description, faqs }: Props) {
   return (
     <section
       id="faqs"
-      className="relative isolate w-full bg-[#F1FCFF] pb-24 md:pb-48 pt-0 md:pt-20"
+      className="relative isolate w-full bg-[#F1FCFF]"
     >
       {/* Decorative squares */}
       <div className="pointer-events-none relative h-20">
@@ -103,7 +103,7 @@ export default function FAQs({ heading, description, faqs }: Props) {
             Common Questions
           </p>
 
-          <h2 className="text-4xl sm:text-5xl md:text-[66px] leading-tight text-[#00161D]">
+          <h2 className="text-[40px] lgtext-[40px] lg:text-[80px] text-[#00161D]">
             {heading}
           </h2>
 

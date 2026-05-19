@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   gap: 4px; /* gap-1 in tailwind is 4px */
+  margin-top: -30px;
 }
 
 .why-pagination .swiper-pagination-bullet {
@@ -58,7 +59,7 @@
 /* Custom Navigation positioning */
 .why-navigation-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;

@@ -20,8 +20,8 @@ export default function CaseStudies() {
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1  w-full">
-                <div className="flex flex-col gap-16">
+            <main className="flex-1 w-full">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <div className=" px-4 sm:px-6 lg:px-20 py-12">
                         <CaseStudiesCard />

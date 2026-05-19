@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from "next/image";
@@ -23,14 +23,15 @@ type Props = {
     heading: React.ReactNode;
     description: string;
     cards: IndustryCard[];
+    ctaText?: string;
 }
 
-export default function Industry({ heading, description, cards }: Props) {
+export default function Industry({ heading, description, cards, ctaText }: Props) {
     return (
-        <section className="flex min-h-[600px] md:min-h-screen w-full items-center justify-center bg-[#F1FCFF] py-16 md:py-20 px-6 md:px-0">
+        <section className="flex min-h-[600px] md:min-h-screen w-full items-center justify-center bg-[#F1FCFF] px-6 md:px-0">
             <div className="flex w-full  flex-col items-center gap-[35px]">
                 <div className="flex flex-col items-center gap-4 text-center">
-                    <h2 className="text-4xl md:text-[66px] leading-tight text-[#00161D]">
+                    <h2 className="text-[40px] lg:text-[60px] leading-tight text-[#00161D]">
                         {heading}
                     </h2>
                     <p className="max-w-[600px] text-[15px] md:text-[18px] leading-relaxed text-[#00161D] opacity-80">
@@ -102,7 +103,7 @@ export default function Industry({ heading, description, cards }: Props) {
                 </div>
 
                 {/* Custom Navigation */}
-                <div className="flex  items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
+                <div className="flex -mt-15 items-center gap-2 rounded-2xl bg-[#DBF7FF] p-1">
                     <button
                         className="industry-prev industry-nav-btn"
                         aria-label="Previous"
@@ -116,6 +117,20 @@ export default function Industry({ heading, description, cards }: Props) {
                         <ArrowRight className="h-6 w-6" />
                     </button>
                 </div>
+                {/* CTA BUTTON */}
+                {ctaText && (
+                    <div className="flex justify-center">
+                        <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
+                            <span className="text-[16px] font-semibold text-[#00161D]">
+                                {ctaText}
+                            </span>
+
+                            <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
+                                <ArrowUpRight size={18} />
+                            </div>
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

@@ -4,6 +4,7 @@ import React from 'react';
 import Image from "next/image";
 import FeatureCard from './FeatureCard';
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
 
 type Feature = {
     icon: string;
@@ -19,7 +20,7 @@ type Props = {
 
 const FeaturesSection = ({ heading, description, features, ctaText }: Props) => {
     return (
-        <section className="relative py-16 md:py-20 px-6 sm:px-10 md:px-20 overflow-hidden">
+        <section className="relative px-6 sm:px-10 md:px-20 overflow-hidden">
             {/* <div className='absolute  left-0 top-4 h-[500px] md:h-[400px] '>
                 <Image src="/images/feature-bg.png" fill className='object-contain opacity-30 md:opacity-100' alt="feature-bg" />
             </div> */}
@@ -31,7 +32,7 @@ const FeaturesSection = ({ heading, description, features, ctaText }: Props) => 
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20 flex flex-col items-center justify-center gap-4"
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-[64px] font-normal leading-tight text-[#00161D]">
+                    <h2 className="text-[40px] lg:text-[60px] font-normal leading-tight text-[#00161D]">
                         {heading}
                     </h2>
                     {description && (
@@ -54,6 +55,19 @@ const FeaturesSection = ({ heading, description, features, ctaText }: Props) => 
                         </motion.div>
                     ))}
                 </div>
+                {ctaText && (
+                    <div className="flex mt-10 justify-center">
+                        <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
+                            <span className="text-[16px] font-semibold text-[#00161D]">
+                                {ctaText}
+                            </span>
+
+                            <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
+                                <ArrowUpRight size={18} />
+                            </div>
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

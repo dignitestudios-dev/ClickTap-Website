@@ -32,8 +32,8 @@ export default function UIUXDevelopment() {
             <Navbar />
 
             {/* Main Content */}
-            <main className="flex-1  w-full">
-                <div className="flex flex-col gap-10">
+            <main className="flex-1 w-full">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={UIUX_CONTENT.hero.tagline}
@@ -71,6 +71,7 @@ export default function UIUXDevelopment() {
                         heading={UIUX_CONTENT.whyChooseUs.heading}
                         para={UIUX_CONTENT.whyChooseUs.description}
                         items={UIUX_CONTENT.whyChooseUs.items}
+                        ctaText={UIUX_CONTENT.whyChooseUs.cta}
                     />
 
                     {/* Tech Stack Section */}
@@ -84,6 +85,7 @@ export default function UIUXDevelopment() {
                         heading={UIUX_CONTENT.industry.heading}
                         description={UIUX_CONTENT.industry.description}
                         cards={UIUX_CONTENT.industry.items}
+                        ctaText={UIUX_CONTENT.industry.cta}
                     />
 
                     {/* Process Section */}
@@ -103,6 +105,7 @@ export default function UIUXDevelopment() {
                             description: item.description,
                             icon: `/images/benefit-${(idx % 6) + 1}.png`
                         }))}
+                        ctaText={UIUX_CONTENT.advantages.cta}
                     />
 
                     {/* Features Section */}
@@ -113,6 +116,7 @@ export default function UIUXDevelopment() {
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`
                         }))}
+                        ctaText={UIUX_CONTENT.features.cta}
                     />
 
                     {/* Portfolio Section */}
@@ -143,6 +147,7 @@ export default function UIUXDevelopment() {
                             rating: 5,
                             avatar: "/images/person.png"
                         }))}
+                        ctaText={UIUX_CONTENT.testimonials.cta}
                     />
 
                     {/* FAQs */}

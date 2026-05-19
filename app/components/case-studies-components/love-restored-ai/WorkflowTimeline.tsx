@@ -87,10 +87,10 @@ export default function WorkflowTimeline() {
     return (
         <section
             ref={sectionRef}
-            className="bg-white py-16 md:py-20 lg:py-[100px] px-4 sm:px-6 md:px-10 lg:px-[80px] w-full max-w-[1440px] mx-auto relative flex flex-col items-center gap-10 md:gap-12 lg:gap-[50px] overflow-hidden select-none"
+            className="bg-white px-4 sm:px-6 md:px-10 lg:px-[80px] w-full max-w-[1440px] mx-auto relative flex flex-col items-center gap-10 md:gap-12 lg:gap-[50px] overflow-hidden select-none"
         >
             {/* Section Title */}
-            <h2 className="w-full max-w-[800px] font-['Inter_Tight',sans-serif] font-bold text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] leading-tight text-center capitalize text-[#00161D] tracking-tight">
+            <h2 className="w-full max-w-[800px] font-['Inter_Tight',sans-serif] font-bold text-[40px] lg:text-[60px] leading-tight text-center capitalize text-[#00161D] tracking-tight">
                 {LOVE_STORED_CONTENT.workflow.title}
             </h2>
 

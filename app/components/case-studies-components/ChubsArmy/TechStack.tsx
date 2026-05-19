@@ -18,10 +18,10 @@ type TechStackProps = {
 
 export default function TechStack({ title, description }: TechStackProps) {
     return (
-        <section className="bg-white py-20 px-4 md:px-20 font-sans">
+        <section className="bg-white px-4 md:px-20 font-sans">
             <div className="text-center">
                 {/* Header Section */}
-                <h2 className="text-[clamp(2rem,5vw,3rem)] font-bold text-[#1a2b3b] mb-6">{title}</h2>
+                <h2 className="text-[40px] lg:text-[60px] font-bold text-[#1a2b3b] mb-6">{title}</h2>
                 <p className="text-gray-600 max-w-5xl mx-auto mb-16 leading-relaxed">
                     {description}
                 </p>

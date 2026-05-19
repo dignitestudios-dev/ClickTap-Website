@@ -11,9 +11,9 @@ type CoreChallengesProps = {
 
 export default function CoreChallenges({ title, items }: CoreChallengesProps) {
     return (
-        <section className="py-10 px-4 md:px-20">
+        <section className="px-4 md:px-20">
             <div className="flex w-full flex-col items-center justify-center gap-3 sm:gap-4">
-                <h2 className="text-[clamp(2rem,8vw,4.125rem)] font-normal text-center capitalize text-[#00161D]" >{title}</h2>
+                <h2 className="text-[40px] lg:text-[60px] font-normal text-center capitalize text-[#00161D]" >{title}</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10">
                 {
@@ -36,4 +36,4 @@ export default function CoreChallenges({ title, items }: CoreChallengesProps) {
             </div>
         </section>
     )
-}
+}

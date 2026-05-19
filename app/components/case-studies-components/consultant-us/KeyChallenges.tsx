@@ -14,9 +14,9 @@ const challenges: ChallengeItem[] = CONSULTANT_US_CONTENT.challenges.items.map((
 
 export default function KeyChallenges() {
     return (
-        <section className="w-full py-20 px-6 md:px-12 lg:px-20 flex flex-col items-center max-w-[1400px] mx-auto">
+        <section className="w-full px-6 md:px-12 lg:px-20 flex flex-col items-center max-w-[1400px] mx-auto">
             {/* Section Header */}
-            <h2 className="text-[32px] sm:text-[42px] md:text-[52px] font-extrabold text-[#101D2D] tracking-tight text-center mb-12 md:mb-16">
+            <h2 className="text-[40px] lg:text-[60px] font-extrabold text-[#101D2D] tracking-tight text-center mb-12 md:mb-16">
                 Key Challenges
             </h2>
 
@@ -26,9 +26,9 @@ export default function KeyChallenges() {
                     // Card 1 Layout Styles
                     if (index === 0) {
                         return (
-                            <div
+        <div
                                 key={challenge.id}
-                                className="bg-[#101D2D] w-full min-h-[140px] px-6 md:px-12 py-8 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6 border-b border-[#1A2E44]"
+                                className="bg-[#101D2D] w-full min-h-[140px] px-6 md:px-12 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6 border-b border-[#1A2E44]"
                             >
                                 <div className="flex justify-between items-center md:block">
                                     <h3 className="text-[20px] md:text-[24px] lg:text-[26px] font-bold text-[#C19A4D] leading-tight">
@@ -51,9 +51,9 @@ export default function KeyChallenges() {
                     // Card 2 Layout Styles
                     if (index === 1) {
                         return (
-                            <div
+        <div
                                 key={challenge.id}
-                                className="bg-[#C19A4D] w-full min-h-[140px] px-6 md:px-12 py-8 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6"
+                                className="bg-[#C19A4D] w-full min-h-[140px] px-6 md:px-12 grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6"
                             >
                                 <div className="flex justify-between items-center md:block">
                                     <h3 className="text-[20px] md:text-[24px] lg:text-[26px] font-bold text-[#101D2D] leading-tight">
@@ -75,9 +75,9 @@ export default function KeyChallenges() {
 
                     // Card 3 Layout Styles
                     return (
-                        <div
+        <div
                             key={challenge.id}
-                            className="w-full min-h-[140px] px-6 md:px-12 py-8 bg-white grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6 border-t border-[#101D2D]/10"
+                            className="w-full min-h-[140px] px-6 md:px-12 bg-white grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_0.5fr] items-center gap-6 border-t border-[#101D2D]/10"
                         >
                             <div className="flex justify-between items-center md:block">
                                 <h3 className="text-[20px] md:text-[24px] lg:text-[26px] font-bold text-[#101D2D] leading-tight">

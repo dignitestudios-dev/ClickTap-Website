@@ -30,11 +30,11 @@ export default function UxWireframingSection() {
 
 
     return (
-        <section className="flex w-full flex-col items-center bg-[#FFFFFF] px-6 py-20 md:py-32 md:px-12 lg:px-20 self-stretch select-none">
+        <section className="flex w-full flex-col items-center bg-[#FFFFFF] px-6 md:px-12 lg:px-20 self-stretch select-none">
 
             {/* Figma Text Block Header */}
             <div className="flex flex-col items-center text-center w-full max-w-[850px] mb-12 md:mb-16">
-                <h2 className="font-['Inter_Tight'] text-[32px] sm:text-[44px] md:text-[56px] lg:text-[66px] font-extrabold text-[#00161D] leading-tight mb-6 tracking-tight">
+                <h2 className="font-['Inter_Tight'] text-[40px] lg:text-[60px] font-extrabold text-[#00161D] leading-tight mb-6 tracking-tight">
                     {CONSULTANT_US_CONTENT.wireframes.title}
                 </h2>
                 <p className="font-['Inter_Tight'] text-sm md:text-base lg:text-[17px] font-normal text-[#00161D]/70 leading-relaxed max-w-[760px] px-4">

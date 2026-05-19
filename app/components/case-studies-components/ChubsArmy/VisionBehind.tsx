@@ -10,10 +10,10 @@ type VisionBehindProps = {
 
 export default function VisionBehind({ title, description }: VisionBehindProps) {
     return (
-        <section className="py-10 mt-10 md:mt-15 px-4 md:px-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-30 bg-white relative overflow-hidden">
+        <section className="px-4 md:px-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-30 bg-white relative overflow-hidden">
             {/* Left Content Side */}
             <div>
-                <h2 className="text-[36px] font-normal capitalize text-[#00161D]">
+                <h2 className="text-[40px] lg:text-[60px] font-normal capitalize text-[#00161D]">
                     {title}
                 </h2>
 

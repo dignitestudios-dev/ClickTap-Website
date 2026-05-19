@@ -51,7 +51,7 @@ const Step = ({ number, title, description, isGreen = false }: { number: string,
 
 export default function Process({ heading, description, steps }: Props) {
     return (
-        <section className="relative w-full bg-[#F1FCFF] py-16 md:py-20 px-6 sm:px-10 md:px-20 overflow-hidden">
+        <section className="relative w-full px-6 sm:px-10 md:px-20">
             {/* Grid background dots (decorative) */}
             <div className="absolute left-[5%] top-[10%] opacity-5 pointer-events-none">
                 <Image src="/images/line.png" alt="Grid" width={600} height={600} className="scale-150" />
@@ -60,7 +60,7 @@ export default function Process({ heading, description, steps }: Props) {
             <div className="w-full mx-auto relative z-10 ">
                 <div className="top-0 z-20 pt-12 pb-8">
                     <div className="text-center flex flex-col items-center gap-6">
-                        <h2 className="text-4xl sm:text-5xl md:text-[80px] font-normal text-[#00161D] leading-tight tracking-tight capitalize">
+                        <h2 className="text-[40px] lg:text-[60px] font-normal text-[#00161D] leading-tight tracking-tight capitalize">
                             {heading}
                         </h2>
                         <p className="max-w-[800px] text-[18px] text-[#00161D] opacity-70 text-center font-medium">

@@ -19,13 +19,13 @@ type Props = {
 
 const ServicesSection = ({ heading, description, services, ctaText }: Props) => {
     return (
-        <section className="overflow-hidden bg-[#F3FBFD] px-6 py-16 md:px-10 lg:px-20 lg:py-24">
+        <section className="overflow-hidden bg-[#F3FBFD] px-6 md:px-10 lg:px-20">
 
             <div className="mx-auto max-w-[1280px]">
 
                 {/* HEADING */}
                 <div className="mx-auto max-w-[980px] text-center">
-                    <h2 className="text-3xl sm:text-4xl md:text-[72px] leading-[1.05] text-[#00161D]">
+                    <h2 className="text-[40px] lg:text-[60px] leading-[1.05] text-[#00161D]">
                         {heading}
                     </h2>
 

@@ -40,13 +40,13 @@ export default function LoveRestoredPage() {
     ];
 
     return (
-        <div className="flex w= flex-col min-h-screen overflow-x-hidden">
+        <div className="flex flex-col min-h-screen overflow-x-hidden">
             {/* Navigation */}
             <Navbar />
 
             {/* Main Content */}
             <main className="flex-1 w-full">
-                <div className="flex flex-col gap-10 md:gap-0">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         title={LOVE_STORED_CONTENT.hero.title}
@@ -78,6 +78,7 @@ export default function LoveRestoredPage() {
                     <SuccessSection />
                 </div>
             </main>
+            <br /><br /> <br />
 
             {/* Footer */}
             <Footer />

@@ -49,14 +49,14 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
     const reviewBadges = ["/images/trust-card-1.png", "/images/trust-card-2.png", "/images/trust-card-3.png", "/images/trust-card-4.png"];
 
     return (
-        <main className="trust-bg  py-12 text-white ">
-            <section className="mx-auto flex w-full  flex-col items-center gap-[60px] overflow-hidden rounded-2xl bg-transparent py-[60px]  md:pb-[100px]">
+        <main className="trust-bg text-white">
+            <section className="mx-auto flex w-full flex-col items-center gap-[60px] overflow-hidden rounded-2xl bg-transparent">
                 <div className="text-center max-w-[900px]">
-                    <h2 className="text-3xl sm:text-4xl md:text-[56px] font-bold leading-tight px-6 md:px-0">
+                    <h2 className="text-[40px] lg:text-[60px] font-bold leading-tight px-6 md:px-0">
                         Verified and Trusted by Different Platforms
                     </h2>
                     <p className="mt-4 text-[15px] md:text-[16px] leading-[28px] text-white/85 px-6 md:px-0">
-                        Clicktap Solutions is trusted by startups and businesses across industries, with positive feedback on platforms like Clutch and Trustpilot. Our work is built on consistent delivery and transparency through every stage.
+                        Clicktap Solutions isn’t a new name; we are a name trusted by startups and businesses across different industries, with positive feedback on platforms like Clutch and Trustpilot. Our work is built on consistent delivery that keeps clients confident because we show transparency throughout every stage of the project.
                     </p>
                 </div>
 

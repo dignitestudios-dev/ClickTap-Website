@@ -33,7 +33,7 @@ export default function AndriodAppDevelopment() {
 
             {/* Main Content */}
             <main className="flex-1 main-body-section w-full">
-                <div className="flex flex-col gap-5 md:gap-16">
+                <div className="flex flex-col gap-36">
                     {/* Hero Section */}
                     <Hero
                         tagline={ANDROID_APP_CONTENT.hero.tagline}
@@ -108,6 +108,7 @@ export default function AndriodAppDevelopment() {
                     {/* Features Section */}
                     <FeaturesSection
                         heading={ANDROID_APP_CONTENT.features.heading}
+                        description={ANDROID_APP_CONTENT.features.description}
                         features={ANDROID_APP_CONTENT.features.items.map((title, idx) => ({
                             title,
                             icon: `/images/feature-${(idx % 10) + 1}.png`

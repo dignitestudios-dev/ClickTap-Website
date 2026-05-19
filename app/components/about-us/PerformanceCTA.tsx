@@ -9,7 +9,7 @@ type PerformanceCTAProps = {
 
 export default function PerformanceCTA({ title, description, buttonText }: PerformanceCTAProps) {
     return (
-        <section className="w-full bg-[#00161D] mb-20 mt-20 py-20 px-6 flex justify-center relative overflow-hidden rounded-[32px]">
+        <section className="w-full bg-[#00161D] px-6 flex justify-center relative overflow-hidden rounded-[32px]">
             {/* Background Glow Image - Positioned absolutely to the right with full height */}
             <div className="absolute right-0 top-0 h-full w-full sm:w-[50%] pointer-events-none z-0">
                 <Image
@@ -25,7 +25,7 @@ export default function PerformanceCTA({ title, description, buttonText }: Perfo
             <div className="max-w-[800px] w-full text-center flex flex-col items-center relative z-10">
 
                 {/* Main Heading */}
-                <h2 className="text-white text-[32px] md:text-[42px] font-normal leading-[1.25] tracking-tight mb-6">
+                <h2 className="text-white text-[40px] lg:text-[60px] font-normal leading-[1.25] tracking-tight mb-6">
                     {title}
                 </h2>
 

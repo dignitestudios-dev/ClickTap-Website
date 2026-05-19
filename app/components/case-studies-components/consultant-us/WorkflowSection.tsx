@@ -98,12 +98,12 @@ export default function WorkflowSection() {
     });
 
     return (
-        <section className="relative flex w-full flex-col items-center gap-12 md:gap-20 self-stretch bg-[#101D2D] px-6 py-20 md:py-32 min-h-fit lg:min-h-[826px] overflow-hidden isolate select-none">
+        <section className="relative flex w-full flex-col items-center gap-12 md:gap-20 self-stretch bg-[#101D2D] px-6 min-h-fit lg:min-h-[826px] overflow-hidden isolate select-none">
             {/* Absolute Background Blue Light Leak/Vector */}
             <div className="absolute right-[-96px] top-[-176px] z-0 h-[701px] w-[383px] rounded-[30px] bg-[#01C2FE] opacity-40 blur-[150px] pointer-events-none" />
 
             {/* Primary Module Header */}
-            <h2 className="z-10 font-['Inter_Tight'] text-[32px] sm:text-[44px] md:text-[56px] lg:text-[66px] font-bold capitalize leading-tight text-white tracking-tight text-center w-full max-w-[800px]">
+            <h2 className="z-10 font-['Inter_Tight'] text-[40px] lg:text-[60px] font-bold capitalize leading-tight text-white tracking-tight text-center w-full max-w-[800px]">
                 Workflow
             </h2>
 

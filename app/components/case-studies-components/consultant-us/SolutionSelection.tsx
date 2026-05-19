@@ -8,9 +8,9 @@ export default function SolutionSection() {
     const solutions = CONSULTANT_US_CONTENT.solutions.items;
 
     return (
-        <section className="flex w-full flex-col items-center gap-12 md:gap-16 bg-white px-6 md:px-12 lg:px-20 py-20 md:py-32">
+        <section className="flex w-full flex-col items-center gap-12 md:gap-16 bg-white px-6 md:px-12 lg:px-20">
             {/* Main Section Title */}
-            <h2 className="font-['Inter_Tight'] text-[32px] sm:text-[44px] md:text-[56px] lg:text-[66px] font-bold capitalize leading-tight text-[#00161D] text-center">
+            <h2 className="font-['Inter_Tight'] text-[40px] lg:text-[60px] font-bold capitalize leading-tight text-[#00161D] text-center">
                 The solution
             </h2>
 

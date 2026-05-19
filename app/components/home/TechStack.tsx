@@ -57,10 +57,10 @@ export default function TechStack({ heading, description }: Props) {
   const [activeTab, setActiveTab] = useState("Frontend");
 
   return (
-    <section className="w-full bg-[#F1FCFF] py-16 md:py-20 px-6 sm:px-10 md:px-20">
+    <section className="w-full bg-[#F1FCFF] px-6 sm:px-10 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-16">
         <div className="text-center flex flex-col items-center gap-4">
-          <h2 className="text-4xl sm:text-5xl md:text-[66px] font-normal text-[#00161D] leading-tight">
+          <h2 className="text-[40px] lg:text-[60px] font-normal text-[#00161D] leading-tight">
             {heading || <>The <span className="!font-bold"> Technologies </span> We Use</>}
           </h2>
           <p className="max-w-[900px] text-[15px] text-[#00161D] opacity-70 leading-relaxed">

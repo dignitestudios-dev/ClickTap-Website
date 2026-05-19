@@ -34,10 +34,10 @@ const ArrowIcon = () => (
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-[#F1FCFF] py-16 md:py-24 px-6 sm:px-10 md:px-20 flex flex-col items-center">
+    <section id="services" className="w-full bg-[#F1FCFF] px-6 sm:px-10 md:px-20 flex flex-col items-center">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[800px] mb-16 text-center">
-        <h2 className="text-[#00161D] font-bold text-4xl sm:text-5xl md:text-[72px] leading-tight tracking-tight">
+        <h2 className="text-[#00161D] font-bold text-[40px] lg:text-[60px] leading-tight tracking-tight">
           Services <span className="font-normal text-[#00161D]">We Offer</span>
         </h2>
         <p className="text-[#00161D] text-[16px] md:text-[20px] leading-[28px] opacity-80 max-w-[750px]">

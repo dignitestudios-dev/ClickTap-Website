@@ -13,7 +13,7 @@ type Props = {
 
 const QuoteSection = ({ heading, description, ctaText }: Props) => {
     return (
-        <section className="px-6 md:px-20 py-10">
+        <section className="px-6 md:px-20">
             <div className="relative w-full max-w-[1440px] mx-auto h-auto min-h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#01C2FE80] flex flex-col lg:flex-row justify-center items-center">
 
                 {/* Gradient Overlay for the blue effect */}
@@ -38,7 +38,7 @@ const QuoteSection = ({ heading, description, ctaText }: Props) => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-white text-3xl sm:text-[36px] font-bold leading-tight mb-4">
+                        <h2 className="text-white text-[40px] lg:text-[60px] font-bold leading-tight mb-4">
                             {heading}
                         </h2>
                         <p className="text-white/90 text-[15px] md:text-[15px] max-w-[550px] leading-relaxed mb-8">

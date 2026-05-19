@@ -24,11 +24,11 @@ const ProductOutcomes = ({
     );
 
     return (
-        <section className="bg-white py-20 px-4 md:px-0 font-sans">
+        <section className="bg-white px-4 md:px-0 font-sans">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="gap-5 mb-16 text-center flex flex-col items-center">
-                    <h2 className="text-[clamp(1.75rem,5vw,3rem)] leading-tight text-gray-900 mb-6 md:mb-0">
+                    <h2 className="text-[40px] lg:text-[60px] leading-tight text-gray-900 mb-6 md:mb-0">
                         {title}
                     </h2>
 

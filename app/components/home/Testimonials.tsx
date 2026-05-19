@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Star } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Star } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -24,6 +24,7 @@ type Props = {
     heading: React.ReactNode;
     description?: string;
     testimonials: Testimonial[];
+    ctaText?: string;
 };
 
 function RatingStars({ rating }: { rating: number }) {
@@ -116,11 +117,11 @@ function TestimonialCard({ item }: { item: Testimonial }) {
     );
 }
 
-export default function TestimonialPage({ heading, description, testimonials }: Props) {
+export default function TestimonialPage({ heading, description, testimonials, ctaText }: Props) {
     const swiperRef = useRef<any>(null);
 
     return (
-        <section className="relative flex min-h-[600px] md:min-h-screen w-full justify-center overflow-hidden bg-[#F1FCFF] px-4 sm:px-8 md:px-16 lg:px-20 pb-0 py-12 sm:py-16 md:py-20">
+        <section className="relative flex w-full justify-center overflow-hidden bg-[#F1FCFF] px-4 sm:px-8 md:px-16 lg:px-20">
             {/* ── Decorative squares (hidden on very small screens) ── */}
             <div className="pointer-events-none absolute left-0 top-[68px] h-[242px] w-[413px] hidden sm:block">
                 <div className="absolute left-[343px] top-0 h-[70px] w-[70px] bg-[#DBF7FF]" />
@@ -194,7 +195,7 @@ export default function TestimonialPage({ heading, description, testimonials }: 
                 </div>
 
                 {/* ── Nav buttons ── */}
-                <div className="flex h-12 sm:h-14 w-[96px] sm:w-[109px] items-center gap-[3px] rounded-2xl bg-[#DBF7FF] p-[3px]">
+                <div className="-mt-10 flex h-12 sm:h-14 w-[96px] sm:w-[109px] items-center gap-[3px] rounded-2xl bg-[#DBF7FF] p-[3px]">
                     <button
                         type="button"
                         onClick={() => swiperRef.current?.slidePrev()}
@@ -212,6 +213,19 @@ export default function TestimonialPage({ heading, description, testimonials }: 
                         <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 text-[#01C2FE]" />
                     </button>
                 </div>
+                {ctaText && (
+                    <div className="-mt-5 flex justify-center">
+                        <button className="group/cta flex items-center gap-6 rounded-[8px] border border-[#00161D] bg-white py-2 cursor-pointer pl-6 pr-4 shadow-sm transition-all active:scale-95">
+                            <span className="text-[16px] font-semibold text-[#00161D]">
+                                {ctaText}
+                            </span>
+
+                            <div className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#01C2FE] text-white transition-transform group-hover/cta:-translate-y-1 group-hover/cta:translate-x-1">
+                                <ArrowUpRight size={18} />
+                            </div>
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

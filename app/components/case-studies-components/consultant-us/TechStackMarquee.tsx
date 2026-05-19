@@ -19,11 +19,11 @@ export default function TechStackMarquee() {
     ];
 
     return (
-        <section className="w-full bg-white flex flex-col items-center justify-start py-20 md:py-32 px-6 gap-12 md:gap-16 font-['Inter_Tight',sans-serif] text-[#00161D] overflow-hidden select-none">
+        <section className="w-full bg-white flex flex-col items-center justify-start px-6 gap-12 md:gap-16 font-['Inter_Tight',sans-serif] text-[#00161D] overflow-hidden select-none">
 
             {/* Title & Headline Header Wrapper */}
             <div className="flex flex-col justify-end items-center gap-4 text-center max-w-[900px]">
-                <h2 className="font-bold text-[32px] sm:text-[44px] md:text-[56px] lg:text-[66px] leading-tight capitalize tracking-tight">
+                <h2 className="font-bold text-[40px] lg:text-[60px] leading-tight capitalize tracking-tight">
                     {CONSULTANT_US_CONTENT.techStack.title}
                 </h2>
 
