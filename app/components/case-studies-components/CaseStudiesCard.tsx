@@ -37,7 +37,7 @@ const caseStudies: CaseStudy[] = [
         bgColor: "from-sky-300 via-blue-200 to-sky-400",
         accentColor: "#0ea5e9",
         image: "/images/case-2.png",
-        link: "/case-studies/consultant-us"
+        link: "/case-studies/consultant-r-us"
     },
     {
         id: 3,

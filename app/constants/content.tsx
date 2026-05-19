@@ -89,7 +89,7 @@ export const HOME_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -620,7 +620,7 @@ export const MOBILE_APP_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -1002,7 +1002,7 @@ export const IOS_APP_Development = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -1389,7 +1389,7 @@ export const CUSTOM_SOFTWARE_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -1766,7 +1766,7 @@ export const AI_APP_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -2142,7 +2142,7 @@ export const ANDROID_APP_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -2501,7 +2501,7 @@ export const PWA_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -2872,7 +2872,7 @@ export const WEB_APP_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -3267,7 +3267,7 @@ export const UIUX_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -3654,7 +3654,7 @@ export const MVP_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",
@@ -4161,7 +4161,7 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
                 img: "/images/case-2.png",
                 title: "Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world.",
                 name: "Consultants R US",
-                link: "/case-studies/consultant-us"
+                link: "/case-studies/consultant-r-us"
             },
             {
                 img: "/images/case-3.png",

@@ -6,7 +6,7 @@ import { LOVE_STORED_CONTENT } from '@/app/constants/content';
 
 export default function SuccessSection() {
     return (
-        <section className="relative w-full bg-[#0a111e] text-white px-6 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12  min-h-fit">
+        <section className="relative w-full bg-[#0a111e] text-white px-6 py-5 md:px-12 lg:px-20 overflow-hidden rounded-[32px] max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 min-h-fit">
 
             {/* Left Content Side */}
             <div className="flex-1 z-10 text-center lg:text-left">

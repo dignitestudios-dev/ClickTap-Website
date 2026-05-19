@@ -34,7 +34,7 @@ export default function WhyChooseUs({ heading, para, items, ctaText }: Props) {
             <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[1114px] w-full -translate-x-1/2 -translate-y-[calc(50%+19.5px)] rounded-[12px]  bg-image " />
 
             <div className="relative z-[2] mx-auto flex w-full max-w-[950px] flex-col items-center justify-end gap-[10px]">
-                <h2 className="text-center text-[40px] lg:text-[60px] font-normal leading-tight capitalize text-[#00161D]">
+                <h2 className="text-center text-[40px] mt-6 lg:text-[60px] font-normal leading-tight capitalize text-[#00161D]">
                     {heading}
                 </h2>
                 <p className="max-w-[700px] text-center text-[15px] md:text-[18px] font-normal leading-relaxed text-[#00161D] opacity-80">
