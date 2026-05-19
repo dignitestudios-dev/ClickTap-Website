@@ -127,7 +127,6 @@ export default function WhyChooseUs({ heading, para, items, ctaText }: Props) {
 
                 {/* Custom Pagination Container */}
                 <div className="why-pagination relative z-10 cursor-pointer flex justify-center gap-2"></div>
-            </div>
             {/* CTA BUTTON */}
             {ctaText && (
                 <div className="mt-8 relative z-10 flex justify-center">
@@ -142,6 +141,8 @@ export default function WhyChooseUs({ heading, para, items, ctaText }: Props) {
                     </button>
                 </div>
             )}
+            <br />
+            </div>
         </section>
     );
 }
