@@ -31,13 +31,12 @@ export default function AboutUsPage() {
                         description={ABOUT_US_CONTENT.hero.description}
                     />
 
-                    {/* Our Story Section / Values Section */}
                     <ValuesSection
                         title={ABOUT_US_CONTENT.values.title}
                         mission={ABOUT_US_CONTENT.values.mission}
                         objectives={ABOUT_US_CONTENT.values.objectives}
                     />
- 
+              <br /><br /><br /><br />
                     {/* Why Choose Us Section */}
                     <div className="">
                         <WhyChooseUs

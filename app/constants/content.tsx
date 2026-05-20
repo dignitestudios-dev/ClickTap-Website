@@ -4530,7 +4530,7 @@ export const ABOUT_US_CONTENT = {
         cta: "Learn More"
     },
     values: {
-        title: "Our Value Section",
+        title: <>Our Value <b>Section</b></>,
         mission: {
             title: "Our Mission",
             description: "Our mission is to help businesses grow through innovative digital solutions, clear communication and reliable technology services. We focus on creating user friendly experiences which solve real business challenges and support long term success through creativity strategy and strong client partnerships built on trust and transparency."
@@ -4541,7 +4541,7 @@ export const ABOUT_US_CONTENT = {
         }
     },
     whyChooseUs: {
-        title: "Why Businesses Choose ClickTap",
+        title: <>Why Businesses Choose <br /> <b>ClickTap</b></>,
         description: "",
         items: [
             {
@@ -4583,11 +4583,11 @@ export const ABOUT_US_CONTENT = {
         ]
     },
     socialProof: {
-        title: "Trusted By Businesses Across Industries",
+        title: <>Trusted By Businesses <br /> <b>Across Industries</b></>,
         description: "ClickTap Solution has earned the trust of businesses through quality work, strong communication and reliable digital solutions. Our team has worked with startups growing brands and enterprises across different industries to deliver results focused on the digital experiences. Clients choose us because we understand their goals and provide practical solutions which support long term growth.\n\nWe have established a reputation over the years for upholding transparency, fulfilling project requirements and providing dependable assistance at every turn. Our focus on innovation, user experience and scalable technological solutions which have assisted companies in increasing their online presence and boosting client interaction. We continue building long term partnerships by providing dependable services which helps brands grow confidently in a fast digital market."
     },
     cta: {
-        title: "Let’s build Something Meaningful Together",
+        title: <>Let’s build Something <br /> <b>Meaningful Together</b></>,
         description: "Whether you are starting with a new idea or improving an existing digital product ClickTap Solution is here to help. Our team combines creativity strategy and technology expertise to deliver the solutions which support your business goals, improve user experience and create the long term growth opportunities for your brand in the digital market.",
         buttonText: "Get Started Today"
     }

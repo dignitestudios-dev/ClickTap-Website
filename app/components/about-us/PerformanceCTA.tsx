@@ -25,7 +25,7 @@ export default function PerformanceCTA({ title, description, buttonText }: Perfo
             <div className="max-w-[800px] w-full text-center flex flex-col items-center relative z-10">
 
                 {/* Main Heading */}
-                <h2 className="text-white text-[40px] lg:text-[60px] font-normal leading-[1.25] tracking-tight mb-6">
+                <h2 className="text-white text-[40px] lg:text-[60px] leading-[1.25] tracking-tight mb-6">
                     {title}
                 </h2>
 

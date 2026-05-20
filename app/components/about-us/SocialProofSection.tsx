@@ -1,7 +1,7 @@
 import React from 'react';
 
 type SocialProofSectionProps = {
-    title: string;
+    title: any;
     description: string;
 };
 
@@ -11,20 +11,17 @@ export default function SocialProofSection({ title, description }: SocialProofSe
             <div className="max-w-[1200px] w-full flex flex-col gap-16">
 
                 {/* Top Content Row */}
-                <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
+                <div className="flex flex-col  justify-between items-start gap-8 lg:gap-16">
                     {/* Left Heading */}
-                    <div className="w-full lg:w-[30%]">
-                        <h2 className="text-[40px] lg:text-[60px] font-bold text-[#111c24] leading-[1.2] tracking-tight whitespace-pre-line">
+                    <div className="w-full">
+                        <h2 className="text-[40px] text-center lg:text-[60px] text-[#111c24] leading-[1.2] tracking-tight whitespace-pre-line">
                             {title}
                         </h2>
-                    </div>
-
-                    {/* Right Paragraph */}
-                    <div className="w-full lg:w-[70%]">
-                        <p className="text-[14px] text-[#4a5560] leading-[1.7] text-justify font-normal whitespace-pre-line">
+                        <p className="text-[16px] mt-3 text-center md:text-[18px] text-[#4a5560] leading-[1.7] font-normal whitespace-pre-line">
                             {description}
                         </p>
                     </div>
+                   
                 </div>
 
                 {/* Bottom Logos Grid */}

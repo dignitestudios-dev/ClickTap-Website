@@ -1,7 +1,7 @@
 import React from 'react';
 
 type ValuesSectionProps = {
-    title: string;
+    title: any;
     mission: {
         title: string;
         description: string;
@@ -27,9 +27,9 @@ const ValuesSection = ({ title, mission, objectives }: ValuesSectionProps) => {
     ];
 
     return (
-        <section className="w-full bg-[#F4F9FC] px-6 md:px-12 flex flex-col items-center justify-center">
+        <section className="w-full bg-[#F4F9FC] lg:h-[450px] px-6 md:px-12 flex flex-col items-center justify-center">
             {/* Main Title */}
-            <h2 className="text-[40px] lg:text-[60px] font-bold text-[#0F172A] tracking-tight mb-12 text-center">
+            <h2 className="text-[40px] lg:text-[60px]  text-[#0F172A] tracking-tight mb-12 text-center">
                 {title}
             </h2>
 
@@ -47,7 +47,7 @@ const ValuesSection = ({ title, mission, objectives }: ValuesSectionProps) => {
                             <h3 className="text-[28px] md:text-[34px] font-medium text-white tracking-tight mb-4">
                                 {card.title}
                             </h3>
-                            <p className="text-[13px] md:text-[14px] font-normal leading-[1.6] text-white/70 tracking-wide font-sans">
+                            <p className="text-[15px] md:text-[16px] font-normal leading-[1.6] text-white/70 tracking-wide font-sans">
                                 {card.description}
                             </p>
                         </div>
