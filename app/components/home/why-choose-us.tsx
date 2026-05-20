@@ -28,7 +28,7 @@ type Props = {
 }
 
 export default function WhyChooseUs({ heading, para, items, ctaText }: Props) {
-    console.log(ctaText, "cta-text")
+    const extendedItems = items.length < 8 ? [...items, ...items] : items;
     return (
         <section className="relative isolate mx-auto h-auto min-h-[700px] md:min-h-[905px] w-full overflow-hidden rounded-[24px] px-6 md:px-0">
             <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[1114px] w-full -translate-x-1/2 -translate-y-[calc(50%+19.5px)] rounded-[12px]  bg-image " />
@@ -95,7 +95,7 @@ export default function WhyChooseUs({ heading, para, items, ctaText }: Props) {
                     modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                     className="why-swiper"
                 >
-                    {items.map((card) => (
+                    {extendedItems.map((card) => (
                         <SwiperSlide key={card.id}>
                             <article className="flex flex-col justify-between h-full">
                                 <div className="flex h-[50px] w-[50px] items-center justify-center">

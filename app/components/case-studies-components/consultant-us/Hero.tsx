@@ -46,13 +46,27 @@ export default function Hero({ title, description, details }: Props) {
         {/* Action Buttons (CTAs) */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-12 md:mb-16">
           {/* iOS App Store Button */}
-          <button className="h-[52px] w-full px-3 sm:w-[220px] bg-[#0A1128] text-white rounded-full flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-opacity-90 active:scale-95 transition-all shadow-md cursor-pointer">
+          <button 
+          onClick={() =>
+              window.open(
+                "https://apps.apple.com/us/app/consultants-r-us/id6757849113",
+                "_blank",
+              )
+            }
+          className="h-[52px] w-full px-3 sm:w-[220px] bg-[#0A1128] text-white rounded-full flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-opacity-90 active:scale-95 transition-all shadow-md cursor-pointer">
             <Image src="/images/apple.webp" alt="Apple" width={18} height={18} className="brightness-100" />
             <span>Download for iPhone</span>
           </button>
 
           {/* Android Play Store Button */}
-          <button className="h-[52px] w-full px-3 sm:w-[220px] bg-white border border-[#E2E8F0] text-[#101D2D] rounded-full flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-gray-50 active:scale-95 transition-all shadow-md cursor-pointer">
+          <button 
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.dignitestudios.consultants_r_us",
+                "_blank",
+              )
+            }
+          className="h-[52px] w-full px-3 sm:w-[220px] bg-white border border-[#E2E8F0] text-[#101D2D] rounded-full flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-gray-50 active:scale-95 transition-all shadow-md cursor-pointer">
             <FaGooglePlay size={22} color="#101D2D" />
             <span>Download for Android</span>
           </button>

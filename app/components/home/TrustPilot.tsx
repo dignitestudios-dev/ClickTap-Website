@@ -49,7 +49,7 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
     const reviewBadges = ["/images/trust-card-1.png", "/images/trust-card-2.png", "/images/trust-card-3.png", "/images/trust-card-4.png"];
 
     return (
-        <main className="trust-bg text-white">
+        <main className="trust-bg py-10  text-white">
             <section className="mx-auto flex w-full flex-col items-center gap-[60px] overflow-hidden rounded-2xl bg-transparent">
                 <div className="text-center max-w-[900px]">
                     <h2 className="text-[40px] lg:text-[60px] font-bold leading-tight px-6 md:px-0">
@@ -92,7 +92,7 @@ export default function TrustPilot({ stats, marqueeLogos }: Props) {
                     <div className="relative flex w-full items-center justify-center gap-6 md:gap-[70px] overflow-hidden rounded-2xl border-r border-[#dbf7ff1a] bg-[#00161D] px-6 py-8 md:h-[312px] md:px-8 flex-wrap md:flex-nowrap">
                         {reviewBadges.map((badge) => (
                             <div key={badge} className="z-10 flex items-center gap-3 text-white/95">
-                                <Image src={badge} alt="Review Badge" width={152} height={40} className="rounded-lg w-24 sm:w-32 md:w-38 h-auto " />
+                                <Image src={badge} alt="Review Badge" width={162} height={50} className="rounded-lg w-24 sm:w-40 md:w-48 h-auto " />
                             </div>
                         ))}
                         <DecorativeBlocks />

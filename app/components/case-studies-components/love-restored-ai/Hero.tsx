@@ -18,10 +18,8 @@ type Props = {
 export default function Hero({ title, description, details }: Props) {
   return (
     <section className="relative w-full flex flex-col items-center pt-10 md:pt-16 lg:pt-20 pb-12 overflow-hidden">
-
       {/* Upper Content Wrapper */}
       <div className="relative z-10 w-full   flex flex-col items-center text-center">
-
         {/* Logo */}
         <div className="mb-6 md:mb-8">
           <Image
@@ -46,10 +44,30 @@ export default function Hero({ title, description, details }: Props) {
         {/* Action Buttons (CTAs) */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           {/* iOS App Store Button */}
-          <Image src="/images/apple-button.png" alt="Apple" width={231} height={48} className="cursor-pointer active:scale-95 transition-all" />
+          <Image
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/us/app/loverestored-ai/id6751412290",
+                "_blank",
+              )
+            }
+            src="/images/apple-button.png"
+            alt="Apple"
+            width={231}
+            height={48}
+            className="cursor-pointer active:scale-95 transition-all"
+          />
 
           {/* Android Play Store Button */}
-          <button className="h-[52px] w-full px-3 sm:w-[220px] bg-white border border-[#E2E8F0] text-[#101D2D] rounded-[16px] flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-gray-50 active:scale-95 transition-all shadow-md cursor-pointer">
+          <button
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.dignitestudios.loverestoredai",
+                "_blank",
+              )
+            }
+            className="h-[52px] w-full px-3 sm:w-[220px] bg-white border border-[#E2E8F0] text-[#101D2D] rounded-[16px] flex items-center justify-center gap-3 font-medium text-[15px] hover:bg-gray-50 active:scale-95 transition-all shadow-md cursor-pointer"
+          >
             <FaGooglePlay size={22} color="#101D2D" />
             <span>Download for Android</span>
           </button>
@@ -86,7 +104,6 @@ export default function Hero({ title, description, details }: Props) {
             </div>
           </div>
         )}
-
       </div>
     </section>
   );

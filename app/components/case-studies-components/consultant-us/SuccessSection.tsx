@@ -10,7 +10,7 @@ export default function SuccessSection() {
 
             {/* Left Content Side */}
             <div className="flex-1 z-10 text-center lg:text-left">
-                <h2 className="text-[40px] lg:text-[60px] font-bold tracking-tight text-white mb-6 leading-tight">
+                <h2 className="text-[40px] lg:text-[50px]  font-bold tracking-tight text-white mb-6 leading-tight">
                     {CONSULTANT_US_CONTENT.successStory.title}
                 </h2>
 
@@ -52,7 +52,7 @@ export default function SuccessSection() {
                         damping: 15,
                         delay: 0.1
                     }}
-                    className="relative w-[180px] left-36 sm:w-[240px] md:w-[300px] h-full rounded-[32px] overflow-visible"
+                    className="relative w-[180px] left-36 sm:w-[240px] md:w-[320px] h-full rounded-[32px] overflow-visible"
                 >
                     <Image
                         src="/images/success-img-1.png"
@@ -73,7 +73,7 @@ export default function SuccessSection() {
                         damping: 15,
                         delay: 0.4
                     }}
-                    className="relative w-[180px] sm:w-[240px] md:w-[230px] h-full rounded-[32px] z-20 overflow-visible"
+                    className="relative -bottom-5 w-[180px] sm:w-[240px] md:w-[250px] h-full rounded-[32px] z-20 overflow-visible"
                 >
                     <Image
                         src="/images/success-img-2.png"

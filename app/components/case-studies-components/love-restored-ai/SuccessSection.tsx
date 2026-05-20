@@ -39,7 +39,7 @@ export default function SuccessSection() {
             </div>
 
             {/* Right Mobile Mockups Side */}
-            <div className="flex-1 relative w-full h-[350px]  sm:h-[400px] lg:h-[500px]  gap-4 lg:gap-8  pt-10 overflow-visible">
+            <div className="flex-1  relative w-full h-[350px]  sm:h-[400px] lg:h-[500px]  gap-4 lg:gap-8  pt-10 overflow-visible">
 
                 {/* Second Mobile Mockup (Right Front) */}
                 <motion.div
@@ -52,12 +52,12 @@ export default function SuccessSection() {
                         damping: 15,
                         delay: 0.4
                     }}
-                    className="relative w-[180px] sm:w-[240px] md:w-[550px]  h-full rounded-[32px] z-20 overflow-visible"
+                    className="relative -bottom-5 w-[180px] sm:w-[240px] md:w-[550px]  h-full rounded-[32px] z-20 overflow-visible"
                 >
                     <Image
                         src="/images/love-restored.png"
                         fill
-                        className="object-contain ml-10"
+                        className="object-contain  ml-10"
                         alt="success-img-2"
                     />
                 </motion.div>
