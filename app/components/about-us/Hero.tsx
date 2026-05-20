@@ -26,10 +26,10 @@ export default function Hero({ title, description, details }: Props) {
     ];
 
     return (
-        <section className="relative w-full flex flex-col items-center pt-10 md:pt-16 lg:pt-20 pb-12 overflow-hidden">
+        <section className="relative w-full flex flex-col items-center  overflow-hidden">
 
             {/* Upper Content Wrapper */}
-            <div className="relative z-10 w-full flex flex-col items-center text-center">
+            <div className="relative z-10 py-10 w-full flex flex-col items-center text-center">
 
                 {/* Main Title */}
                 <h1 className="max-w-[1000px] relative z-40 text-[32px] sm:text-4xl md:text-6xl lg:text-[72px] font-extrabold text-[#0D1B2A] leading-[1.1] tracking-tight mb-6 px-2">
@@ -75,6 +75,7 @@ export default function Hero({ title, description, details }: Props) {
                             </div>
                         </div>
                     )}
+                    <br /><br />
                     <OurStory
                         title={ABOUT_US_CONTENT.story.title}
                         paragraphs={ABOUT_US_CONTENT.story.paragraphs}
@@ -83,8 +84,6 @@ export default function Hero({ title, description, details }: Props) {
 
 
                 </div>
-
-
 
             </div>
         </section>

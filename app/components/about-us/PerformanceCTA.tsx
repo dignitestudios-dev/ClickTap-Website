@@ -9,7 +9,7 @@ type PerformanceCTAProps = {
 
 export default function PerformanceCTA({ title, description, buttonText }: PerformanceCTAProps) {
     return (
-        <section className="w-full bg-[#00161D] px-6 flex justify-center relative overflow-hidden rounded-[32px]">
+        <section className="w-full bg-[#00161D] px-6 py-10 flex justify-center relative overflow-hidden rounded-[32px]">
             {/* Background Glow Image - Positioned absolutely to the right with full height */}
             <div className="absolute right-0 top-0 h-full w-full sm:w-[50%] pointer-events-none z-0">
                 <Image

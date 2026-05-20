@@ -24,7 +24,7 @@ export default function AboutUsPage() {
 
             {/* Main Content */}
             <main className="flex-1 w-full">
-                <div className="flex flex-col gap-36">
+                <div className="flex flex-col space-y-36">
                     {/* Hero Section */}
                     <Hero
                         title={ABOUT_US_CONTENT.hero.title}
@@ -37,9 +37,9 @@ export default function AboutUsPage() {
                         mission={ABOUT_US_CONTENT.values.mission}
                         objectives={ABOUT_US_CONTENT.values.objectives}
                     />
-
+ 
                     {/* Why Choose Us Section */}
-                    <div className="mt-16">
+                    <div className="">
                         <WhyChooseUs
                             heading={ABOUT_US_CONTENT.whyChooseUs.title}
                             para={ABOUT_US_CONTENT.whyChooseUs.description}
@@ -51,13 +51,14 @@ export default function AboutUsPage() {
                         title={ABOUT_US_CONTENT.socialProof.title}
                         description={ABOUT_US_CONTENT.socialProof.description}
                     />
-
                     <div className="px-6 md:px-20">
                         <PerformanceCTA
                             title={ABOUT_US_CONTENT.cta.title}
                             description={ABOUT_US_CONTENT.cta.description}
                             buttonText={ABOUT_US_CONTENT.cta.buttonText}
                         />
+                    <br />
+                    <br />
                     </div>
                 </div>
             </main>

@@ -8,7 +8,7 @@ type OurStoryProps = {
 
 const OurStory = ({ title, paragraphs, cta }: OurStoryProps) => {
     return (
-        <section className="w-full bg-white px-6 md:px-12 flex justify-center">
+        <section className="w-full bg-white px-6 py-10  md:px-12 flex justify-center">
             <div className="max-w-[1200px] w-full flex flex-col items-center text-center gap-12">
 
                 {/* Heading */}
