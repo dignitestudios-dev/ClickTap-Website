@@ -265,37 +265,37 @@ export const HOME_CONTENT = {
                 quote: "Their developers turned our idea into a reliable app way faster than we expected. Communicating was always clear and easy with them.",
                 author: "James Tate",
                 role: "Founder, Bright-E Labs",
-                avatar: "/images/person.png",
+                avatar: "/images/person-1.png",
             },
             {
                 quote: "Definitely a great team to work with. They understood our vision quickly and delivered a product that our users have loved so far.",
                 author: "Sarah David",
                 role: "Product Manager, MediC Health",
-                avatar: "/images/person.png",
+                avatar: "/images/person-10.png",
             },
             {
                 quote: "We saw improvements in engagement after launch. The app feels very clean and very thoughtfully built.",
                 author: "Daniel Carter",
                 role: "CTO, UrbanCart",
-                avatar: "/images/person.png",
+                avatar: "/images/person-2.png",
             },
             {
                 quote: "Their team made the entire process simple. Everything was handled with care and consistency with them.",
                 author: "Emily Rachel",
                 role: "CEO, TravelMate",
-                avatar: "/images/person.png",
+                avatar: "/images/person-9.png",
             },
             {
                 quote: "The internal system finally works just the way we wanted. The team literally understood our business needs from day day.",
                 author: "Michael Smith",
                 role: "Operations Lead, CoreSync Labs",
-                avatar: "/images/person.png",
+                avatar: "/images/person-3.png",
             },
             {
                 quote: "They were highly professional and responsive. They delivered exactly what we needed and helped us scale without friction.",
                 author: "Olivia Cooper",
                 role: "Co-Founder, Linkify",
-                avatar: "/images/person.png",
+                avatar: "/images/person-5.png",
             },
         ],
     },
@@ -656,31 +656,31 @@ export const MOBILE_APP_CONTENT = {
                 quote: "The team made the entire development process feel simple and structured. We always knew what stage we were at, and the final app came out even better than we expected.",
                 author: "Daniel Thomas",
                 role: "Product Manager, Medi-T Health",
-                avatar: "/images/person.png",
+                avatar: "/images/person-1.png",
             },
             {
                 quote: "What stood out most was their communication. No confusion, no delays in updates. just a very clear and professional workflow from start to finish.",
                 author: "Robert James",
                 role: "Founder, ShopFast E-commerce",
-                avatar: "/images/person.png",
+                avatar: "/images/person-2.png",
             },
             {
                 quote: "They didn’t just build what we initially asked for. They helped us improve the idea. The app is now faster, cleaner, and more user-friendly than our original concept.",
                 author: "Michael T.",
                 role: "CTO, UrbanMove Logistics",
-                avatar: "/images/person.png",
+                avatar: "/images/person-3.png",
             },
             {
                 quote: "Working with ClickTap felt like having an in house team. They were responsive, collaborative and genuinely cared about the product’s success.",
                 author: "Sarah Thompson",
                 role: "CEO, Travelora App",
-                avatar: "/images/person.png",
+                avatar: "/images/person-10.png",
             },
             {
                 quote: "The quality of work is excellent. Everything from design to performance feels polished and ready for scale. We’ve already seen strong user feedback.",
                 author: "David Jackson",
                 role: "Head of Digital, HomePace Realty",
-                avatar: "/images/person.png",
+                avatar: "/images/person-4.png",
             },
         ],
         cta: "Work With Our Expert Team",
@@ -1038,31 +1038,37 @@ export const IOS_APP_Development = {
                 quote: "Highly professional team with excellent execution. They understood our requirements clearly and delivered a scalable product that performs really well for our users.",
                 author: "Michael Ralph",
                 role: "Product Manager, BluePeak Co.",
+                avatar: "/images/person-1.png",
             },
             {
                 quote: "Great communication throughout the project. The team was skilled, and focused on delivering actual business value at every stage.",
                 author: "Sarah Micheal",
                 role: "Founder, Nexora Techs",
+                avatar: "/images/person-10.png",
             },
             {
                 quote: "They transformed our idea into a fully functional product that exceeded expectations in both design and performance. Truly impressive work.",
                 author: "Lauren David",
                 role: "CEO, RightWave Systems",
+                avatar: "/images/person-2.png",
             },
             {
                 quote: "Very structured process and timely delivery. We always knew what stage the project was in, which gave us full confidence.",
                 author: "Travis Johnson",
                 role: "Operations Lead, CloudTrick Inc.",
+                avatar: "/images/person-3.png",
             },
             {
                 quote: "Strong technical expertise and attention to detail. The final product was stable and extremely user friendly across all devices.",
                 author: "Mitchel Wilson",
                 role: "CTO, Vertex-B Solutions",
+                avatar: "/images/person-4.png",
             },
             {
                 quote: "Excellent collaboration experience. They provided valuable suggestions that improved our overall product strategy and user experience.",
                 author: "Laura Brown",
                 role: "Product Owner, NovaSky Tech",
+                avatar: "/images/person-5.png",
             },
         ],
         cta: "Work with us",
@@ -1426,36 +1432,43 @@ export const CUSTOM_SOFTWARE_CONTENT = {
                 quote: "ClickTap delivered our software platform on time with excellent performance and smooth user experience across all the devices",
                 author: "Michael Johnson",
                 role: "Product Manager, StreamWave Media",
+                avatar: "/images/person-1.png",
             },
             {
                 quote: "The team was highly professional and easy to work with. They understood our requirements and delivered exactly what we needed",
                 author: "Sarah Williams",
                 role: "CTO, BrightVision Tech",
+                avatar: "/images/person-10.png",
             },
             {
                 quote: "The user user engagement was massive. Their development approach as structured and highly effective",
                 author: "David Miller",
                 role: "Founder, AppSphere Solution",
+                avatar: "/images/person-8.png",
             },
             {
                 quote: "Their clear planning made everything simpler and fluent. We always knew what stage the project was in",
                 author: "Emily Brown",
                 role: "Project Lead, NextGen Digital",
+                avatar: "/images/person-9.png",
             },
             {
                 quote: "Great support throughout the entire project. Communication was smooth and everything update was shared on time without any delays",
                 author: "James Anderson",
                 role: "CEO, VisionCore Labs",
+                avatar: "/images/person-3.png",
             },
             {
                 quote: "They truly understand business needs and deliver practical solutions which improve performance and user satisfaction significantly",
                 author: "Olivia Davis",
                 role: "Operation Manager, MediaFlow Systems",
+                avatar: "/images/person-5.png",
             },
             {
                 quote: "Users enjoy using our software, and it functions flawlessly. Their technical expertise made a real difference in our product success",
                 author: "Daniel Wilson",
                 role: "Founder, Cloudstream Apps",
+                avatar: "/images/person-4.png",
             },
         ],
         cta: "Work With Our Expert Team",
@@ -1803,31 +1816,37 @@ export const AI_APP_CONTENT = {
                 quote: "ClickTap Solution helped us automate several manual tasks that were slowing down our operations. Their team understood our goals clearly and delivered an AI system that improved workflow efficiency across sour departments",
                 author: "Micheal Carter",
                 role: "NexaFlow Technologies",
+                avatar: "/images/person-1.png",
             },
             {
                 quote: "Their communication was excellent from start to finish. The AI solution they developed helped us improve customer response times and reduced support workload significantly",
                 author: "Sarah Mitchell",
                 role: "BrightCore Solutions",
+                avatar: "/images/person-10.png",
             },
             {
                 quote: "We were impressed with their technical expertise and problem solving approach. The final product was stable, easy to use and delivered exactly what our business needed",
                 author: "Daniel Roberts",
                 role: "Elevate Digital Group",
+                avatar: "/images/person-2.png",
             },
             {
                 quote: "ClickTap Solution guided properly throughout the project. Their team explained every step clearly and delivered a reliable AI system within the given timeline",
                 author: "Olivia Bennette",
                 role: "Horizon Media Labs",
+                avatar: "/images/person-5.png",
             },
             {
                 quote: "The AI platform they developed improved our data management process and helped our team work more efficiently. We had a very smooth experience working with them",
                 author: "Ethan Walker",
                 role: "VertexOne Systems",
+                avatar: "/images/person-4.png",
             },
             {
                 quote: "They focused on our business goals instead of just development. The final customer engagement and helped us streamline daily operations successfully",
                 author: "Jessica Adams",
                 role: "NovaEdge Technologies",
+                avatar: "/images/person-9.png",
             },
         ],
         cta: "Work With Our Expert Team",
@@ -2179,26 +2198,31 @@ export const ANDROID_APP_CONTENT = {
                 quote: "The team ClickTap Solutions got the requirements clearly. We didn’t expect such quick service, so they definitely exceeded expectations.",
                 author: "Michael Anderson",
                 role: "Product Manager, UrbanPulse Technologies",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "We just needed some consultation, and they did it nicely. Our app performance and user engagement improved significantly after their guidance.",
                 author: "Jessica Turner",
                 role: "Founder, Redwood Digital Labs",
+                avatar: "/images/person-9.png"
             },
             {
                 quote: "Their developers built an Android app for us with clean UI and backend integration. 10/10 and highly recommended because they were really skilled.",
                 author: "David Collins",
                 role: "CTO, Silverline Systems",
+                avatar: "/images/person-2.png"
             },
             {
                 quote: "The mobile app was delivered on schedule without compromising quality, and their process is so transparent.",
                 author: "Emily Roberts",
                 role: "Operations Director, BlueHarbor Group",
+                avatar: "/images/person-9.png"
             },
             {
                 quote: "They provided continuous support even after the launch. Very responsive and helpful team.",
                 author: "Christopher Walker",
                 role: "CEO, NextGen Solutions",
+                avatar: "/images/person-5.png"
             },
         ],
         cta: "Work With Our Expert Team",
@@ -2538,31 +2562,37 @@ export const PWA_CONTENT = {
                 quote: "Working with the development team at ClickTap Solutions was a game changer for our product. Their PWA expertise was brilliant and helped us improve load speed significantly.",
                 author: "Ethan Walker",
                 role: "Product Manager, BrightWave Technologies",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "Their approach is highly professional and the teamwork is brilliant. Our team noticed a major improvement in conversions after launch.",
                 author: "Olivia Jackson",
                 role: "Founder & CEO, UrbanCart Retail",
+                avatar: "/images/person-5.png"
             },
             {
                 quote: "Their team built a reliable PWA for our healthcare platform. 10/10 and highly recommended.",
                 author: "Michael Wills",
                 role: "CTO, HealthSync Systems",
+                avatar: "/images/person-2.png"
             },
             {
                 quote: "They delivered exactly what we needed. The PWA built by them is highly responsive.",
                 author: "Daniel Brooks",
                 role: "Operations Director, EstateHub Realty",
+                avatar: "/images/person-3.png"
             },
             {
                 quote: "The ecommerce engagement has been so much better ever since we launched a PWA with them.",
                 author: "Ava Thompson",
                 role: "Marketing Director, ShopNova E-commerce",
+                avatar: "/images/person-4.png"
             },
             {
                 quote: "They built a social PWA for us that handles high traffic smoothly. The user experience is clean and engaging too.",
                 author: "James Anderson",
                 role: "Startup Founder, LinkUp Social",
+                avatar: "/images/person-6.png"
             },
         ],
         cta: "Work With Our Expert Team",
@@ -2909,31 +2939,37 @@ export const WEB_APP_CONTENT = {
                 quote: "Their approach to work was amazing, and actually functional. The team understood what we wanted and delivered beyond expectations.",
                 author: "Ethan Caldwell",
                 role: "Product Manager, OrionEdge Logistics",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "We required a really complex platform and they honestly did great! What they delivered was quick and really secure.",
                 author: "Olivia Harper",
                 role: "CTO, Medivance Health Systems",
+                avatar: "/images/person-5.png"
             },
             {
                 quote: "Working with the team at ClickTap Solution was such a great experience because they actually provided valuable suggestions.",
                 author: "Liam Foster",
                 role: "Operations Director, Stratify Retail Group",
+                avatar: "/images/person-2.png"
             },
             {
                 quote: "They actually built a highly responsive web app for our business. It has improved engagement with our users.",
                 author: "Ava Mitchell",
                 role: "Founder, Skyline Travel Hub",
+                avatar: "/images/person-3.png"
             },
             {
                 quote: "They took the idea we had and created a fully functional product with a clean performance. Their structured process made the entire experience stress free for us.",
                 author: "Noah Bennett",
                 role: "CEO, IronPeak Realty Solutions",
+                avatar: "/images/person-4.png"
             },
             {
                 quote: "I’d say, excellent technical team! The communication is so on point an dthe team is highly skilled.",
                 author: "Isabella Grant",
                 role: "Head of Digital, CrestWave Financial Group",
+                avatar: "/images/person-10.png"
             },
         ],
     },
@@ -3304,36 +3340,43 @@ export const UIUX_CONTENT = {
                 quote: "ClickTap Solution created a clean and modern interface for our platform. The design became much easier for users to understand and navigate.",
                 author: "Michael Carter",
                 role: "Product Manager, Nexa Digital",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "Their UI UX team listened carefully to our ideas and delivered exactly what we wanted. The whole process stayed simple and organized.",
                 author: "Sarah William",
                 role: "Founder, Bright Edge",
+                avatar: "/images/person-10.png"
             },
             {
                 quote: "We noticed better customer engagement after the redesign. Users were spending more time on our platform because everything felt easier to use.",
                 author: "Daniel Roberts",
                 role: "Marketing Lead, Urban Shift",
+                avatar: "/images/person-2.png"
             },
             {
                 quote: "The team maintained clear communication during every stage of the project. They delivered high quality designs without making the process complicated for us.",
                 author: "Emma Johnson",
                 role: "Operations Head, Pixel Craft",
+                avatar: "/images/person-5.png"
             },
             {
                 quote: "Our old interface looked outdated and confusing. ClickTap Solution redesigned everything into a much cleaner and more professional experience for our users.",
                 author: "James Walker",
                 role: "CEO, NovaSphere",
+                avatar: "/images/person-4.png"
             },
             {
                 quote: "We really liked how simple and user friendly the final design looked. Their designers understood both usability and modern design perfectly.",
                 author: "Olivia Turner",
                 role: "Creative Director, Elevate Media",
+                avatar: "/images/person-9.png"
             },
             {
                 quote: "ClickTap Solution improved our platform usability through practical design changes. Our customers immediately noticed the smooth navigation and better layout structure.",
                 author: "Ryan Mitchell",
                 role: "Co Founder, Core Vision",
+                avatar: "/images/person-6.png"
             },
         ],
         cta: "Work With Our Expert Team",
@@ -3691,31 +3734,37 @@ export const MVP_CONTENT = {
                 quote: "ClickTap Solutions helped us turn our idea into a working MVP in a very short time. The process was simple and easy to follow.",
                 author: "Daniel Carter",
                 role: "Product Manager, NovaTech Labs",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "The team understood our vision clearly and focused only on what mattered for early testing and validation.",
                 author: "James Wilson",
                 role: "Founder, BrightLoop Startups",
+                avatar: "/images/person-2.png"
             },
             {
                 quote: "We were able to validate our product idea without spending too much money in the beginning stage.",
                 author: "Michael Brown",
                 role: "CEO, InnoSpark Solutions",
+                avatar: "/images/person-3.png"
             },
             {
                 quote: "Their communication was smooth and updates were always on time throughout the MVP development process.",
                 author: "Christopher Hall",
                 role: "CTO, CloudBridge Systems",
+                avatar: "/images/person-4.png"
             },
             {
                 quote: "We liked how they gave clear, understandable explanations for each stage.",
                 author: "James Wilson",
                 role: "Co-Founder, PixelCraft Labs",
+                avatar: "/images/person-6.png"
             },
             {
                 quote: "The MVP they built helped us attract early users and secure investor interest quickly.",
                 author: "Emily Johnson",
                 role: "Product Lead, NextWave Ventures",
+                avatar: "/images/person-5.png"
             },
         ],
         cta: "Work With Our Expert Team",
@@ -4198,36 +4247,44 @@ export const MOBILE_APP_CONSULTING_CONTENT = {
                 quote: "ClickTap Solution gave us clear direction from the beginning. Their consulting process helped us to organize our product idea properly and avoid unnecessary confusion during planning",
                 author: "Michael Carter",
                 role: "Product Manager, NexaSoft Solutions",
+                avatar: "/images/person-1.png"
             },
             {
                 quote: "Their team explained every stage in simple words. We finally understood how to shape our mobile app idea into a practical business solution",
                 author: "Jennifer Adams",
                 role: "Founder, BrightPath Digital",
+                avatar: "/images/person-9.png"
             },
             {
                 quote: "We needed guidance for feature planning and scalability. Their consulting support helped us make smarter product decisions with complete confidence",
                 author: "Daniel Brooks",
                 role: "Operations Director, Elevate Hub",
+                avatar: "/images/person-6.png"
             },
             {
                 quote: "Very professional team with strong consulting experience. Their recommendations helped us improve our product strategy and long term planning significantly",
                 author: "Emily Roberts",
                 role: "CEO, Visionary Labs",
+                avatar: "/images/person-10.png"
+
             },
             {
                 quote: "The communication stayed clear and transparent throughout the process. Their consulting support made our mobile app planning much easier to understand",
                 author: "Ryan Mitchell",
                 role: "Co Founder, CoreBridge Technologies",
+                avatar: "/images/person-7.png"
             },
             {
                 quote: "ClickTap Solution Helped us simplify our product structure and focus on what actually mattered for users and business growth",
                 author: "Olivia Turner",
                 role: "Marketing Head, NovaSphere Inc",
+                avatar: "/images/person-5.png"
             },
             {
                 quote: "Our team gained complete clarity after working with their consultants. Every discussion was practical simple and focused on business goals",
                 author: "Ethan Walker",
                 role: "Strategy Lead, PixelForge Systems",
+                avatar: "/images/person-4.png"
             },
         ],
         cta: "Work With Our Expert Team",

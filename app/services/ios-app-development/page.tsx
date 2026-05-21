@@ -128,7 +128,7 @@ export default function IOSAppDevelopment() {
                             message: item.quote,
                             date: "2024",
                             rating: 5,
-                            avatar: "/images/person.png"
+                            avatar: item.avatar
                         }))}
                     />
 

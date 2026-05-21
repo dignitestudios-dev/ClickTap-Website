@@ -51,6 +51,7 @@ function RatingStars({ rating }: { rating: number }) {
 }
 
 function TestimonialCard({ item }: { item: Testimonial }) {
+    console.log("Rendering testimonial:", item);
     return (
         <article className="flex flex-col w-full max-w-[582px] rounded-2xl sm:rounded-3xl bg-white p-5 sm:p-7 md:p-10 mx-auto">
             {/* ── Header: avatar + name/role + stars ── */}
@@ -87,12 +88,12 @@ function TestimonialCard({ item }: { item: Testimonial }) {
 
             {/* ── Title & message ── */}
             <div className="mt-4 sm:mt-6 flex flex-col gap-3 sm:gap-4 text-left">
-                <h3
+                {/* <h3
                     className="text-[15px] sm:text-[18px] leading-snug font-bold text-[#00161D]"
                     style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
                 >
                     {item.title}
-                </h3>
+                </h3> */}
                 <p
                     className="text-[14px] sm:text-[18px] leading-relaxed font-light text-[#00161D]"
                     style={{ fontFamily: "'Inter Tight', var(--font-sans)" }}
