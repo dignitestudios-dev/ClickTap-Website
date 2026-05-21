@@ -162,10 +162,6 @@ export default function TermsAndConditionsContent() {
             </Link>
           </div>
 
-          {/* Last Updated */}
-          <div className="text-center text-sm text-[#00161D] opacity-60 mt-12 pt-12 border-t border-[#DBF7FF]">
-            <p>Last Updated: May 2026</p>
-          </div>
         </div>
       </section>
     </div>
