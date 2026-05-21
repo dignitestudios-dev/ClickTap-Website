@@ -18,8 +18,8 @@ const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about-us" },
   { name: "Contact", href: "/contact-us" },
-  { name: "Teams & Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
+  { name: "Teams & Conditions", href: "/terms-and-conditions" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const socialLinks = [
